@@ -1,0 +1,103 @@
+### Magento ###
+/app/.htaccess
+/app/bootstrap.php
+/app/autoload.php
+/app/functions.php
+/app/etc/di.xml
+/app/etc/vendor_path.php
+/app/etc/NonComposerComponentRegistration.php
+
+# Files re-generated through composer
+/CHANGELOG.md
+/CONTRIBUTING.md
+/COPYING.txt
+/ISSUE_TEMPLATE.md
+/LICENSE_AFL.txt
+/LICENSE.txt
+/Gruntfile.js.sample
+/nginx.conf.sample
+/package.json.sample
+/php.ini.sample
+/vendor
+/bin
+/dev
+/lib
+/pub
+/setup
+/var
+
+# Excludes (or a better alternative might be to symlink this to shared folders
+!/pub/media/catalog
+!/pub/media/downloadable
+!/var/composer_home
+
+
+### Metadata ###
+/.buildpath
+/.cache
+/.metadata
+/.project
+/.settings
+atlassian*
+/nbproject
+/sitemap
+/.idea
+/.gitattributes
+
+
+### VSCode ###
+.vscode/
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
