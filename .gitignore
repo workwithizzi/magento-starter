@@ -4,10 +4,19 @@
 /app/autoload.php
 /app/functions.php
 /app/etc/di.xml
+/app/etc/env.php
 /app/etc/vendor_path.php
 /app/etc/NonComposerComponentRegistration.php
 
+
 # Files re-generated through composer
+/phpserver/.htaccess
+/phpserver/README.md
+/phpserver/router.php
+/generated/.htaccess
+/.htaccess
+/.php_cs.dist
+/.user.ini
 /CHANGELOG.md
 /CONTRIBUTING.md
 /COPYING.txt
