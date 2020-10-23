@@ -5,8 +5,9 @@
 /app/functions.php
 /app/etc/di.xml
 /app/etc/env.php
-/app/etc/vendor_path.php
 /app/etc/NonComposerComponentRegistration.php
+/app/etc/vendor_path.php
+/app/etc/registration_globlist.php
 
 
 # Files re-generated through composer
