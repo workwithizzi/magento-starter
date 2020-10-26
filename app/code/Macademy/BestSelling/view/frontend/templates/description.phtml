@@ -1,3 +1,9 @@
 <!-- <p>This is a description.</p> -->
 <!-- To make use of Magento's built in transation function: -->
-<p><?=__('This is a description.') ?></p>
+<?php
+/** @var $block \Magento\Framework\View\Element\Template */
+/** @var \Macademy\BestSelling\ViewModel\Description $descriptionViewModel */
+$descriptionViewModel = $block->getData('description_view_model')
+?>
+<p><?= $descriptionViewModel->getWithWordCount() ?></p>
+<?= $block->getChildHtml() ?>
