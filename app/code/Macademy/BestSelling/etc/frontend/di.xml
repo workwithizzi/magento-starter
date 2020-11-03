@@ -2,7 +2,7 @@
 <!-- This isn't working -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Catalog\Block\Product\ProductList\Toolbar">
-        <plugin name="addBestSellersToToolbarAvailableOrders" type="Macademy\BestSelling\Plugin\AddBestSellersToToolbarAvailableOrders"/>
+        <!-- <plugin name="addBestSellersToToolbarAvailableOrders" type="Macademy\BestSelling\Plugin\AddBestSellersToToolbarAvailableOrders"/> -->
     </type>
 
 </config>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright info.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- <referenceBlock name="catalog.topnav">
+            <block name="custom.menu.links" template="Izzi_Skeleton::html/topmenu_custom.phtml"/>
+        </referenceBlock> -->
+
+        <!-- <referenceBlock name="catalog.topnav" template="Izzi_Skeleton::topmenu.phtml" /> -->
+        <referenceBlock name="wishlist_sidebar" template="Izzi_Skeleton::wishlist/sidebar.phtml" />
+    </body>
+</page>
