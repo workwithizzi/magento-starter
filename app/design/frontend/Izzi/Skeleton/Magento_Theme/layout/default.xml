@@ -1,5 +1,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 	<body>
+		<attribute name="class" value="skeleton-body-class"/>
+
 		<!-- Remove the "View Wishlist" link in top menu -->
 		<referenceBlock name="wish-list-link" remove="true"/>
 
