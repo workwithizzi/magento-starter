@@ -1,0 +1,18 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<!-- Remove the "View Wishlist" link in top menu -->
+		<referenceBlock name="wish-list-link" remove="true"/>
+
+		<!-- Remove the Search bar in header -->
+		<referenceBlock name="top.search" remove="true"/>
+
+		<!-- Possibly move the mini cart this way or just use similar styles to the mobile view of the cart -->
+		<move element="minicart" destination="header.panel" after="-"/>
+
+		<!-- Remove default subscription signup from footer -->
+		<referenceBlock name="form.subscribe" remove="true"/>
+
+		<!-- Remove bug-report link from footer -->
+		<referenceBlock name="report.bugs" remove="true"/>
+	</body>
+</page>
