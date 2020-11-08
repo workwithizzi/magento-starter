@@ -1,4 +1,0 @@
-- Controllers: Only route and direct responses
-- Models: Save and fetch data
-- Views: Only deal with the presentation of data
-- ViewModel: A separate object that can be passed directly to a template file
