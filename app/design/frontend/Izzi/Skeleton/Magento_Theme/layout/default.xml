@@ -14,6 +14,9 @@
 		<!-- Remove default subscription signup from footer -->
 		<referenceBlock name="form.subscribe" remove="true"/>
 
+		<!-- Remove blank theme's default footer links -->
+		<referenceBlock name="footer_links" remove="true"/>
+
 		<!-- Remove bug-report link from footer -->
 		<referenceBlock name="report.bugs" remove="true"/>
 	</body>
