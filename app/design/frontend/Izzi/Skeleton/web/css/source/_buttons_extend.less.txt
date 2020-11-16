@@ -1,0 +1,9 @@
+// Extends parent-theme or module styles
+// File must be imported in _extend.less to take effect
+
+.action {
+	&.primary {
+			background-color: palevioletred;
+			border-color: palevioletred;
+	}
+}
