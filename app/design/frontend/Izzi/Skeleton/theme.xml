@@ -4,7 +4,7 @@
     <title>Skeleton</title>
     <!-- The parent theme your theme will inherit -->
     <!-- Almost always Magento/blank for new themes -->
-    <parent>Magento/blank</parent>
+    <!-- <parent>Magento/blank</parent> -->
     <!-- The media node is optional and can be removed if no preview image -->
     <media>
         <!-- The preview_image node defines your theme's preview image -->
