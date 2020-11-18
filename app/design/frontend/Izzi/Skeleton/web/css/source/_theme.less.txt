@@ -1,2 +1,0 @@
-// Overrides variables from the parent theme.
-// There aren't any in magneto/blank's _theme.less

@@ -1,2 +1,0 @@
-// Overrides all parent-theme or module styles.
-// @see: vendor/magento/theme-frontend-blank/web/css/source/_navigation.less
