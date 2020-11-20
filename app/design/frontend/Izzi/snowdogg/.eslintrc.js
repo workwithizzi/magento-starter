@@ -1,5 +1,8 @@
 module.exports = {
 	extends: "@workwithizzi/eslint-config",
+	globals: {
+		"define": "readonly"
+	},
 	rules: {
 		"quotes": ["warn", "backtick"],
 		semi: ["warn", "never"],
