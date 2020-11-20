@@ -22,7 +22,7 @@ rules:
 
   #################
   # Extends
-  no-extends: 1 # Try not to use extends
+  no-extends: 0 # Try not to use extends
   extends-before-mixins: 1
   extends-before-declarations: 1
   placeholder-in-extend: 0 # Can extend classes too
@@ -31,7 +31,7 @@ rules:
   # Write them first (other than media queries)
   # in-case you need to override something.
   mixins-before-declarations:
-    - 1
+    - 0
     - exclude:
         - bp
         - between_bp
@@ -48,14 +48,16 @@ rules:
   bem-depth: 0
   nesting-depth:
     - 1
-    - max-depth: 3
-  pseudo-element: 1 # https://git.io/fxrAu
+    - max-depth: 6 # 2
+  pseudo-element: # https://git.io/fxrAu
+    - 0
+    - double # double|single
 
   # Properties
   no-disallowed-properties:
     - 1
     - properties: [] # blacklist
-  no-important: 1 # Only use for hacks. Disable linting per line
+  no-important: 0
   no-misspelled-properties: 1
   no-transition-all: 0
   no-url-domains: 0
@@ -68,7 +70,7 @@ rules:
         # - font-size: ["rem", "em"]
   property-sort-order: 0
   quotes:
-    - 1
+    - 0
     - style: single
   variable-for-property:
     - 1
@@ -103,14 +105,14 @@ rules:
   no-invalid-hex: 1
 
   #############################
-  # Code Readibility #
+  # Code Readability #
   #############################
 
   # Selectors
   no-mergeable-selectors:
     - 1
     - whitelist: []
-  declarations-before-nesting: 1
+  declarations-before-nesting: 0
   brace-style:
     - 1
     - style: # https://git.io/fxwlu
@@ -124,11 +126,12 @@ rules:
 
   # Properties/Rules
   no-duplicate-properties:
-    - 1
+    - 0
     - exclude: # whitelist
         - margin
         - padding
         - border
+        - src
   shorthand-values:
     - 1
     - allowed-shorthands: [1, 2]
@@ -142,19 +145,23 @@ rules:
   space-before-colon: 0 #false | allow for alignment
   space-after-colon: 0 #true | allow for alignment
   space-before-brace: 0 #true | ignore due to interpolation
-  space-between-parens: 1 #false
+  space-between-parens:
+    - 0 # Ignored for code alignment purposes
+    - false # false|true
   space-around-operator: 1 #true
 
   # Misc
   no-css-comments: 0 # Removed during minification
   clean-import-paths: 1
-  empty-args: 1 #false --Used for mixins
+  empty-args: 0 #false --Used for mixins
   max-line-length: 0 #80
   max-file-line-count: 0 #300
   trailing-semicolon: 1 #true
   hex-length: 0 #short | Allow long for alignment
 
-  indentation: 0 #2 spaces | Auto-convert to tabs onSave
+  indentation:
+    - 0
+    - size: tab #2 spaces | Auto-convert to tabs onSave
   empty-line-between-blocks: # turned off because linter & auto-fix has trouble
     - 0
     - include: true
@@ -166,7 +173,9 @@ rules:
   no-color-keywords: 0 # auto-fixed
   hex-notation: 0 #lowercase | auto-fixed
   border-zero: 0 #0
-  attribute-quotes: 1 #true
+  attribute-quotes:
+    - 1
+    - true # true|false
   final-newline: 0 #true # Should be corrected onSave
   no-trailing-zero: 0 #disallowed | auto-fixed
   space-before-bang: 0 #true | auto-fixed

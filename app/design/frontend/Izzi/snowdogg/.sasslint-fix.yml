@@ -18,7 +18,9 @@ syntax:
 resolvers:
   # Auto-fix has trouble with these so they are ignored
   empty-line-between-blocks: 0 #true
-  indentation: 0 #2 spaces | Auto-convert to tabs onSave
+  indentation:
+    - 1
+    - size: tab #2 spaces | Auto-convert to tabs onSave
   hex-length: 0 #short | Allow long for alignment
   no-css-comments: 0 # Removed during minification
   no-important: 0 #allowed | Handle per-case by regular linter
@@ -28,7 +30,9 @@ resolvers:
   no-color-keywords: 1
   hex-notation: 1 #lowercase
   border-zero: 1 #0
-  attribute-quotes: 1 #true
+  attribute-quotes:
+    - 1
+    - true # true|false
   final-newline: 1 #true
   no-trailing-zero: 1 #disallowed
   space-after-bang: 1 #false

@@ -43,6 +43,9 @@ $checkout-billing-address-form__max-width      : $checkout-shipping-address__max
     }
 
     .payment-method-content {
+				display: none;
+				@include lib-css(padding, 0 0 $indent__base $checkout-payment-method-content__padding__xl);
+
         > .actions-toolbar {
             > .primary {
                 .action {
@@ -51,7 +54,13 @@ $checkout-billing-address-form__max-width      : $checkout-shipping-address__max
                     }
                 }
             }
-        }
+				}
+
+				.fieldset {
+						&:not(:last-child) {
+								margin: 0 0 $indent__base;
+						}
+				}
     }
 
     .payment-method-title {
@@ -70,15 +79,6 @@ $checkout-billing-address-form__max-width      : $checkout-shipping-address__max
         }
     }
 
-    .payment-method-content {
-        display: none;
-        @include lib-css(padding, 0 0 $indent__base $checkout-payment-method-content__padding__xl);
-        .fieldset {
-            &:not(:last-child) {
-                margin: 0 0 $indent__base;
-            }
-        }
-    }
 
     .payment-group {
         & + .payment-group {

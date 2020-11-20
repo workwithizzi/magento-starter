@@ -52,6 +52,12 @@ $toolbar-element-background : $panel__background-color !default;
     .products.wrapper ~ .toolbar & {
         display: none;
     }
+
+		.sort-desc {
+				&:before {
+						content: $icon-arrow-down;
+				}
+		}
 }
 
 .sorter-options {
@@ -69,14 +75,6 @@ $toolbar-element-background : $panel__background-color !default;
         $_icon-font-color-hover: $header-icons-color-hover,
         $_icon-font-text-hide  : true
     );
-}
-
-.sorter {
-    .sort-desc {
-        &:before {
-            content: $icon-arrow-down;
-        }
-    }
 }
 
 .modes {

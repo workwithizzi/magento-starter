@@ -15,7 +15,16 @@ $checkout-step-title-mobile__font-size : 18px !default;
 .checkout-index-index {
     .page-title-wrapper {
         @extend .abs-visually-hidden;
-    }
+		}
+
+		.nav-sections,
+		.nav-toggle {
+				display: none;
+		}
+
+		.logo {
+				margin-left: 0;
+		}
 }
 
 .checkout-container {
@@ -36,17 +45,6 @@ $checkout-step-title-mobile__font-size : 18px !default;
 
     .step-content {
         margin: 0 0 $indent__xl;
-    }
-}
-
-.checkout-index-index {
-    .nav-sections,
-    .nav-toggle {
-        display: none;
-    }
-
-    .logo {
-        margin-left: 0;
     }
 }
 

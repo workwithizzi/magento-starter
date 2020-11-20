@@ -55,7 +55,7 @@ $_password-very-strong               : #81b562 !default;
 }
 
 .form-address-edit {
-    #region_id {
+    #region_id { // sass-lint:disable-line no-ids
         display: none;
     }
 

@@ -1,3 +1,4 @@
+// sass-lint:disable no-mergeable-selectors
 //  email-inline.scss
 //  Since email client support for CSS in <style> tags is limited, the majority of styles should be added as "inline"
 //  styles. CSS will be applied to transactional email HTML via the Emogrifier library, which only has support for
@@ -186,4 +187,3 @@ body {
         }
     }
 }
-
