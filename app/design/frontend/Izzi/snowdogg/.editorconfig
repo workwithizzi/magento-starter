@@ -11,8 +11,9 @@ insert_final_newline = true
 # Set default charset
 charset = utf-8
 
-# Indentation (size is left up to the user)
+# Indentation
 indent_style = tab
+# indent_size = 2 # size is left up to the user
 
 # Remove whitespace characters preceding newline characters
 trim_trailing_whitespace = true
