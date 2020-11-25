@@ -1,7 +1,7 @@
 //
-//  Ratings
+// Ratings
 // ::::::::::::::::::::::::::::::::::::
-//  Rating-vote mixin
+// Rating-vote mixin
 
 @mixin lib-rating-vote(
 	$_icon-count          : $rating-icon__count,
@@ -82,7 +82,7 @@
 	);
 }
 
-//  Rating-summary mixin
+// Rating-summary mixin
 
 @mixin lib-rating-summary(
 	$_icon-count          : $rating-icon__count,
@@ -151,7 +151,7 @@
 	}
 }
 
-//  Internal use mixins
+// Internal use mixins
 
 @mixin _lib-rating-label-hide($_label-hide) {
 	@if $_label-hide == true {

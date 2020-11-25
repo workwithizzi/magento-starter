@@ -1,5 +1,5 @@
 //
-//  Utilities
+// Utilities
 // ::::::::::::::::::::::::::::::::::::
 // Remove the unit of a length
 // @param {Number} $number - Number to remove unit from
@@ -13,7 +13,7 @@
 }
 
 //
-//  Convert values to unit specified in typography variables
+// Convert values to unit specified in typography variables
 // ::::::::::::::::::::::::::::::::::::
 
 @function lib-font-size-value($_value) {
@@ -58,7 +58,7 @@
 }
 
 //
-//  Clearfix
+// Clearfix
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-clearfix() {
@@ -82,7 +82,7 @@
 }
 
 //
-//  Gradient
+// Gradient
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-gradient__horizontal(
@@ -124,7 +124,7 @@
 }
 
 //
-//  Custom background gradient
+// Custom background gradient
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-background-gradient(
@@ -152,7 +152,7 @@
 
 
 //
-//  Rotate
+// Rotate
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-rotate($_rotation) {
@@ -161,7 +161,7 @@
 
 
 //
-//  Remove spaces between elements with display: inline-block
+// Remove spaces between elements with display: inline-block
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-inline-block-space-container() {
@@ -182,7 +182,7 @@
 }
 
 //
-//  Add any css property
+// Add any css property
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-css(
@@ -212,17 +212,17 @@
 }
 
 //
-//  Add url to property
+// Add url to property
 // ::::::::::::::::::::::::::::::::::::
 
 // usage:
 // .column.left {
-//     .lib-url('images/fallback.png');
-//     background:url("#{$url}") repeat-y;
+//    .lib-url('images/fallback.png');
+//    background:url("#{$url}") repeat-y;
 // }
 // .columns {
-//     .lib-url('images/fallback.png', 'Magento_Catalog');
-//     background:url("#{$url}") repeat;
+//    .lib-url('images/fallback.png', 'Magento_Catalog');
+//    background:url("#{$url}") repeat;
 // }
 
 $urls-resolved: false;
@@ -243,7 +243,7 @@ $urls-resolved: false;
 }
 
 //
-//  Arrow
+// Arrow
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-arrow($_position, $_size, $_color) {
@@ -269,7 +269,7 @@ $urls-resolved: false;
 }
 
 //
-//  Input placeholder
+// Input placeholder
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-input-placeholder(
@@ -298,7 +298,7 @@ $urls-resolved: false;
 }
 
 //
-//  Flex layout
+// Flex layout
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-vendor-prefix-display(
@@ -362,7 +362,7 @@ $urls-resolved: false;
 }
 
 //
-//  Pointer for popups or dropdowns
+// Pointer for popups or dropdowns
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-pointer(

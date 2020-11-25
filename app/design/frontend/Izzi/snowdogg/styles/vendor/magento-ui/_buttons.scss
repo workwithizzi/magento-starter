@@ -1,8 +1,8 @@
 //
-//  Buttons
+// Buttons
 // ::::::::::::::::::::::::::::::::::::
 //
-//  Button with solid or pictire background
+// Button with solid or pictire background
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-button(
@@ -121,7 +121,7 @@
 }
 
 //
-//  Button size
+// Button size
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-button-size(
@@ -133,7 +133,7 @@
 }
 
 //
-//  Large buttons
+// Large buttons
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-button-l(
@@ -149,7 +149,7 @@
 }
 
 //
-//  Small buttons
+// Small buttons
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-button-s(
@@ -165,7 +165,7 @@
 }
 
 //
-//  Link as button
+// Link as button
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-link-as-button() {
@@ -181,7 +181,7 @@
 }
 
 //
-//  Button as link
+// Button as link
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-button-as-link(
@@ -225,7 +225,7 @@
 }
 
 //
-//  Responsive
+// Responsive
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-button-responsive() {
@@ -233,7 +233,7 @@
 }
 
 //
-//  Button reset
+// Button reset
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-button-reset() {
@@ -241,6 +241,7 @@
 	background-image: none; // Reset unusual Firefox-on-Android default style
 	border: 0;
 	box-shadow: none;
+	// stylelint-disable-next-line property-no-vendor-prefix
 	-moz-box-sizing: content-box; // Hack: fix Firefox button line-height problem
 	line-height: inherit;
 	margin: 0;
@@ -270,7 +271,7 @@
 }
 
 //
-//  Button primary
+// Button primary
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-button-primary(
@@ -322,7 +323,7 @@
 }
 
 //
-//  Button revert secondary color
+// Button revert secondary color
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-button-revert-secondary-color(
@@ -357,7 +358,7 @@
 }
 
 //
-//  Button revert secondary size
+// Button revert secondary size
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-button-revert-secondary-size(
@@ -373,7 +374,7 @@
 }
 
 //
-//  Inner buttons mixins
+// Inner buttons mixins
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin _lib-button-icon(

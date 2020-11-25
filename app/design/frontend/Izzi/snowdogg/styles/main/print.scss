@@ -23,6 +23,7 @@
 		background: transparent !important;
 		// TODO: change this hex color to global var
 		color: #000000 !important; // stylelint-disable-line color-no-hex
+		// stylelint-disable-next-line property-no-vendor-prefix
 		-webkit-filter: none !important; // Use in 41 Chrome
 		filter: none !important;
 		text-shadow: none !important;

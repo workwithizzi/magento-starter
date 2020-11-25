@@ -1,11 +1,11 @@
 //
-//  Sections variables
+// Sections variables
 // ::::::::::::::::::::::::::::::::::::
 //
-//  Tabs
+// Tabs
 // ::::::::::::::::::::::::::::::::::::
 
-//  Tabs controls
+// Tabs controls
 $tab-control__font-size                      : $font-size__base !default;
 $tab-control__font-family                    : false !default;
 $tab-control__font-weight                    : $font-weight__semibold !default;
@@ -21,7 +21,7 @@ $tab-control__padding-left                   : $tab-control__padding-right !defa
 $tab-control__border-color                   : $border-color__base !default;
 $tab-control__border-width                   : $border-width__base !default;
 
-//  Current tab
+// Current tab
 $tab-control__background-color               : $panel__background-color !default;
 $tab-control__color                          : $text__color__muted !default;
 $tab-control__text-decoration                : none !default;
@@ -44,7 +44,7 @@ $tab-content__padding-bottom                 : $tab-content__padding-top !defaul
 $tab-content__padding-left                   : $tab-content__padding-right !default;
 
 //
-//  Accordions
+// Accordions
 // ::::::::::::::::::::::::::::::::::::
 
 $accordion-control__font-family              : $tab-control__font-family !default;

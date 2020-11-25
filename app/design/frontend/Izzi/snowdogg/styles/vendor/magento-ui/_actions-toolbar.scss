@@ -1,5 +1,5 @@
 //
-//  Actions-toolbar
+// Actions-toolbar
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-actions-toolbar(
@@ -55,7 +55,7 @@
 }
 
 //
-//  Actions-toolbar-clear-floats
+// Actions-toolbar-clear-floats
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-actions-toolbar-clear-floats() {
@@ -67,7 +67,7 @@
 }
 
 //
-//  Internal use mixins
+// Internal use mixins
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin _lib-actions-toolbar-align($_actions-toolbar-actions-position) {

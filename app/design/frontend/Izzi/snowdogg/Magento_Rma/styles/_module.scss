@@ -70,7 +70,7 @@
 }
 
 //
-//  Guest return view page
+// Guest return view page
 // ::::::::::::::::::::::::::::::::::::
 
 .magento-rma-guest-returns {
@@ -82,7 +82,7 @@
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m) {
@@ -112,7 +112,7 @@
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -126,7 +126,7 @@
 	}
 
 	//
-	//  Guest return view page
+	// Guest return view page
 	// ::::::::::::::::::::::::::::::::::::
 
 	.magento-rma-guest-returns {

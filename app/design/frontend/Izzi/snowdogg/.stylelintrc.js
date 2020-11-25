@@ -33,12 +33,12 @@ module.exports = {
 	// ::::::::::::::::::::::::::::::::::::
 	"rules": {
 		"no-duplicate-at-import-rules": true,
-		// "no-duplicate-selectors": [
-		// 	true,
-		// 	{
-		// 		"disallowInList": false
-		// 	}
-		// ],
+		"no-duplicate-selectors": [
+			true,
+			{
+				"disallowInList": false
+			}
+		],
 		"no-eol-whitespace": [
 			true,
 			{
@@ -193,7 +193,7 @@ module.exports = {
 		"no-extra-semicolons": true,
 		"number-leading-zero": "never",
 		"number-no-trailing-zeros": true,
-		// "property-no-vendor-prefix": true, // 2nd options: https://t.ly/fNSX)
+		"property-no-vendor-prefix": true, // 2nd options: https://t.ly/fNSX)
 		"selector-attribute-brackets-space-inside": "never",
 		"selector-attribute-operator-space-after": "never",
 		"selector-attribute-operator-space-before": "never",

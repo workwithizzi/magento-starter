@@ -1,4 +1,4 @@
-//  Paypal billing agreement
+// Paypal billing agreement
 .form-new-agreement {
 	.actions-toolbar {
 		@extend .abs-reset-left-margin;
@@ -6,7 +6,7 @@
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {

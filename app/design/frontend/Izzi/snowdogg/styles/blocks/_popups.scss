@@ -1,9 +1,9 @@
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 $popup-marker__size: 7px !default;
 
-//  Popup working with dropdown dialog
+// Popup working with dropdown dialog
 .ui-dialog {
 	&.popup {
 		.action {
@@ -54,7 +54,7 @@ $popup-marker__size: 7px !default;
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__s) {

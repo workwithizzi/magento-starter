@@ -14,7 +14,7 @@
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m) {
@@ -26,7 +26,7 @@
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {

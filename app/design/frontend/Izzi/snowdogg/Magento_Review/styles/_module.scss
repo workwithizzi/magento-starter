@@ -1,5 +1,5 @@
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 $review-ratings-left: 280px !default;
 $reviews-indent-desktop: 30px !default;
@@ -23,7 +23,7 @@ $reviews-indent-desktop: 30px !default;
 }
 
 //
-//  Add review block
+// Add review block
 // ::::::::::::::::::::::::::::::::::::
 
 .block {
@@ -121,7 +121,7 @@ $reviews-indent-desktop: 30px !default;
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -205,7 +205,7 @@ $reviews-indent-desktop: 30px !default;
 }
 
 //
-//  Review product page
+// Review product page
 // ::::::::::::::::::::::::::::::::::::
 
 .review {
@@ -302,7 +302,7 @@ $reviews-indent-desktop: 30px !default;
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__s) {

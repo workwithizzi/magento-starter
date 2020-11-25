@@ -24,14 +24,16 @@ body,
 table,
 td,
 a {
-	-ms-text-size-adjust: 100%; // sass-lint:disable-line no-vendor-prefixes
-	-webkit-text-size-adjust: 100%; // sass-lint:disable-line no-vendor-prefixes
+	// stylelint-disable property-no-vendor-prefix
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 // Allow smoother rendering of resized images in
 // Internet Explorer (such as high-resolution logo)
 img {
-	-ms-interpolation-mode: bicubic; // sass-lint:disable-line no-misspelled-properties no-vendor-prefixes
+	-ms-interpolation-mode: bicubic;
+	// stylelint-enable property-no-vendor-prefix
 }
 
 // Remove spacing between tables in Outlook 2007 and up

@@ -35,7 +35,7 @@ table {
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__s) {
@@ -79,6 +79,7 @@ table {
 			}
 		}
 
+		// stylelint-disable-next-line no-duplicate-selectors
 		.table {
 			&:not(.totals) {
 				&:not(.table-comparison) {

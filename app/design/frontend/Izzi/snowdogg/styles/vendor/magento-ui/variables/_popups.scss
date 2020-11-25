@@ -1,5 +1,5 @@
 //
-//  Popup variables
+// Popup variables
 // ::::::::::::::::::::::::::::::::::::
 $popup__width                                              : 100% !default;
 $popup__height                                             : auto !default;
@@ -38,7 +38,7 @@ $popup-button-close__position-right                        : $indent__s !default
 $popup-button-close__position-bottom                       : false !default;
 $popup-button-close__position-left                         : false !default;
 
-//  Actions toolbar variables
+// Actions toolbar variables
 $popup-actions-toolbar                                     : false !default; // [true|false]
 $popup-actions-toolbar__margin                             : $actions-toolbar__margin !default;
 $popup-actions-toolbar__padding                            : $actions-toolbar__padding !default;
@@ -53,7 +53,7 @@ $popup-actions-toolbar-actions-links__margin-top           : $actions-toolbar-ac
 $popup-actions-toolbar-actions-links-primary__margin-top   : $actions-toolbar-actions-links-primary__margin-top !default;
 $popup-actions-toolbar-actions-links-secondary__margin-top : $actions-toolbar-actions-links-secondary__margin-top !default;
 
-//  Popup Icons variables
+// Popup Icons variables
 $popup-icon-font                                           : $button-icon__font !default;
 $popup-icon-font__content                                  : $icon-remove !default;
 $popup-icon-font__size                                     : $button-icon__font-size !default;
@@ -66,7 +66,7 @@ $popup-icon-font__vertical-align                           : $button-icon__verti
 $popup-icon-font__position                                 : $button-icon__position !default;
 $popup-icon-font__text-hide                                : true !default;
 
-//  Window overlay variables
+// Window overlay variables
 $overlay__background                                       : $color-black !default;
 $overlay__opacity                                          : .5 !default;
 $overlay__opacity-old                                      : 50 !default;

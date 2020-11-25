@@ -148,7 +148,7 @@
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__s) {
@@ -234,8 +234,8 @@
 	}
 
 	//
-	//  Grid view for wishlist
-	//  -----------------------------------------
+	// Grid view for wishlist
+	// -----------------------------------------
 
 	.wishlist-index-index {
 		.product {
@@ -264,7 +264,7 @@
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {

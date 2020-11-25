@@ -1,5 +1,5 @@
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 $checkout-wrapper__margin              : $indent__base !default;
 $checkout-wrapper__columns             : 8 !default;
@@ -56,7 +56,7 @@ $checkout-step-title-mobile__font-size : 18px !default;
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__s) {
@@ -71,7 +71,7 @@ $checkout-step-title-mobile__font-size : 18px !default;
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {

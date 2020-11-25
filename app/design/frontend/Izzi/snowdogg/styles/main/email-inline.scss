@@ -1,7 +1,7 @@
 //
-//  Styles for emails
+// Styles for emails
 // ::::::::::::::::::::::::::::::::::::
-//  See comments in source/_email-base.scss for explanation of email styles
+// See comments in source/_email-base.scss for explanation of email styles
 
 @import "../vendor/magento-ui/lib"; // Global lib
 
@@ -15,7 +15,7 @@
 
 @import "../email/email-extend-inline";
 
-//  Module-specific styles for emails
+// Module-specific styles for emails
 
 @import "../../Magento_Bundle/styles/email-inline";
 

@@ -1,5 +1,5 @@
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 $autocomplete__background-color  : $color-white !default;
 $autocomplete__border            : 1px solid $form-element-input__border-color !default;
@@ -171,7 +171,7 @@ $autocomplete-item-amount__color : $color-gray60 !default;
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m) {
@@ -189,7 +189,7 @@ $autocomplete-item-amount__color : $color-gray60 !default;
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {

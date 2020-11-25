@@ -1,17 +1,17 @@
 //
-//  Typography variables
+// Typography variables
 // ::::::::::::::::::::::::::::::::::::
 //
-//  Fonts
+// Fonts
 // ::::::::::::::::::::::::::::::::::::
 
-//  Path
+// Path
 $icons__font-path               : "../fonts/Blank-Theme-Icons/Blank-Theme-Icons" !default;
 
-//  Names
+// Names
 $icons__font-name               : "icons-blank-theme" !default; // ToDo UI                                         : we need to rename (it shouldn't use blank theme name) or move icon fonts to blank theme
 
-//  Font families
+// Font families
 $font-family-name__base         : "Open Sans" !default;
 $font-family__sans-serif        : "Helvetica Neue", helvetica, arial, sans-serif !default;
 $font-family__serif             : georgia, "Times New Roman", times, serif !default;
@@ -19,7 +19,7 @@ $font-family__monospace         : menlo, monaco, consolas, "Courier New", monosp
 
 $font-family__base              : $font-family-name__base, $font-family__sans-serif !default;
 
-//  Sizes
+// Sizes
 $root__font-size                : 62.5% !default; // Defines ratio between root font size and base font size, 1rem = 10px
 $font-size-ratio__base          : 1.4 !default; // Defines ratio of the root font-size to the base font-size
 
@@ -33,31 +33,31 @@ $font-size__l                   : ceil(1.25 * $font-size__base) !default; // 18p
 $font-size__s                   : ceil(.85 * $font-size__base) !default; // 12px
 $font-size__xs                  : floor(.75 * $font-size__base) !default; // 11px
 
-//  Weights
+// Weights
 $font-weight__light             : 300 !default;
 $font-weight__regular           : 400 !default;
 $font-weight__heavier           : 500 !default;
 $font-weight__semibold          : 600 !default;
 $font-weight__bold              : 700 !default;
 
-//  Styles
+// Styles
 $font-style__base               : normal !default;
 $font-style__emphasis           : italic !default;
 
-//  Line heights
+// Line heights
 $line-height__base              : 1.428571429 !default;
 $line-height__computed          : floor($font-size__base * $line-height__base) !default;
 $line-height__xl                : 1.7 !default;
 $line-height__l                 : 1.5 !default;
 $line-height__s                 : 1.33 !default;
 
-//  Colors
+// Colors
 $text__color                    : $primary__color !default;
 $text__color__intense           : $primary__color__darker !default;
 $text__color__muted             : $primary__color__lighter !default;
 
 //
-//  Indents
+// Indents
 // ::::::::::::::::::::::::::::::::::::
 
 $indent__base                   : $line-height__computed !default; // 20px
@@ -68,14 +68,14 @@ $indent__s                      : $indent__base / 2 !default; // 10px
 $indent__xs                     : $indent__base / 4 !default; // 5px
 
 //
-//  Borders
+// Borders
 // ::::::::::::::::::::::::::::::::::::
 
 $border-color__base             : darken($page__background-color, 18%) !default;
 $border-width__base             : 1px !default;
 
 //
-//  Links
+// Links
 // ::::::::::::::::::::::::::::::::::::
 
 $link__color                    : $color-blue1 !default;
@@ -91,14 +91,14 @@ $link__active__color            : $active__color !default;
 $link__active__text-decoration  : underline !default;
 
 //
-//  Focus
+// Focus
 // ::::::::::::::::::::::::::::::::::::
 
 $focus__color                   : $color-sky-blue1 !default;
 $focus__box-shadow              : 0 0 3px 1px $focus__color !default;
 
 //
-//  Lists
+// Lists
 // ::::::::::::::::::::::::::::::::::::
 
 $list__color__base              : false !default;
@@ -120,14 +120,14 @@ $dd__margin-top                 : 0 !default;
 $dd__margin-bottom              : $indent__s !default;
 
 //
-//  Paragraphs
+// Paragraphs
 // ::::::::::::::::::::::::::::::::::::
 
 $p__margin-top                  : 0 !default;
 $p__margin-bottom               : $indent__s !default;
 
 //
-//  Headings
+// Headings
 // ::::::::::::::::::::::::::::::::::::
 
 $heading__font-family__base     : false !default;
@@ -197,7 +197,7 @@ $heading__small-color           : $primary__color !default;
 $heading__small-line-height     : 1 !default;
 $heading__small-size            : ($font-size__xs / $font-size__base) * 100% !default;
 
-//  Code blocks
+// Code blocks
 $code__background-color         : $panel__background-color !default;
 $code__color                    : $primary__color__darker !default;
 $code__font-size                : $font-size__s !default;
@@ -211,7 +211,7 @@ $pre__color                     : $primary__color__darker !default;
 $kbd__background-color          : $panel__background-color !default;
 $kbd__color                     : $primary__color__darker !default;
 
-//  Blockquote
+// Blockquote
 $blockquote__border-color       : $border-color__base !default;
 $blockquote__border-width       : 0 !default;
 $blockquote__content-before     : "\2014 \00A0" !default;
@@ -225,7 +225,7 @@ $blockquote-small__font-size    : $font-size__xs !default;
 
 $cite__font-style               : $font-style__base !default;
 
-//  Misc
+// Misc
 $hr__border-color               : $border-color__base !default;
 $hr__border-style               : solid !default;
 $hr__border-width               : $border-width__base !default;
@@ -235,5 +235,5 @@ $mark__background-color         : $panel__background-color !default;
 
 $abbr__border-color             : $border-color__base !default;
 
-//  Disable filters output in css
+// Disable filters output in css
 $disable-filters                : false !default;

@@ -1,5 +1,5 @@
 //
-//  Default appearance styles
+// Default appearance styles
 // ::::::::::::::::::::::::::::::::::::
 [data-content-type="slide"] {
 	box-sizing: border-box;
@@ -59,7 +59,7 @@
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m - 1) {

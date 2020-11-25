@@ -288,6 +288,7 @@ $active-nav-indent: 54px !default;
 		display: none;
 	}
 
+	// stylelint-disable-next-line no-duplicate-selectors
 	.nav-sections-item-content {
 		> .navigation {
 			display: block;

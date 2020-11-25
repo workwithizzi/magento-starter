@@ -1,12 +1,12 @@
 //
-//  Responsive Classes
+// Responsive Classes
 // ::::::::::::::::::::::::::::::::::::
 .pagebuilder-column {
 	box-sizing: border-box;
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m - 1) {

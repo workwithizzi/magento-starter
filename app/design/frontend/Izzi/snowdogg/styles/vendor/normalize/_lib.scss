@@ -1,4 +1,4 @@
-// sass-lint:disable-all
+// stylelint-disable
 // normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css
 html {
 	font-family: sans-serif;
@@ -80,8 +80,8 @@ h1 {
 }
 
 mark {
-	background-color: #ffff00; // stylelint-disable-line color-no-hex
-	color: #000000; // stylelint-disable-line color-no-hex
+	background-color: #ffff00;
+	color: #000000;
 }
 
 small {
@@ -116,9 +116,7 @@ code,
 kbd,
 pre,
 samp {
-	/* stylelint-disable */
 	font-family: monospace, monospace;
-	/* stylelint-enable */
 	font-size: 1em;
 }
 
@@ -191,7 +189,7 @@ input:-moz-focusring {
 }
 
 fieldset {
-	border: 1px solid #c0c0c0; // stylelint-disable-line color-no-hex
+	border: 1px solid #c0c0c0;
 	margin: 0 2px;
 	padding: .35em .625em .75em;
 }

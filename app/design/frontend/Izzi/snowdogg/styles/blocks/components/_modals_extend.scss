@@ -1,8 +1,8 @@
 //
-//  Components -> Modals
+// Components -> Modals
 // ::::::::::::::::::::::::::::::::::::
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 
 $modal-title__color                   : $text__color !default;
@@ -22,7 +22,7 @@ $modal-action-close__hover__color     : darken($primary__color, 10%) !default;
 $modal-slide-action-close__padding    : $modal-slide-header__padding-vertical - 1rem $modal-popup__padding - 1rem !default;
 
 //
-//  Common
+// Common
 // ::::::::::::::::::::::::::::::::::::
 .modal-custom,
 .modal-popup,
@@ -109,7 +109,7 @@ body {
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m) {
@@ -173,7 +173,7 @@ body {
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {

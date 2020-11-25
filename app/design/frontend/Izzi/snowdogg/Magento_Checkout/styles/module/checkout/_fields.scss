@@ -1,5 +1,5 @@
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 $checkout-field-validation__border-color: $form-element-validation__border-error !default;
 
@@ -45,11 +45,11 @@ $checkout-field-validation__border-color: $form-element-validation__border-error
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
-	//  ToDo UI: remove with global blank theme .field.required update
+	// ToDo UI: remove with global blank theme .field.required update
 	.opc-wrapper {
 		.fieldset {
 			> .field {

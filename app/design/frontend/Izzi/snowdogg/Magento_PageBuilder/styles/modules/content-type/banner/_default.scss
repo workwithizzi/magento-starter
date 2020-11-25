@@ -1,5 +1,5 @@
 //
-//  Default appearance styles
+// Default appearance styles
 // ::::::::::::::::::::::::::::::::::::
 [data-content-type="banner"] > [data-element="link"],
 [data-content-type="banner"] > [data-element="empty_link"] {
@@ -49,7 +49,7 @@
 }
 
 //
-//  Responsive Classes
+// Responsive Classes
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m - 1) {

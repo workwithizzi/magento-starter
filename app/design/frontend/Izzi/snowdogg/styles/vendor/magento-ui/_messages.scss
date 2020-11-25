@@ -1,5 +1,5 @@
 //
-//  Messages
+// Messages
 // ::::::::::::::::::::::::::::::::::::
 // Helper function to easier get values related to specific type
 
@@ -91,7 +91,7 @@
 	}
 }
 
-//  Messages with lateral icon
+// Messages with lateral icon
 
 @mixin lib-message-icon-lateral(
 	$_message-type: info,
@@ -110,7 +110,7 @@
 	);
 }
 
-//  Messages with inner icon
+// Messages with inner icon
 
 @mixin lib-message-icon-inner($_message-type: info) {
 	@include lib-message($_message-type);
@@ -125,7 +125,7 @@
 	);
 }
 
-//  Private mixins
+// Private mixins
 
 @mixin _lib-message-icon-lateral(
 	$_message-icon-position,
@@ -163,6 +163,7 @@
 		}
 	}
 
+	// stylelint-disable-next-line no-duplicate-selectors
 	&  > *:first-child {
 		&:after {
 			@include _lib-icon-font(

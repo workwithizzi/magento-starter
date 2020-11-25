@@ -195,6 +195,8 @@
 	}
 }
 
+// stylelint-disable property-no-vendor-prefix
+
 @mixin lib-form-element-number-reset() {
 	&::-webkit-inner-spin-button,
 	&::-webkit-outer-spin-button {
@@ -214,6 +216,8 @@
 		-webkit-appearance: none;
 	}
 }
+
+// stylelint-enable property-no-vendor-prefix
 
 @mixin lib-form-element-textarea-resize($_textarea-resize: $textarea__resize) {
 	@include lib-css(resize, $_textarea-resize);
@@ -413,7 +417,7 @@
 	input[type="button"],
 	input[type="reset"],
 	input[type="submit"] {
-		-webkit-appearance: button;
+		-webkit-appearance: button; // stylelint-disable-line property-no-vendor-prefix
 		cursor: pointer;
 	}
 

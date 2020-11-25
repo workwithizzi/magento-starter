@@ -1,8 +1,8 @@
 //
-//  Shopping cart
+// Shopping cart
 // ::::::::::::::::::::::::::::::::::::
 
-//  Summary block
+// Summary block
 .cart-summary {
 	@extend .abs-add-box-sizing;
 	@extend .abs-adjustment-incl-excl-tax;
@@ -61,7 +61,7 @@
 	}
 }
 
-//  Totals block
+// Totals block
 .cart-totals {
 	@extend .abs-sidebar-totals;
 
@@ -74,7 +74,7 @@
 	}
 }
 
-//  Products table
+// Products table
 .cart.table-wrapper {
 	.items {
 		thead + .item {
@@ -172,7 +172,7 @@
 		}
 	}
 
-	//  Product options
+	// Product options
 	.item-options {
 		@extend .abs-product-options-list;
 		@extend .abs-add-clearfix;
@@ -220,7 +220,7 @@
 	}
 }
 
-//  Products pager
+// Products pager
 .cart-products-toolbar {
 	.toolbar-amount {
 		margin: $indent__m 0 15px;
@@ -245,7 +245,7 @@
 }
 
 //
-//  Cross sell
+// Cross sell
 // ::::::::::::::::::::::::::::::::::::
 
 .block.crosssell {
@@ -270,7 +270,7 @@
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m) {
@@ -327,7 +327,7 @@
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -406,6 +406,7 @@
 				}
 			}
 
+			// stylelint-disable-next-line no-duplicate-selectors
 			.item-actions {
 				.actions-toolbar {
 					@extend .abs-reset-left-margin-desktop;
@@ -420,7 +421,7 @@
 		}
 	}
 
-	//  Products pager
+	// Products pager
 	.cart-products-toolbar {
 		.toolbar-amount {
 			line-height: 30px;
@@ -439,6 +440,7 @@
 		}
 	}
 
+	// stylelint-disable-next-line no-duplicate-selectors
 	.cart.table-wrapper {
 		.cart-products-toolbar {
 			+ .cart {

@@ -721,6 +721,7 @@
 	}
 }
 
+// stylelint-disable-next-line no-duplicate-selectors
 .abs-tax-total-expanded {
 	@include lib-icon-font-symbol(
 		$_icon-font-content  : $icon-up,

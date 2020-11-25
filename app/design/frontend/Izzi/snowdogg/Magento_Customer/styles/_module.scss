@@ -1,5 +1,5 @@
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 $account-nav-background              : $sidebar__background-color !default;
 $account-nav-color                   : false !default;
@@ -57,7 +57,7 @@ $_password-very-strong               : #81b562 !default;
 }
 
 .form-address-edit {
-	#region_id { // sass-lint:disable-line no-ids
+	#region_id {
 		display: none;
 	}
 
@@ -81,7 +81,7 @@ $_password-very-strong               : #81b562 !default;
 	}
 }
 
-//  Full name fieldset
+// Full name fieldset
 .fieldset {
 	.fullname {
 		&.field {
@@ -101,7 +101,7 @@ $_password-very-strong               : #81b562 !default;
 }
 
 //
-//  My account
+// My account
 // ::::::::::::::::::::::::::::::::::::
 
 .account {
@@ -155,7 +155,7 @@ $_password-very-strong               : #81b562 !default;
 	}
 }
 
-//  Checkout address (create shipping address)
+// Checkout address (create shipping address)
 .field.street {
 	.field.additional {
 		.label {
@@ -165,7 +165,7 @@ $_password-very-strong               : #81b562 !default;
 }
 
 //
-//  Account navigation
+// Account navigation
 // ::::::::::::::::::::::::::::::::::::
 
 .account-nav {
@@ -225,7 +225,7 @@ $_password-very-strong               : #81b562 !default;
 }
 
 //
-//  Blocks & Widgets
+// Blocks & Widgets
 // ::::::::::::::::::::::::::::::::::::
 
 .block {
@@ -257,7 +257,7 @@ $_password-very-strong               : #81b562 !default;
 }
 
 //
-//  Password Strength Meter
+// Password Strength Meter
 // ::::::::::::::::::::::::::::::::::::
 
 .field.password {
@@ -339,7 +339,7 @@ $_password-very-strong               : #81b562 !default;
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__s) {
@@ -386,7 +386,7 @@ $_password-very-strong               : #81b562 !default;
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -422,7 +422,7 @@ $_password-very-strong               : #81b562 !default;
 		}
 	}
 
-	//  Full name fieldset
+	// Full name fieldset
 	.fieldset {
 		.fullname {
 			.field {
@@ -454,7 +454,7 @@ $_password-very-strong               : #81b562 !default;
 	}
 
 	//
-	//  My account
+	// My account
 	// ::::::::::::::::::::::::::::::::::::
 
 	.account.page-layout-2columns-left {
@@ -512,7 +512,7 @@ $_password-very-strong               : #81b562 !default;
 	}
 
 	//
-	//  Welcome block
+	// Welcome block
 	// ::::::::::::::::::::::::::::::::::::
 
 	.dashboard-welcome-toggler {

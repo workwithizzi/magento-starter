@@ -40,7 +40,7 @@
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__s) {
@@ -52,7 +52,7 @@
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -105,6 +105,7 @@
 		margin: 0;
 	}
 
+	// stylelint-disable-next-line no-duplicate-selectors
 	.block.widget .products-grid .product-item {
 		margin-left: calc((100% - 4 * 24.439%) / 3);
 		padding: 0;

@@ -1,5 +1,5 @@
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 $block-auth__dropdown__padding          : $indent__m !default;
 $block-auth__dropdown__background-color : $color-white !default;
@@ -111,7 +111,7 @@ $block-auth__border                     : 1px solid $color-gray-light3 !default;
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {

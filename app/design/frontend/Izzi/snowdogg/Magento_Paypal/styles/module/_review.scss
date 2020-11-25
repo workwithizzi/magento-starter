@@ -1,4 +1,4 @@
-//  PayPal Review Order page
+// PayPal Review Order page
 .paypal-review {
 	.block {
 		@extend .abs-account-blocks;
@@ -59,7 +59,7 @@
 	}
 }
 
-//  Discounts
+// Discounts
 .paypal-review-discount {
 	border-bottom: $border-width__base solid $border-color__base;
 	margin: $indent__base 0;
@@ -76,7 +76,7 @@
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {

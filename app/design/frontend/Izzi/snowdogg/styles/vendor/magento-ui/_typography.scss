@@ -269,11 +269,11 @@
 	}
 
 	p {
-		& {
+		& { // stylelint-disable-line no-duplicate-selectors
 			@include lib-css(margin-top, lib-font-size-value($_p-margin-top));
 		}
 
-		& {
+		& { // stylelint-disable-line no-duplicate-selectors
 			@include lib-css(margin-bottom, lib-font-size-value($_p-margin-bottom));
 		}
 	}
@@ -575,7 +575,7 @@
 	}
 
 	// Quotes
-	blockquote {
+	blockquote { // stylelint-disable-line no-duplicate-selectors
 		&:before,
 		&:after {
 			content: "";

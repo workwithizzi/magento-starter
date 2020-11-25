@@ -1,8 +1,8 @@
 //
-//  Lib -> Components -> Modals
+// Lib -> Components -> Modals
 // ::::::::::::::::::::::::::::::::::::
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 
 $modal__background-color                         : $color-white !default;
@@ -29,7 +29,7 @@ $modal-popup-image-box-preview-image__max-height : 54rem !default;
 $modal-popup-image-box-preview__max-width        : calc(#{$modal-popup-image-box-preview-image__max-height} + #{(2 * $indent__base)}) !default;
 
 //
-//  Utilities
+// Utilities
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-modal() {
@@ -118,7 +118,7 @@ body {
 	}
 }
 
-//  Modals overlay
+// Modals overlay
 .modals-overlay {
 	@include lib-css(z-index, $overlay__z-index);
 }
@@ -167,7 +167,7 @@ body {
 .modal-popup {
 	@include lib-modal-popup();
 
-	//  If applied, switching outer popup scroll to inner
+	// If applied, switching outer popup scroll to inner
 	&._inner-scroll {
 		overflow-y: visible;
 
@@ -222,9 +222,9 @@ body {
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
-//  Mobile transform to modal-slide
+// Mobile transform to modal-slide
 
 @include max-screen($screen__m) {
 	.modal-popup {

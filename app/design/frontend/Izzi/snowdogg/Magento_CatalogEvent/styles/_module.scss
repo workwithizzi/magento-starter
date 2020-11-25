@@ -2,7 +2,7 @@ $catalog-event-background-color : $color-gray94 !default;
 $catalog-event-color            : $primary__color !default;
 
 //
-//  Catalog Events
+// Catalog Events
 // ::::::::::::::::::::::::::::::::::::
 
 .block-category-event {
@@ -84,7 +84,7 @@ $catalog-event-color            : $primary__color !default;
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {

@@ -1,4 +1,4 @@
-// sass-lint:disable no-mergeable-selectors
+// stylelint-disable no-duplicate-selectors
 // email-inline.scss
 // Since email client support for CSS in <style> tags is
 // limited, the majority of styles should be added as "inline"
@@ -8,22 +8,22 @@
 // source: https://github.com/jjriv/emogrifier#supported-css-selectors
 //
 // Supported selectors (examples in parenthesis):
-//  * ID (#logo)
-//  * class (.logo)
-//  * type (h1)
-//  * descendant (.logo > a)
-//  * child (.logo a)
-//  * adjacent (.logo + .second-example)
-//  * attribute presence (a[title])
-//  * attribute value (a[title="example"])
-//  * attribute only ([title="example"])
+// * ID (#logo)
+// * class (.logo)
+// * type (h1)
+// * descendant (.logo > a)
+// * child (.logo a)
+// * adjacent (.logo + .second-example)
+// * attribute presence (a[title])
+// * attribute value (a[title="example"])
+// * attribute only ([title="example"])
 //
 // Unsupported selectors (examples in parenthesis):
-//  * first-child (div:first-child)
-//  * last-child (div:last-child)
-//  * nth-child (div:nth-child(3n+1))
-//  * universal (*)
-//  * pseudo (a:hover, a:active, a:focus, span:before, span:after, etc)
+// * first-child (div:first-child)
+// * last-child (div:last-child)
+// * nth-child (div:nth-child(3n+1))
+// * universal (*)
+// * pseudo (a:hover, a:active, a:focus, span:before, span:after, etc)
 
 
 //

@@ -1,5 +1,5 @@
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 $form-field__vertical-indent__desktop: 29px !default;
 $form-calendar-icon__color: $primary__color !default;
@@ -128,8 +128,8 @@ select {
 }
 
 //
-//  Sidebar forms
-//  -----------------------------------------
+// Sidebar forms
+// -----------------------------------------
 
 .sidebar {
 	.fieldset {
@@ -156,7 +156,7 @@ select {
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {

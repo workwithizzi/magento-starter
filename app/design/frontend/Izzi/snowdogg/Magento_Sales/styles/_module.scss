@@ -215,7 +215,7 @@
 }
 
 //
-//  Guest order view page
+// Guest order view page
 // ::::::::::::::::::::::::::::::::::::
 
 [class^="sales-guest-"],
@@ -228,7 +228,7 @@
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__s) {
@@ -301,7 +301,7 @@
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -352,7 +352,7 @@
 	}
 
 	//
-	//  Guest order view page
+	// Guest order view page
 	// ::::::::::::::::::::::::::::::::::::
 
 	[class^="sales-guest-"],
