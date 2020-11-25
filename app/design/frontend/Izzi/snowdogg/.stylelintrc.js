@@ -80,7 +80,7 @@ module.exports = {
 				]
 			}
 		],
-		// "declaration-no-important": true,
+		"declaration-no-important": true,
 		// "selector-attribute-name-disallowed-list": ["id"],
 		// "at-rule-no-vendor-prefix": true,
 

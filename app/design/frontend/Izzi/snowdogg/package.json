@@ -4,10 +4,8 @@
 	"description": "Blank sass-theme for Magento 2",
 	"main": "index.js",
 	"scripts": {
-		"sass:lint": "sass-lint -c .sasslint.yml 'styles/**/*.s+(a|c)ss' -v -q",
-		"sass:fix": "sass-lint-auto-fix --c .sasslint-fix.yml 'styles/**/*.s+(a|c)ss'",
-		"stylelint": "stylelint 'styles/**/*.s+(a|c)ss'",
-		"stylelint-fix": "stylelint 'styles/**/*.s+(a|c)ss' --fix",
+		"stylelint": "stylelint '**/*.scss'",
+		"stylelint-fix": "stylelint '**/*.scss' --fix",
 		"js:lint": "eslint ./",
 		"js:fix": "eslint ./ --fix",
 		"compile": "node-sass --source-comments --source-map true --output-style expanded -o web/css/ styles/main/",
