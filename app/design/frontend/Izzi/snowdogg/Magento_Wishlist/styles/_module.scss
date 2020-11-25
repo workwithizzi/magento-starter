@@ -147,8 +147,7 @@
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__s) {
     .products-grid.wishlist {
         .product-item {
@@ -263,8 +262,7 @@
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .products-grid.wishlist {
         .product {

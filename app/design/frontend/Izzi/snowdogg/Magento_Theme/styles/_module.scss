@@ -1,8 +1,7 @@
 // sass-lint:disable no-mergeable-selectors
 //
 //  Theme variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 //  Messages
 $message-global-note__background           : $color-yellow-light2 !default;
 $message-global-note__border-color         : $color-yellow-light3 !default;
@@ -45,7 +44,7 @@ body {
 
 //
 //  Header
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .page-header {
     @include lib-css(background-color, $header__background-color);
@@ -110,7 +109,7 @@ body {
 
 //
 //  Global notice
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .message.global {
     p {
@@ -144,7 +143,7 @@ body {
 
 //
 //  Footer
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .page-footer {
     @include lib-css(background-color, $footer__background-color);
@@ -226,7 +225,7 @@ body {
 
 //
 //  Widgets
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .sidebar {
     .widget.block:not(:last-child),
@@ -256,7 +255,7 @@ body {
 
 //
 //  Calendar
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .ui-datepicker {
     td {
@@ -266,8 +265,7 @@ body {
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
 
     html,

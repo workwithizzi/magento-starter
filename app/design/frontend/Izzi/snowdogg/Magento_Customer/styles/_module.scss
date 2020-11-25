@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $account-nav-background              : $sidebar__background-color !default;
 $account-nav-color                   : false !default;
 
@@ -100,7 +99,7 @@ $_password-very-strong               : #81b562 !default;
 
 //
 //  My account
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .account {
     .column.main {
@@ -164,7 +163,7 @@ $_password-very-strong               : #81b562 !default;
 
 //
 //  Account navigation
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .account-nav {
     .title {
@@ -222,7 +221,7 @@ $_password-very-strong               : #81b562 !default;
 
 //
 //  Blocks & Widgets
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .block {
     @extend .abs-margin-for-blocks-and-widgets;
@@ -254,7 +253,7 @@ $_password-very-strong               : #81b562 !default;
 
 //
 //  Password Strength Meter
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .field.password {
     .control {
@@ -335,8 +334,7 @@ $_password-very-strong               : #81b562 !default;
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__s) {
     .account {
         .column.main,
@@ -381,8 +379,7 @@ $_password-very-strong               : #81b562 !default;
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .login-container {
         @extend .abs-add-clearfix-desktop;
@@ -447,7 +444,7 @@ $_password-very-strong               : #81b562 !default;
 
     //
     //  My account
-    //  ---------------------------------------------
+    // ::::::::::::::::::::::::::::::::::::
 
     .account.page-layout-2columns-left {
         .sidebar-main,
@@ -504,7 +501,7 @@ $_password-very-strong               : #81b562 !default;
 
     //
     //  Welcome block
-    //  ---------------------------------------------
+    // ::::::::::::::::::::::::::::::::::::
 
     .dashboard-welcome-toggler {
         @extend .abs-visually-hidden-desktop;

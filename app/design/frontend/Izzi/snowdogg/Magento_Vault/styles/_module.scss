@@ -23,8 +23,7 @@
 
 //
 //  Mobile $screen__s
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__m) {
     .my-credit-cards {
         .table:not(.totals):not(.cart):not(.table-comparison) {
@@ -51,8 +50,7 @@
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .my-credit-cards {
         .card-type {

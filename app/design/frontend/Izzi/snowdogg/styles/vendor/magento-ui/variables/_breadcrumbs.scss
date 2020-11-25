@@ -1,7 +1,6 @@
 //
 //  Breadcrumbs variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $breadcrumbs__font-size                          : $font-size__s !default;
 $breadcrumbs__display                            : false !default;
 $breadcrumbs__container-margin                   : 0 0 $indent__base !default;
@@ -33,7 +32,7 @@ $breadcrumbs-separator__color                    : $breadcrumbs-current__color !
 
 //
 //  Link
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 //  Gradient
 $breadcrumbs-link__gradient                      : false !default; // [true|false]

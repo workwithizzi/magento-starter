@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $checkout-progress-bar__font-size                              : 18px !default;
 $checkout-progress-bar__font-weight                            : $font-weight__light !default;
 $checkout-progress-bar__margin                                 : $indent__base !default;
@@ -28,7 +27,7 @@ $checkout-progress-bar-item-element-inner__active__line-height : 1 !default;
 
 //
 //  Checkout Progress Bar
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .opc-progress-bar {
     @extend .abs-reset-list;
@@ -153,8 +152,7 @@ $checkout-progress-bar-item-element-inner__active__line-height : 1 !default;
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .opc-progress-bar-item {
         @include lib-css(width, $checkout-progress-bar-item__width);

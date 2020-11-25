@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $checkout-modal-popup__width: 800px !default;
 
 .checkout-index-index {
@@ -16,8 +15,7 @@ $checkout-modal-popup__width: 800px !default;
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .checkout-index-index {
         .modal-popup {

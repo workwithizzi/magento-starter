@@ -1,6 +1,6 @@
 //
 //  Checkout Estimated Total
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .opc-estimated-wrapper {
     @extend .abs-add-clearfix;
@@ -33,8 +33,7 @@
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .opc-estimated-wrapper {
         display: none;

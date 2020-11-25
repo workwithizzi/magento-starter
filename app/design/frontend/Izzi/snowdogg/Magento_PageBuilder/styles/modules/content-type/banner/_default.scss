@@ -1,7 +1,6 @@
 //
 //  Default appearance styles
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 [data-content-type='banner'] > [data-element='link'],
 [data-content-type='banner'] > [data-element='empty_link'] {
     color: inherit;
@@ -51,8 +50,7 @@
 
 //
 //  Responsive Classes
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__m - 1) {
     .pagebuilder-banner-wrapper {
         background-attachment: scroll !important; // sass-lint:disable-line no-important

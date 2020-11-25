@@ -1,7 +1,6 @@
 //
 //  Default appearance styles
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 div[data-content-type='tabs'] {
     .tabs-navigation {
         display: block;
@@ -100,8 +99,7 @@ div[data-content-type='tabs'] {
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__m - 1) {
     [data-content-type='tab-item'] {
         background-attachment: scroll !important; // sass-lint:disable-line no-important

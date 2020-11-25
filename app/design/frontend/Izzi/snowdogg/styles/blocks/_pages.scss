@@ -1,15 +1,15 @@
 .pages {
-    @include lib-pager();
+	@include lib-pager();
 
-    .action {
-        width: 34px;
+	.action {
+		width: 34px;
 
-        &.previous {
-            margin-right: 12px;
-        }
+		&.previous {
+			margin-right: 12px;
+		}
 
-        &.next {
-            margin-left: 12px;
-        }
-    }
+		&.next {
+			margin-left: 12px;
+		}
+	}
 }

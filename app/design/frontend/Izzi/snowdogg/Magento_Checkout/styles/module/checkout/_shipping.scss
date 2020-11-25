@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $checkout-shipping-address__max-width           : 600px !default;
 $checkout-shipping-address__margin-top          : 28px !default;
 
@@ -34,13 +33,12 @@ $checkout-shipping-method__padding              : $indent__base !default;
 
 //
 //  Common
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 .opc-wrapper {
 
     //
     //  Shipping Address
-    //  ---------------------------------------------
+    // ::::::::::::::::::::::::::::::::::::
 
     .form-login,
     .form-shipping-address {
@@ -131,7 +129,7 @@ $checkout-shipping-method__padding              : $indent__base !default;
 
 //
 //  Shipping Methods
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .checkout-shipping-method {
     .step-title {
@@ -193,8 +191,7 @@ $checkout-shipping-method__padding              : $indent__base !default;
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__s) {
     .opc-wrapper {
         .form-login {
@@ -254,8 +251,7 @@ $checkout-shipping-method__padding              : $indent__base !default;
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .checkout-shipping-method {
         .actions-toolbar {

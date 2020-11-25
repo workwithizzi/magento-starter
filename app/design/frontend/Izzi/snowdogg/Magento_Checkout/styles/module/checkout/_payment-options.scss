@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $checkout-payment-option-title__border            : $checkout-payment-method-title__border !default;
 $checkout-payment-option-title__color             : $link__color !default;
 $checkout-payment-option-title__padding           : $checkout-payment-method-title__padding !default;
@@ -160,8 +159,7 @@ $checkout-payment-option-content__padding__xl     : $checkout-payment-method-con
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__m) {
     .checkout-payment-method {
         .payment-option {
@@ -180,8 +178,7 @@ $checkout-payment-option-content__padding__xl     : $checkout-payment-method-con
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .checkout-payment-method {
         .payment-option-title {

@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $checkout-tooltip__hover__z-index               : $tooltip__z-index !default;
 
 $checkout-tooltip-icon-arrow__font-size         : 10px !default;
@@ -26,8 +25,7 @@ $checkout-tooltip-content-mobile__top           : 30px + $checkout-tooltip-icon-
 
 //
 //  Common
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 .field-tooltip {
     cursor: pointer;
     position: absolute;
@@ -117,8 +115,7 @@ $checkout-tooltip-content-mobile__top           : 30px + $checkout-tooltip-icon-
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__xs) {
     .modal-popup {
         .field-tooltip {

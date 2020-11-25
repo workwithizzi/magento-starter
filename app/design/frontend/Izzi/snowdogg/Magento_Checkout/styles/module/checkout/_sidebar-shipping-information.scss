@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $checkout-sidebar-shipping-information__padding                : $indent__l !default;
 $checkout-sidebar-shipping-information__line-height            : $checkout-billing-address-details__line-height !default;
 
@@ -14,7 +13,7 @@ $checkout-sidebar-shipping-information-edit-icon__hover__color : $primary__color
 
 //
 //  Shipping Information
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .opc-block-shipping-information {
     @include lib-css(padding, 0 $checkout-sidebar-shipping-information__padding);

@@ -1,12 +1,11 @@
 //
 //  Form variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 //
 //  Form elements inputs default variables
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
-$form-element-input-type                        : '' !default; // [input-text|select|textarea|input-radio|input-checkbox]
+$form-element-input-type                        : "" !default; // [input-text|select|textarea|input-radio|input-checkbox]
 $form-element-input__background                 : $color-white !default;
 $form-element-input__border-color               : $color-gray76 !default;
 $form-element-input__border                     : 1px solid $form-element-input__border-color !default;
@@ -31,7 +30,7 @@ $form-element-input-placeholder__font-style     : $form-element-input__font-styl
 //  Disabled state
 $form-element-input__disabled__background       : $form-element-input__background !default;
 $form-element-input__disabled__border           : $form-element-input__border !default;
-$form-element-input__disabled__opacity          : 0.5 !default;
+$form-element-input__disabled__opacity          : .5 !default;
 $form-element-input__disabled__color            : $form-element-input__color !default;
 $form-element-input__disabled__font-style       : $form-element-input__font-style !default;
 
@@ -42,14 +41,14 @@ $form-element-input__focus__color               : $form-element-input__color !de
 $form-element-input__focus__font-style          : $form-element-input__font-style !default;
 
 //  Form elements choice default variables
-$form-element-choice__type                      : '' !default; // [radio|checkbox]
+$form-element-choice__type                      : "" !default; // [radio|checkbox]
 $form-element-choice__vertical-align            : false !default;
 $form-element-choice__margin                    : 2px $indent__xs 0 0 !default;
 $form-element-choice__disabled__opacity         : $form-element-input__disabled__opacity !default;
 
 //
 //  Input-text
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $input-text__background                         : $form-element-input__background !default;
 $input-text__border                             : $form-element-input__border !default;
@@ -86,7 +85,7 @@ $input-text__focus__font-style                  : $form-element-input__focus__fo
 
 //
 //  Select
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $select__background                             : $form-element-input__background !default;
 $select__border                                 : $form-element-input__border !default;
@@ -123,7 +122,7 @@ $select__focus__font-style                      : $form-element-input__focus__fo
 
 //
 //  Textarea
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $textarea__background                           : $form-element-input__background !default;
 $textarea__border                               : $form-element-input__border !default;
@@ -161,7 +160,7 @@ $textarea__focus__font-style                    : $form-element-input__focus__fo
 
 //
 //  Radio
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $input-radio__vertical-align                    : $form-element-choice__vertical-align !default;
 $input-radio__margin                            : $form-element-choice__margin !default;
@@ -170,7 +169,7 @@ $input-radio__disabled__opacity                 : $form-element-choice__disabled
 
 //
 //  Checkbox
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $input-checkbox__vertical-align                 : $form-element-choice__vertical-align !default;
 $input-checkbox__margin                         : $form-element-choice__margin !default;
@@ -179,7 +178,7 @@ $input-checkbox__disabled__opacity              : $form-element-choice__disabled
 
 //
 //  Validation
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $form-validation-note__color-error              : $error__color !default;
 $form-validation-note__font-size                : $font-size__s !default;
@@ -212,7 +211,7 @@ $form-element-validation__background-valid      : false !default;
 
 //
 //  Fieldset
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $form-fieldset__border                          : 0 !default;
 $form-fieldset__margin                          : 0 0 $indent__xl !default;
@@ -229,7 +228,7 @@ $form-fieldset-legend__width                    : false !default;
 
 //
 //  Field
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $form-field-type                                : block !default; // [inline|block]
 $form-field-type-revert                         : inline !default; // [inline|block|false]

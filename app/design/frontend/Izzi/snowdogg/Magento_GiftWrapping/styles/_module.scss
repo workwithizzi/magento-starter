@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $gift-wrapping__border-color                 : $color-gray-light5 !default;
 $gift-wrapping__border-width                 : $border-width__base !default;
 
@@ -167,7 +166,7 @@ $gift-wrapping-no-image-icon__font-size      : 38px !default;
 
 //
 //  Multiple Shipping Checkout
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .order-options {
     .item {
@@ -191,8 +190,7 @@ $gift-wrapping-no-image-icon__font-size      : 38px !default;
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__m) {
     .gift-wrapping {
         @include lib-css(border-bottom, $gift-wrapping__border-width solid $gift-wrapping__border-color);
@@ -224,8 +222,7 @@ $gift-wrapping-no-image-icon__font-size      : 38px !default;
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .gift-wrapping {
         .nested {

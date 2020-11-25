@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $checkout-wrapper__margin              : $indent__base !default;
 $checkout-wrapper__columns             : 8 !default;
 
@@ -58,8 +57,7 @@ $checkout-step-title-mobile__font-size : 18px !default;
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__s) {
     .opc-wrapper {
         .step-title {
@@ -72,8 +70,7 @@ $checkout-step-title-mobile__font-size : 18px !default;
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .opc-wrapper {
         @extend .abs-add-box-sizing-desktop-m;

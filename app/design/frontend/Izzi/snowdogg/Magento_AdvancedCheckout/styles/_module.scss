@@ -97,8 +97,7 @@
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__s) {
     .column {
         .block-addbysku {
@@ -138,8 +137,7 @@
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .block-cart-failed {
         @extend .abs-shopping-cart-items-desktop;

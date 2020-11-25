@@ -1,138 +1,140 @@
 .table-wrapper {
-    margin-bottom: $indent__base;
+	margin-bottom: $indent__base;
 }
 
 table {
-    @include lib-table-caption();
+	@include lib-table-caption();
 }
 
 .table {
-    &:not(.cart) {
-        &:not(.totals) {
-            @include lib-table-bordered(
-                $_table_type         : light,
-                $_table_border-width : $table__border-width
-            );
+	&:not(.cart) {
+		&:not(.totals) {
+			@include lib-table-bordered(
+				$_table_type         : light,
+				$_table_border-width : $table__border-width
+			);
 
-            tfoot {
-                > tr {
-                    &:first-child {
-                        th,
-                        td {
-                            border-top: $table__border-width $table__border-style $table__border-color;
-                            padding-top: $indent__base;
-                        }
-                    }
-                }
+			tfoot {
+				> tr {
+					&:first-child {
+						th,
+						td {
+							border-top: $table__border-width $table__border-style $table__border-color;
+							padding-top: $indent__base;
+						}
+					}
+				}
 
-                .mark {
-                    font-weight: $font-weight__regular;
-                    text-align: right;
-                }
-            }
-        }
-    }
+				.mark {
+					font-weight: $font-weight__regular;
+					text-align: right;
+				}
+			}
+		}
+	}
 }
 
 //
 //  Mobile
-//  _____________________________________________
+// ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__s) {
-    .table-wrapper {
-        @include lib-table-overflow();
-        position: relative; // To hide unnecessary horizontal scrollbar in Safari
+	.table-wrapper {
+		@include lib-table-overflow();
 
-        .table {
-            &:not(.cart) {
-                &:not(.totals) {
-                    &:not(.table-comparison) {
-                        @include lib-table-responsive();
+		position: relative; // To hide unnecessary horizontal scrollbar in Safari
 
-                        tbody > tr {
-                            > td:first-child {
-                                padding-top: $indent__base;
-                            }
+		.table {
+			&:not(.cart) {
+				&:not(.totals) {
+					&:not(.table-comparison) {
+						@include lib-table-responsive();
 
-                            > td:last-child {
-                                padding-bottom: $indent__base;
-                            }
-                        }
+						tbody > tr {
+							> td:first-child {
+								padding-top: $indent__base;
+							}
 
-                        &.additional-attributes {
-                            tbody {
-                                th {
-                                    @extend .abs-no-display-s;
-                                }
+							> td:last-child {
+								padding-bottom: $indent__base;
+							}
+						}
 
-                                td {
-                                    &:last-child {
-                                        border: none;
-                                        padding: 0 0 $indent__xs;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+						&.additional-attributes {
+							tbody {
+								th {
+									@extend .abs-no-display-s;
+								}
 
-        .table {
-            &:not(.totals) {
-                &:not(.table-comparison) {
-                    tfoot {
-                        display: block;
+								td {
+									&:last-child {
+										border: none;
+										padding: 0 0 $indent__xs;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 
-                        tr {
-                            @extend .abs-add-clearfix-mobile;
-                            display: block;
+		.table {
+			&:not(.totals) {
+				&:not(.table-comparison) {
+					tfoot {
+						display: block;
 
-                            &:first-child {
-                                th,
-                                td {
-                                    padding-top: $indent__base;
-                                }
-                            }
-                        }
+						tr {
+							@extend .abs-add-clearfix-mobile;
 
-                        th {
-                            box-sizing: border-box;
-                            float: left;
-                            padding-left: 0;
-                            padding-right: 0;
-                            text-align: left;
-                            width: 70%;
-                        }
+							display: block;
 
-                        td {
-                            box-sizing: border-box;
-                            float: left;
-                            padding-left: 0;
-                            padding-right: 0;
-                            text-align: right;
-                            width: 30%;
-                        }
-                    }
-                }
-            }
-        }
-    }
+							&:first-child {
+								th,
+								td {
+									padding-top: $indent__base;
+								}
+							}
+						}
 
-    .data-table-definition-list {
-        thead {
-            display: none;
-        }
+						th {
+							box-sizing: border-box;
+							float: left;
+							padding-left: 0;
+							padding-right: 0;
+							text-align: left;
+							width: 70%;
+						}
 
-        tbody th {
-            padding-bottom: 0;
-        }
+						td {
+							box-sizing: border-box;
+							float: left;
+							padding-left: 0;
+							padding-right: 0;
+							text-align: right;
+							width: 30%;
+						}
+					}
+				}
+			}
+		}
+	}
 
-        tbody th,
-        tbody td {
-            display: block;
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
+	.data-table-definition-list {
+		thead {
+			display: none;
+		}
+
+		tbody th {
+			padding-bottom: 0;
+		}
+
+		tbody th,
+		tbody td {
+			display: block;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 }

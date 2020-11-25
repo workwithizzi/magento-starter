@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $checkout-summary__background-color : $color-white-smoke !default;
 $checkout-summary__padding          : 22px $indent__l !default;
 
@@ -13,7 +12,7 @@ $checkout-summary-items__padding    : 15px !default;
 
 //
 //  Order Summary
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .opc-block-summary {
     @extend .abs-add-box-sizing;
@@ -59,7 +58,7 @@ $checkout-summary-items__padding    : 15px !default;
 
     //
     //  Items list
-    //  ---------------------------------------------
+    // ::::::::::::::::::::::::::::::::::::
 
     //  Block title
     .items-in-cart {
@@ -176,8 +175,7 @@ $checkout-summary-items__padding    : 15px !default;
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .opc-summary-wrapper {
         .modal-header {

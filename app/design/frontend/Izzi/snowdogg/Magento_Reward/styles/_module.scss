@@ -15,8 +15,7 @@
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__m) {
     .reward-settings {
         + .actions-toolbar {
@@ -27,8 +26,7 @@
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .reward-settings {
         + .actions-toolbar {

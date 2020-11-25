@@ -1,28 +1,28 @@
+// stylelint-disable
 //
-//  Color variables
-//  _____________________________________________
-
-$color-white             : #fff !default;
-$color-black             : #000 !default;
+// Color variables
+// ::::::::::::::::::::::::::::::::::::
+$color-white             : #ffffff !default;
+$color-black             : #000000 !default;
 
 $color-gray19            : #303030 !default;
-$color-gray20            : #333 !default;
+$color-gray20            : #333333 !default;
 $color-gray34            : #575757 !default;
 $color-gray37            : #5e5e5e !default;
-$color-gray40            : #666 !default;
+$color-gray40            : #666666 !default;
 $color-gray43            : #6d6d6d !default;
 $color-gray46            : #757575 !default;
 $color-gray52            : #858585 !default;
 $color-gray55            : #8c8c8c !default;
 $color-gray56            : #8f8f8f !default;
-$color-gray60            : #999 !default;
+$color-gray60            : #999999 !default;
 $color-gray62            : #9e9e9e !default;
 $color-gray64            : #a3a3a3 !default;
 $color-gray68            : #adadad !default;
 $color-gray76            : #c2c2c2 !default;
 $color-gray78            : #c7c7c7 !default;
 $color-gray79            : #c9c9c9 !default;
-$color-gray80            : #ccc !default;
+$color-gray80            : #cccccc !default;
 $color-gray82            : #d1d1d1 !default;
 $color-gray89            : #e3e3e3 !default;
 $color-gray90            : #e5e5e5 !default;
@@ -37,7 +37,7 @@ $color-white-fog         : #f8f8f8 !default;
 $color-gray-light0       : #f6f6f6 !default;
 $color-gray-light01      : #f4f4f4 !default;
 $color-gray-light1       : #e5efe5 !default;
-$color-gray-light2       : #bbb !default;
+$color-gray-light2       : #bbbbbb !default;
 $color-gray-light3       : #aeaeae !default;
 $color-gray-light4       : #cecece !default;
 $color-gray-light5       : #c1c1c1 !default;
@@ -49,10 +49,10 @@ $color-gray-middle3      : #7e807e !default;
 $color-gray-middle4      : #6e716e !default;
 $color-gray-middle5      : #707070 !default;
 
-$color-gray-darken0      : #eee !default;
+$color-gray-darken0      : #eeeeee !default;
 $color-gray-darken1      : #e2e2e2 !default;
 $color-gray-darken2      : #cdcdcd !default;
-$color-gray-darken3      : #555 !default;
+$color-gray-darken3      : #555555 !default;
 $color-gray-darken4      : #494949 !default;
 
 $color-red9              : #ff0101 !default;
@@ -69,7 +69,7 @@ $color-dark-green1       : #006400 !default;
 
 $color-blue1             : #1979c3 !default;
 $color-blue2             : #006bb4 !default;
-$color-blue3             : #00699D !default;
+$color-blue3             : #00699d !default;
 $color-sky-blue1         : #68a8e0 !default;
 
 $color-pink1             : #fae5e5 !default;
@@ -81,11 +81,11 @@ $color-brownie-light1    : #c07600 !default;
 $color-yellow-light1     : #fdf0d5 !default;
 $color-yellow-light2     : #ffee9c !default;
 $color-yellow-light3     : #d6ca8e !default;
-$color-yellow1           : #ff0 !default;
+$color-yellow1           : #ffff00 !default;
 
 //
-//  Color nesting
-//  ---------------------------------------------
+// Color nesting
+// ::::::::::::::::::::::::::::::::::::
 
 $primary__color          : $color-gray20 !default;
 $primary__color__dark    : darken($primary__color, 35%) !default; // #000

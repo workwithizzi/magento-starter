@@ -33,7 +33,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
 //
 //  Category view
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .old-price,
 .old.price {
@@ -91,7 +91,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
 //
 //  Product images general container
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .product-image-container {
     display: inline-block;
@@ -120,7 +120,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
 //
 //  Product view
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .product.media {
     .product.photo .photo.image {
@@ -386,7 +386,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
 //
 //  Sidebar product view
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .sidebar {
     .product-items {
@@ -461,7 +461,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
     //
     //  Product images only
-    //  ---------------------------------------------
+    // ::::::::::::::::::::::::::::::::::::
 
     .product-items-images {
         @extend .abs-add-clearfix;
@@ -476,7 +476,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
     //
     //  Product names only
-    //  ---------------------------------------------
+    // ::::::::::::::::::::::::::::::::::::
 
     .product-items-names {
         .product-item {
@@ -491,8 +491,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__m) {
     .catalog-product-view {
         .column.main {
@@ -530,8 +529,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .product-info-main,
     .product-options-bottom {
@@ -588,8 +586,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
 //
 //  Desktop large
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__xl) {
     .sidebar {
         .product-items {
@@ -612,7 +609,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
 //
 //  Category page layout
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
     .product-info-main {
@@ -648,7 +645,7 @@ $product-h1-margin-bottom-desktop                   : $indent__base !default;
 
 //
 //  Compare Products Page
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 body.catalog-product-compare-index {
     .action.print {

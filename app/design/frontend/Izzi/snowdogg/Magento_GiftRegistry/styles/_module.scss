@@ -153,8 +153,7 @@
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__s) {
     .table-giftregistry-items {
         .col.product {
@@ -183,8 +182,7 @@
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .form-giftregistry-share,
     .form-giftregistry-edit {

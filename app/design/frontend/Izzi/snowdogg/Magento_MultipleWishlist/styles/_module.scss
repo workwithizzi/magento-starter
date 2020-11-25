@@ -246,8 +246,7 @@ $desktop-popup-position-top  : 20% !default;
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__m) {
     .block-wishlist-management {
         clear: both;
@@ -361,8 +360,7 @@ $desktop-popup-position-top  : 20% !default;
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .wishlist {
         &.window.popup {

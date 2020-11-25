@@ -41,8 +41,7 @@
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__s) {
     .block.widget .products-grid .product-item,
     .page-layout-1column .block.widget .products-grid .product-item,
@@ -53,8 +52,7 @@
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .block.widget .products-grid .product-item {
         width: (100% / 3);

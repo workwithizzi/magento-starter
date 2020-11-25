@@ -3,7 +3,7 @@ $catalog-event-color            : $primary__color !default;
 
 //
 //  Catalog Events
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 .block-category-event {
     @include lib-css(background, $catalog-event-background-color);
@@ -80,8 +80,7 @@ $catalog-event-color            : $primary__color !default;
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .block-category-event {
         &.block:last-child {

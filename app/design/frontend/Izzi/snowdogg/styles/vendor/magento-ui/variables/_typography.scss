@@ -1,22 +1,21 @@
 //
 //  Typography variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 //
 //  Fonts
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 //  Path
 $icons__font-path               : "../fonts/Blank-Theme-Icons/Blank-Theme-Icons" !default;
 
 //  Names
-$icons__font-name               : 'icons-blank-theme' !default; // ToDo UI                                         : we need to rename (it shouldn't use blank theme name) or move icon fonts to blank theme
+$icons__font-name               : "icons-blank-theme" !default; // ToDo UI                                         : we need to rename (it shouldn't use blank theme name) or move icon fonts to blank theme
 
 //  Font families
-$font-family-name__base         : 'Open Sans' !default;
-$font-family__sans-serif        : 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-$font-family__serif             : Georgia, 'Times New Roman', Times, serif !default;
-$font-family__monospace         : Menlo, Monaco, Consolas, 'Courier New', monospace !default;
+$font-family-name__base         : "Open Sans" !default;
+$font-family__sans-serif        : "Helvetica Neue", helvetica, arial, sans-serif !default;
+$font-family__serif             : georgia, "Times New Roman", times, serif !default;
+$font-family__monospace         : menlo, monaco, consolas, "Courier New", monospace !default;
 
 $font-family__base              : $font-family-name__base, $font-family__sans-serif !default;
 
@@ -31,8 +30,8 @@ $font-size-unit-convert         : true !default; // Controls whether font-size v
 $font-size__base                : $font-size-unit-ratio * $font-size-ratio__base * 1px !default; // Base font size value in px
 $font-size__xl                  : ceil(1.5 * $font-size__base) !default; // 21px
 $font-size__l                   : ceil(1.25 * $font-size__base) !default; // 18px
-$font-size__s                   : ceil(0.85 * $font-size__base) !default; // 12px
-$font-size__xs                  : floor(0.75 * $font-size__base) !default; // 11px
+$font-size__s                   : ceil(.85 * $font-size__base) !default; // 12px
+$font-size__xs                  : floor(.75 * $font-size__base) !default; // 11px
 
 //  Weights
 $font-weight__light             : 300 !default;
@@ -59,7 +58,7 @@ $text__color__muted             : $primary__color__lighter !default;
 
 //
 //  Indents
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $indent__base                   : $line-height__computed !default; // 20px
 $indent__xl                     : $indent__base * 2 !default; // 40px
@@ -70,14 +69,14 @@ $indent__xs                     : $indent__base / 4 !default; // 5px
 
 //
 //  Borders
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $border-color__base             : darken($page__background-color, 18%) !default;
 $border-width__base             : 1px !default;
 
 //
 //  Links
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $link__color                    : $color-blue1 !default;
 $link__text-decoration          : none !default;
@@ -93,14 +92,14 @@ $link__active__text-decoration  : underline !default;
 
 //
 //  Focus
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $focus__color                   : $color-sky-blue1 !default;
 $focus__box-shadow              : 0 0 3px 1px $focus__color !default;
 
 //
 //  Lists
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $list__color__base              : false !default;
 $list__font-size__base          : false !default;
@@ -122,14 +121,14 @@ $dd__margin-bottom              : $indent__s !default;
 
 //
 //  Paragraphs
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $p__margin-top                  : 0 !default;
 $p__margin-bottom               : $indent__s !default;
 
 //
 //  Headings
-//  ---------------------------------------------
+// ::::::::::::::::::::::::::::::::::::
 
 $heading__font-family__base     : false !default;
 $heading__font-weight__base     : $font-weight__light !default;
@@ -164,7 +163,7 @@ $h3__font-family                : $heading__font-family__base !default;
 $h3__font-weight                : $heading__font-weight__base !default;
 $h3__font-style                 : $heading__font-style__base !default;
 $h3__line-height                : $heading__line-height__base !default;
-$h3__margin-top                 : $indent__base * 0.75 !default;
+$h3__margin-top                 : $indent__base * .75 !default;
 $h3__margin-bottom              : $indent__s !default;
 
 $h4__font-size                  : $font-size__base !default; // 14px
@@ -176,7 +175,7 @@ $h4__line-height                : $heading__line-height__base !default;
 $h4__margin-top                 : $heading__margin-top__base !default;
 $h4__margin-bottom              : $heading__margin-bottom__base !default;
 
-$h5__font-size                  : ceil(($font-size__base * 0.85)) !default; // 12px
+$h5__font-size                  : ceil(($font-size__base * .85)) !default; // 12px
 $h5__font-color                 : $heading__color__base !default;
 $h5__font-family                : $heading__font-family__base !default;
 $h5__font-weight                : $font-weight__bold !default;
@@ -185,7 +184,7 @@ $h5__line-height                : $heading__line-height__base !default;
 $h5__margin-top                 : $heading__margin-top__base !default;
 $h5__margin-bottom              : $heading__margin-bottom__base !default;
 
-$h6__font-size                  : ceil(($font-size__base * 0.7)) !default; // 10px
+$h6__font-size                  : ceil(($font-size__base * .7)) !default; // 10px
 $h6__font-color                 : $heading__color__base !default;
 $h6__font-family                : $heading__font-family__base !default;
 $h6__font-weight                : $font-weight__bold !default;
@@ -215,7 +214,7 @@ $kbd__color                     : $primary__color__darker !default;
 //  Blockquote
 $blockquote__border-color       : $border-color__base !default;
 $blockquote__border-width       : 0 !default;
-$blockquote__content-before     : '\2014 \00A0' !default;
+$blockquote__content-before     : "\2014 \00A0" !default;
 $blockquote__font-size          : $font-size__base !default;
 $blockquote__font-style         : $font-style__emphasis !default;
 $blockquote__margin             : 0 0 $indent__base $indent__xl !default;

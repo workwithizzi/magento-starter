@@ -1,7 +1,6 @@
 //
 //  Variables
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 $checkout-payment-method-title__border         : $checkout-shipping-method__border !default;
 $checkout-payment-method-title__padding        : $checkout-shipping-method__padding !default;
 $checkout-payment-method-title-mobile__padding : 15px !default;
@@ -14,8 +13,7 @@ $checkout-billing-address-form__max-width      : $checkout-shipping-address__max
 
 //
 //  Common
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 .checkout-payment-method {
     .step-title {
         border-bottom: 0;
@@ -147,8 +145,7 @@ $checkout-billing-address-form__max-width      : $checkout-shipping-address__max
 
 //
 //  Mobile
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include max-screen($screen__m) {
     .checkout-payment-method {
         .payment-methods {
@@ -173,8 +170,7 @@ $checkout-billing-address-form__max-width      : $checkout-shipping-address__max
 
 //
 //  Desktop
-//  _____________________________________________
-
+// ::::::::::::::::::::::::::::::::::::
 @include min-screen($screen__m) {
     .checkout-payment-method {
         .actions-toolbar {
