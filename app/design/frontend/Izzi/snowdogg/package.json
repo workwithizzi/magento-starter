@@ -4,8 +4,12 @@
 	"description": "Blank sass-theme for Magento 2",
 	"main": "index.js",
 	"scripts": {
-		"sass:lint": "sass-lint -c .sasslint.yml '**/*.s+(a|c)ss' -v -q",
-		"sass:fix": "sass-lint-auto-fix -c .sasslint-fix.yml 'styles/**/*.s+(a|c)ss' -v -q",
+		"sass:lint1": "sass-lint -c .sasslint.yml '**/*.s+(a|c)ss' -v -q",
+		"sass:lint": "sass-lint -c .sasslint.yml 'styles/temp.sass' -v -q",
+		"sass:fix1": "sass-lint-auto-fix -c .sasslint-fix.yml 'styles/temp.sass' -v -q",
+		"sass:fix": "sass-lint-auto-fix --c .sasslint-fix.yml 'styles/temp.sass'",
+		"stylelint": "stylelint 'stylelint/**/*.s+(a|c)ss'",
+		"stylelint-fix": "stylelint 'stylelint/**/*.s+(a|c)ss' --fix",
 		"js:lint": "eslint ./",
 		"js:fix": "eslint ./ --fix",
 		"compile": "node-sass --source-comments --source-map true --output-style expanded -o web/css/ styles/main/",
@@ -27,7 +31,11 @@
 		"onchange": "^7.1.0",
 		"postcss": "^8.1.8",
 		"postcss-cli": "^8.3.0",
-		"sass-lint": "^1.13.1",
-		"sass-lint-auto-fix": "^0.21.2"
+		"stylelint": "^13.8.0",
+		"stylelint-config-recommended": "^3.0.0",
+		"stylelint-config-sass-guidelines": "^7.1.0",
+		"stylelint-config-standard": "^20.0.0",
+		"stylelint-order": "^4.1.0",
+		"stylelint-scss": "^3.18.0"
 	}
 }
