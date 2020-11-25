@@ -1,35 +1,37 @@
 .fotorama {
-    &__spinner {
-        @include fotorama-abs-center();
-        position: absolute;
-        display: none;
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        height: $fotorama-spinner-size;
-        width: $fotorama-spinner-size;
-        margin: auto;
-        background-image: url('../images/loader-1.gif');
-        z-index: $z-index-1;
+	&__spinner {
+		@include fotorama-abs-center();
 
-        &--show {
-            display: block;
-        }
+		background-image: url("../images/loader-1.gif");
+		bottom: 0;
+		display: none;
+		height: $fotorama-spinner-size;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: $fotorama-spinner-size;
+		z-index: $z-index-1;
 
-        .fotorama__wrap--css3 & {
-            @extend .fotorama-gpu;
-            animation: spinner 24s infinite linear;
-        }
-    }
+		&--show {
+			display: block;
+		}
+
+		.fotorama__wrap--css3 & {
+			@extend .fotorama-gpu;
+
+			animation: spinner 24s infinite linear;
+		}
+	}
 }
 
 @keyframes spinner {
-    0% {
-        transform: rotate(0deg);
-    }
+	0% {
+		transform: rotate(0deg);
+	}
 
-    100% {
-        transform: rotate(360deg);
-    }
+	100% {
+		transform: rotate(360deg);
+	}
 }

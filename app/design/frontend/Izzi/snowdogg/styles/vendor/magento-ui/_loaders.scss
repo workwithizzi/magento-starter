@@ -1,5 +1,5 @@
 //
-//  Loaders
+// Loaders
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-loader(
@@ -13,15 +13,14 @@
 	$_loader-icon-border-radius       : $loader-icon__border-radius,
 	$_loader-icon-padding             : $loader-icon__padding,
 	$_loader-text                     : $loader-text,
-    $_loader-text-color               : $loader-text__color,
-    $_loader-text-font-size           : $loader-text__font-size,
-    $_loader-text-font-family         : $loader-text__font-family,
-    $_loader-text-font-weight         : $loader-text__font-weight,
-    $_loader-text-font-style          : $loader-text__font-style,
-    $_loader-text-padding             : $loader-text__padding
+	$_loader-text-color               : $loader-text__color,
+	$_loader-text-font-size           : $loader-text__font-size,
+	$_loader-text-font-family         : $loader-text__font-family,
+	$_loader-text-font-weight         : $loader-text__font-weight,
+	$_loader-text-font-style          : $loader-text__font-style,
+	$_loader-text-padding             : $loader-text__padding
 ) {
 	@include lib-css(background-color, $_loader-overlay-background-color);
-
 	@include lib-css(z-index, $_loader-overlay-z-index);
 
 	bottom: 0;
@@ -37,7 +36,6 @@
 			content: attr(data-text);
 			text-align: center;
 			vertical-align: baseline;
-
 			@include lib-typography(
 				$_color       : $_loader-text-color,
 				$_font-size   : $_loader-text-font-size,
@@ -46,15 +44,10 @@
 				$_font-style  : $_loader-text-font-style
 			);
 		}
-
 		@include lib-css(background, $_loader-icon-background-color $_loader-icon-background-image no-repeat $_loader-icon-background-position);
-
 		@include lib-css(border-radius, $_loader-icon-border-radius);
-
 		@include lib-css(height, $_loader-icon-height);
-
 		@include lib-css(padding, $_loader-icon-padding);
-
 		@include lib-css(width, $_loader-icon-width);
 
 		bottom: 0;

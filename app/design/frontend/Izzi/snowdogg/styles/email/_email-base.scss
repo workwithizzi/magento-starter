@@ -46,25 +46,25 @@ td {
 // ::::::::::::::::::::::::::::::::::::
 
 a:visited {
-	color: $link__visited__color !important; // sass-lint:disable-line no-important
-	text-decoration: $link__visited__text-decoration !important; // sass-lint:disable-line no-important
+	color: $link__visited__color !important; // stylelint-disable-line declaration-no-important
+	text-decoration: $link__visited__text-decoration !important; // stylelint-disable-line declaration-no-important
 }
 
 a:hover {
-	color: $link__hover__color !important; // sass-lint:disable-line no-important
+	color: $link__hover__color !important; // stylelint-disable-line declaration-no-important
 }
 
 a:active {
-	color: $link__active__color !important; // sass-lint:disable-line no-important
-	text-decoration: $link__active__text-decoration !important; // sass-lint:disable-line no-important
+	color: $link__active__color !important; // stylelint-disable-line declaration-no-important
+	text-decoration: $link__active__text-decoration !important; // stylelint-disable-line declaration-no-important
 }
 
 // Remove link color on iOS
 .no-link a,
 .no-link-a {
-	color: $text__color !important; // sass-lint:disable-line no-important
-	cursor: default !important; // sass-lint:disable-line no-important
-	text-decoration: none !important; // sass-lint:disable-line no-important
+	color: $text__color !important; // stylelint-disable-line declaration-no-important
+	cursor: default !important; // stylelint-disable-line declaration-no-important
+	text-decoration: none !important; // stylelint-disable-line declaration-no-important
 }
 
 //
@@ -77,13 +77,13 @@ a:active {
 	body {
 		// Change background/foreground to same color
 		background-color: $email-content__background-color;
-		width: 100% !important; // sass-lint:disable-line no-important
+		width: 100% !important; // stylelint-disable-line declaration-no-important
 	}
 
 	.main {
-		max-width: 100% !important; // sass-lint:disable-line no-important
+		max-width: 100% !important; // stylelint-disable-line declaration-no-important
 		min-width: 240px;
-		width: auto !important; // sass-lint:disable-line no-important
+		width: auto !important; // stylelint-disable-line declaration-no-important
 	}
 }
 
@@ -95,12 +95,12 @@ a:active {
 .button {
 	.inner-wrapper {
 		td:hover {
-			background-color: $button-primary__hover__background !important; // sass-lint:disable-line no-important
+			background-color: $button-primary__hover__background !important; // stylelint-disable-line declaration-no-important
 		}
 
 		a:active,
 		td:active {
-			background-color: $button-primary__active__background !important; // sass-lint:disable-line no-important
+			background-color: $button-primary__active__background !important; // stylelint-disable-line declaration-no-important
 		}
 	}
 
@@ -109,15 +109,15 @@ a:active {
 	a:visited {
 		// Undo general link hover state
 		border: 1px solid $button-primary__hover__background;
-		color: $button-primary__color !important; // sass-lint:disable-line no-important
-		text-decoration: none !important; // sass-lint:disable-line no-important
+		color: $button-primary__color !important; // stylelint-disable-line declaration-no-important
+		text-decoration: none !important; // stylelint-disable-line declaration-no-important
 	}
 }
 
 @include max-screen($screen__xs) {
 	.button {
 		.inner-wrapper {
-			width: 100% !important; // sass-lint:disable-line no-important
+			width: 100% !important; // stylelint-disable-line declaration-no-important
 
 			td {
 				a {

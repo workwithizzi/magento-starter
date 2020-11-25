@@ -1,79 +1,81 @@
-//  Newsletter subscription
+// Newsletter subscription
 .block.newsletter {
-    margin-bottom: $indent__xl;
+	margin-bottom: $indent__xl;
 
-    .form.subscribe {
-        display: table;
-        width: 100%;
-    }
+	.form.subscribe {
+		display: table;
+		width: 100%;
+	}
 
-    .fieldset {
-        display: table-cell;
-        margin: 0;
-        padding: 0;
-        vertical-align: top;
-    }
+	.fieldset {
+		display: table-cell;
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+	}
 
-    .field {
-        margin: 0;
+	.field {
+		margin: 0;
 
-        .control {
-            @include lib-icon-font(
-                $icon-envelope,
-                $_icon-font-size        : 35px,
-                $_icon-font-line-height : 33px,
-                $_icon-font-color       : $form-element-input-placeholder__color
-            );
-            display: block;
+		.control {
+			@include lib-icon-font(
+				$icon-envelope,
+				$_icon-font-size        : 35px,
+				$_icon-font-line-height : 33px,
+				$_icon-font-color       : $form-element-input-placeholder__color
+			);
 
-            &:before {
-                position: absolute;
-            }
-        }
-    }
+			display: block;
 
-    input {
-        padding-left: 35px;
-    }
+			&:before {
+				position: absolute;
+			}
+		}
+	}
 
-    .title {
-        display: none;
-    }
+	input {
+		padding-left: 35px;
+	}
 
-    .label {
-        @extend .abs-visually-hidden;
-    }
+	.title {
+		display: none;
+	}
 
-    .actions {
-        display: table-cell;
-        vertical-align: top;
-        width: 1%;
-    }
+	.label {
+		@extend .abs-visually-hidden;
+	}
 
-    .action.subscribe {
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-        margin-left: -1px;
-    }
+	.actions {
+		display: table-cell;
+		vertical-align: top;
+		width: 1%;
+	}
+
+	.action.subscribe {
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+		margin-left: -1px;
+	}
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
+
 @include min-screen($screen__m) {
-    .block.newsletter {
-        width: 32%;
+	.block.newsletter {
+		width: 32%;
 
-        .field {
-            margin-right: 5px;
+		.field {
+			margin-right: 5px;
 
-            .control {
-                width: 100%;
-            }
-        }
+			.control {
+				width: 100%;
+			}
+		}
 
-        .action.subscribe {
-            border-radius: 3px;
-        }
-    }
+		.action.subscribe {
+			border-radius: 3px;
+		}
+	}
 }

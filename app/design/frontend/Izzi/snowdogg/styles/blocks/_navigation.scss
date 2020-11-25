@@ -1,5 +1,5 @@
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 $active-nav-indent: 54px !default;
 
@@ -21,7 +21,6 @@ $active-nav-indent: 54px !default;
 		$_icon-font-color       : $header-icons-color,
 		$_icon-font-color-hover : $header-icons-color-hover
 	);
-
 	@include lib-icon-text-hide();
 
 	cursor: pointer;
@@ -34,7 +33,7 @@ $active-nav-indent: 54px !default;
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m) {
@@ -44,7 +43,6 @@ $active-nav-indent: 54px !default;
 		.parent {
 			.level-top {
 				position: relative;
-
 				@include lib-icon-font(
 					$_icon-font-content  : $icon-down,
 					$_icon-font-size     : 42px,
@@ -78,7 +76,6 @@ $active-nav-indent: 54px !default;
 		top: 0;
 		width: 80%;
 		width: calc(100% - #{$active-nav-indent});
-
 		@include lib-css(transition, left .3s, 1);
 
 		.switcher {
@@ -101,7 +98,6 @@ $active-nav-indent: 54px !default;
 		.switcher-trigger {
 			strong {
 				position: relative;
-
 				@include lib-icon-font(
 					$_icon-font-content  : $icon-down,
 					$_icon-font-size     : 42px,
@@ -153,7 +149,6 @@ $active-nav-indent: 54px !default;
 			a,
 			a:hover {
 				@include lib-css(color, $navigation-level0-item__color);
-
 				@include lib-css(text-decoration, $navigation-level0-item__text-decoration);
 
 				display: block;
@@ -197,7 +192,6 @@ $active-nav-indent: 54px !default;
 
 		.nav-sections {
 			$_shadow: 0 0 5px 0 rgba(50, 50, 50, .75);
-
 			@include lib-css(box-shadow, $_shadow, 1);
 
 			left: 0;
@@ -263,12 +257,11 @@ $active-nav-indent: 54px !default;
 			display: block;
 		}
 	}
-
 	@include lib-main-navigation();
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -278,7 +271,6 @@ $active-nav-indent: 54px !default;
 
 	.nav-sections {
 		@include lib-vendor-prefix-flex-shrink(0);
-
 		@include lib-vendor-prefix-flex-basis(auto);
 
 		margin-bottom: $indent__m;
@@ -289,7 +281,7 @@ $active-nav-indent: 54px !default;
 	}
 
 	.nav-sections-item-content {
-		display: block !important;
+		display: block !important; // stylelint-disable-line declaration-no-important
 	}
 
 	.nav-sections-item-content > * {
@@ -301,7 +293,6 @@ $active-nav-indent: 54px !default;
 			display: block;
 		}
 	}
-
 	@include lib-main-navigation-desktop();
 
 	.panel.header {

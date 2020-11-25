@@ -1,8 +1,8 @@
 //
-//  Styles Extends
+// Styles Extends
 // ::::::::::::::::::::::::::::::::::::
 //
-//  List default styles reset
+// List default styles reset
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-reset-list {
@@ -13,19 +13,17 @@
 }
 
 //
-//  Link as a button
+// Link as a button
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-action-link-button {
 	@include lib-button();
-
 	@include lib-link-as-button();
-
 	@include lib-css(border-radius, $button__border-radius);
 }
 
 //
-//  Product options list
+// Product options list
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin abs-product-options-list() {
@@ -58,7 +56,7 @@
 }
 
 //
-//  Button reset width, floats, margins
+// Button reset width, floats, margins
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin abs-button-responsive() {
@@ -82,7 +80,7 @@
 }
 
 //
-//  Blocks in 2 columns
+// Blocks in 2 columns
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin abs-blocks-2columns() {
@@ -111,12 +109,12 @@
 }
 
 //
-//  Reset image alignment in container
+// Reset image alignment in container
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-reset-image-wrapper {
 	height: auto;
-	padding: 0 !important;
+	padding: 0 !important; // stylelint-disable-line declaration-no-important
 
 	.product-image-photo {
 		position: static;
@@ -124,7 +122,7 @@
 }
 
 //
-//  Adaptive images
+// Adaptive images
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-adaptive-images {
@@ -141,7 +139,7 @@
 }
 
 //
-//  Title for login blocks
+// Title for login blocks
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-login-block-title {
@@ -156,7 +154,7 @@
 }
 
 //
-//  Abstract block title
+// Abstract block title
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-block-title {
@@ -168,7 +166,7 @@
 }
 
 //
-//  Account blocks
+// Account blocks
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-account-blocks {
@@ -205,7 +203,7 @@
 }
 
 //
-//  Simple Dropdown
+// Simple Dropdown
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-dropdown-simple {
@@ -218,7 +216,7 @@
 }
 
 //
-//  Input quantity
+// Input quantity
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-input-qty {
@@ -227,7 +225,7 @@
 }
 
 //
-//  Marging for blocks & widgets
+// Marging for blocks & widgets
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-margin-for-blocks-and-widgets {
@@ -235,7 +233,7 @@
 }
 
 //
-//  Remove button for blocks
+// Remove button for blocks
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-remove-button-for-blocks {
@@ -251,7 +249,7 @@
 }
 
 //
-//  Product link
+// Product link
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-product-link {
@@ -272,7 +270,7 @@
 }
 
 //
-//  Reset left margin
+// Reset left margin
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin abs-reset-left-margin() {
@@ -296,7 +294,7 @@
 }
 
 //
-//  Action with icon remove with text
+// Action with icon remove with text
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-action-remove {
@@ -310,7 +308,7 @@
 }
 
 //
-//  Action with icon remove with text for desktop
+// Action with icon remove with text for desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -323,7 +321,7 @@
 }
 
 //
-//  Add Recipient
+// Add Recipient
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-add-fields {
@@ -380,7 +378,7 @@
 }
 
 //
-//  Add Recipient for desktop
+// Add Recipient for desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -406,7 +404,7 @@
 }
 
 //
-//  Margin for forms
+// Margin for forms
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin abs-margin-for-forms-desktop {
@@ -426,7 +424,7 @@
 }
 
 //
-//  Visibility hidden / show visibility hidden
+// Visibility hidden / show visibility hidden
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-hidden {
@@ -434,7 +432,7 @@
 }
 
 //
-//  Visually hidden / show visually hidden
+// Visually hidden / show visually hidden
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin abs-visually-hidden {
@@ -470,7 +468,7 @@
 }
 
 //
-//  Visually hidden reset
+// Visually hidden reset
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-visually-hidden-reset {
@@ -478,7 +476,7 @@
 }
 
 //
-//  Clearfix
+// Clearfix
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin abs-add-clearfix {
@@ -514,7 +512,7 @@
 }
 
 //
-//  Box-sizing
+// Box-sizing
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin abs-add-box-sizing {
@@ -544,7 +542,7 @@
 }
 
 //
-//  Revert field type
+// Revert field type
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -563,7 +561,7 @@
 }
 
 //
-//  Settings icons
+// Settings icons
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-navigation-icon {
@@ -583,7 +581,7 @@
 }
 
 //
-//  Split button
+// Split button
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-split-button {
@@ -596,12 +594,11 @@
 }
 
 //
-//  Action addto
+// Action addto
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-action-addto-product {
 	@extend .abs-action-link-button;
-
 	@include lib-button-s();
 }
 
@@ -618,7 +615,7 @@
 }
 
 //
-//  Large button
+// Large button
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-button-l {
@@ -626,7 +623,7 @@
 }
 
 //
-//  Button as a link
+// Button as a link
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-action-button-as-link {
@@ -643,7 +640,7 @@
 }
 
 //
-//  Button revert secondary color
+// Button revert secondary color
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-revert-secondary-color {
@@ -651,7 +648,7 @@
 }
 
 //
-//  Button revert secondary size
+// Button revert secondary size
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-revert-secondary-size {
@@ -659,7 +656,7 @@
 }
 
 //
-//  Box-tocart block
+// Box-tocart block
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-box-tocart {
@@ -667,7 +664,7 @@
 }
 
 //
-//  Excl/Incl tax
+// Excl/Incl tax
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-adjustment-incl-excl-tax {
@@ -695,7 +692,7 @@
 }
 
 //
-//  Cart tax total
+// Cart tax total
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-tax-total {
@@ -732,7 +729,7 @@
 }
 
 //
-//  Checkout shipping methods title
+// Checkout shipping methods title
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-methods-shipping-title {
@@ -743,7 +740,7 @@
 }
 
 //
-//  Checkout order review
+// Checkout order review
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__s) {
@@ -788,7 +785,7 @@
 }
 
 //
-//  Add colon
+// Add colon
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-colon {
@@ -798,7 +795,7 @@
 }
 
 //
-//  Icon - create add
+// Icon - create add
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-icon-add {
@@ -824,7 +821,7 @@
 }
 
 //
-//  Dropdown items - create new
+// Dropdown items - create new
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-dropdown-items-new {
@@ -844,7 +841,7 @@
 }
 
 //
-//  Abstract toggle title block
+// Abstract toggle title block
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m) {
@@ -855,7 +852,6 @@
 		margin-bottom: 0;
 		padding: $indent__s $indent__xl $indent__s $layout__width-xs-indent;
 		position: relative;
-
 		@include lib-icon-font(
 			$_icon-font-content   : $icon-down,
 			$_icon-font-size      : 28px,
@@ -880,7 +876,7 @@
 }
 
 //
-//  Abstract no display
+// Abstract no display
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin abs-no-display {
@@ -904,7 +900,7 @@
 }
 
 //
-//  Status
+// Status
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-status {
@@ -913,7 +909,7 @@
 }
 
 //
-//  Pager toolbar for non-catalog pages mobile
+// Pager toolbar for non-catalog pages mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__m) {
@@ -928,7 +924,7 @@
 }
 
 //
-//  Pager toolbar for non-catalog pages mobile
+// Pager toolbar for non-catalog pages mobile
 // ::::::::::::::::::::::::::::::::::::
 
 @include max-screen($screen__s) {
@@ -942,7 +938,7 @@
 }
 
 //
-//  Pager toolbar for non-catalog pages desktop
+// Pager toolbar for non-catalog pages desktop
 // ::::::::::::::::::::::::::::::::::::
 
 @include min-screen($screen__m) {
@@ -975,19 +971,18 @@
 }
 
 //
-//  Items counter in blocks
+// Items counter in blocks
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-block-items-counter {
 	@include lib-css(color, $primary__color__lighter);
-
 	@include lib-font-size(12px);
 
 	white-space: nowrap;
 }
 
 //
-//  Shopping cart items
+// Shopping cart items
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-shopping-cart-items {
@@ -995,9 +990,7 @@
 		&.continue {
 			border-radius: 3px;
 			font-weight: $font-weight__bold;
-
 			@include lib-link-as-button();
-
 			@include lib-button(
 				$_button-padding               : 7px 15px 7px 0,
 				$_button-icon-use              : true,
@@ -1069,7 +1062,7 @@
 }
 
 //
-//  Form Field Date
+// Form Field Date
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-field-date {
@@ -1085,7 +1078,7 @@
 }
 
 //
-//  Form Field Date Input
+// Form Field Date Input
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-field-date-input {
@@ -1095,7 +1088,7 @@
 }
 
 //
-//  Form Field Tooltip
+// Form Field Tooltip
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-field-tooltip {
@@ -1111,12 +1104,11 @@
 }
 
 //
-//  Checkout Tooltip Content (position: top)
+// Checkout Tooltip Content (position: top)
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin abs-checkout-tooltip-content-position-top {
 	@include lib-css(right, $checkout-tooltip-content-mobile__right);
-
 	@include lib-css(top, $checkout-tooltip-content-mobile__top);
 
 	left: auto;
@@ -1128,9 +1120,7 @@
 			$_size     : $checkout-tooltip-icon-arrow__font-size,
 			$_color    : $checkout-tooltip-content__background-color
 		);
-
 		@include lib-css(margin-top, $checkout-tooltip-icon-arrow__left);
-
 		@include lib-css(right, $indent__s);
 
 		left: auto;
@@ -1159,14 +1149,12 @@
 }
 
 //
-//  Checkout title
+// Checkout title
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-checkout-title {
 	@include lib-css(border-bottom, $checkout-step-title__border);
-
 	@include lib-css(padding-bottom, $checkout-step-title__padding);
-
 	@include lib-typography(
 		$_font-size   : $checkout-step-title__font-size,
 		$_font-weight : $checkout-step-title__font-weight,
@@ -1177,7 +1165,7 @@
 }
 
 //
-//  Shopping cart sidebar and checkout sidebar totals
+// Shopping cart sidebar and checkout sidebar totals
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-sidebar-totals {
@@ -1225,7 +1213,6 @@
 			.mark,
 			.amount {
 				@include lib-css(border-top, $border-width__base solid $border-color__base);
-
 				@include lib-css(border-bottom, $border-width__base solid $border-color__base);
 
 				cursor: pointer;
@@ -1267,7 +1254,6 @@
 
 		&-details {
 			display: none;
-
 			@include lib-css(border-bottom, $border-width__base solid $border-color__base);
 
 			&.shown {
@@ -1282,7 +1268,7 @@
 }
 
 //
-//  Shopping cart and payment discount codes block
+// Shopping cart and payment discount codes block
 // ::::::::::::::::::::::::::::::::::::
 
 .abs-discount-block {
@@ -1294,7 +1280,6 @@
 		overflow: hidden;
 		padding: 7px $indent__l 7px $indent__xs;
 		position: relative;
-
 		@include lib-icon-font(
 			$_icon-font-content  : $icon-down,
 			$_icon-font-size     : 30px,

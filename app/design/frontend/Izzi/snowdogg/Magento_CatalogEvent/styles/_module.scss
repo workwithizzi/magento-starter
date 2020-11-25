@@ -6,125 +6,133 @@ $catalog-event-color            : $primary__color !default;
 // ::::::::::::::::::::::::::::::::::::
 
 .block-category-event {
-    @include lib-css(background, $catalog-event-background-color);
-    @include lib-css(color, $catalog-event-color);
-    padding: $indent__s 0 15px;
-    text-align: center;
+	@include lib-css(background, $catalog-event-background-color);
+	@include lib-css(color, $catalog-event-color);
 
-    &.block:last-child {
-        margin-bottom: $indent__s;
-    }
+	padding: $indent__s 0 15px;
+	text-align: center;
 
-    .block-title {
-        margin: 0 0 $indent__s;
+	&.block:last-child {
+		margin-bottom: $indent__s;
+	}
 
-        strong {
-            @include lib-font-size(15);
-            font-weight: $font-weight__light;
-        }
-    }
+	.block-title {
+		margin: 0 0 $indent__s;
 
-    .ticker {
-        @include lib-list-reset-styles();
+		strong {
+			@include lib-font-size(15);
 
-        li {
-            display: none;
-            margin: 0 15px;
-        }
+			font-weight: $font-weight__light;
+		}
+	}
 
-        .value {
-            @include lib-font-size(18);
-            font-weight: $font-weight__light;
-        }
+	.ticker {
+		@include lib-list-reset-styles();
 
-        .label {
-            @include lib-font-size(10);
-            display: block;
-            text-transform: lowercase;
-        }
-    }
+		li {
+			display: none;
+			margin: 0 15px;
+		}
 
-    .dates {
-        display: table;
-        margin: 0 auto;
+		.value {
+			@include lib-font-size(18);
 
-        .start,
-        .end {
-            display: table-cell;
-            vertical-align: top;
-        }
+			font-weight: $font-weight__light;
+		}
 
-        .date {
-            @include lib-font-size(18);
-        }
+		.label {
+			@include lib-font-size(10);
 
-        .time {
-            display: block;
-        }
+			display: block;
+			text-transform: lowercase;
+		}
+	}
 
-        .start {
-            padding-right: $indent__xl;
-            position: relative;
+	.dates {
+		display: table;
+		margin: 0 auto;
 
-            &:after {
-                @include lib-font-size(18);
-                content: '\2013';
-                display: block;
-                position: absolute;
-                right: 15px;
-                top: 0;
-            }
-        }
-    }
+		.start,
+		.end {
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		.date {
+			@include lib-font-size(18);
+		}
+
+		.time {
+			display: block;
+		}
+
+		.start {
+			padding-right: $indent__xl;
+			position: relative;
+
+			&:after {
+				@include lib-font-size(18);
+
+				content: "\2013";
+				display: block;
+				position: absolute;
+				right: 15px;
+				top: 0;
+			}
+		}
+	}
 }
 
 //
 //  Desktop
 // ::::::::::::::::::::::::::::::::::::
+
 @include min-screen($screen__m) {
-    .block-category-event {
-        &.block:last-child {
-            margin-bottom: $indent__l;
-            padding: $indent__s 0 $indent__l;
-        }
+	.block-category-event {
+		&.block:last-child {
+			margin-bottom: $indent__l;
+			padding: $indent__s 0 $indent__l;
+		}
 
-        .block-title {
-            margin: 0;
+		.block-title {
+			margin: 0;
 
-            strong {
-                @include lib-font-size(24);
-            }
-        }
+			strong {
+				@include lib-font-size(24);
+			}
+		}
 
-        .ticker {
-            li {
-                display: none;
-                margin: 0 50px;
-            }
+		.ticker {
+			li {
+				display: none;
+				margin: 0 50px;
+			}
 
-            .value {
-                @include lib-font-size(60);
-            }
+			.value {
+				@include lib-font-size(60);
+			}
 
-            .label {
-                @include lib-font-size(14);
-                text-transform: none;
-            }
-        }
+			.label {
+				@include lib-font-size(14);
 
-        .dates {
-            .date {
-                @include lib-font-size(50);
-            }
+				text-transform: none;
+			}
+		}
 
-            .start {
-                padding-right: 50px;
+		.dates {
+			.date {
+				@include lib-font-size(50);
+			}
 
-                &:after {
-                    @include lib-font-size(50);
-                    right: 10px;
-                }
-            }
-        }
-    }
+			.start {
+				padding-right: 50px;
+
+				&:after {
+					@include lib-font-size(50);
+
+					right: 10px;
+				}
+			}
+		}
+	}
 }

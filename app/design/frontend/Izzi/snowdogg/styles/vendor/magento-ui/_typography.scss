@@ -1,5 +1,5 @@
 //
-//  Typography
+// Typography
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-font-face(
@@ -21,28 +21,26 @@
 	}
 }
 
-//  Rem font size
+// Rem font size
 
 @mixin lib-font-size($sizeValue) {
 	@if type-of($sizeValue) == number and unit($sizeValue) != "%" and $sizeValue != false {
 		@if unit($sizeValue) == $font-size-unit or unit($sizeValue) == "em" {
 			@include lib-css(font-size, $sizeValue);
 		}
-
 		@else {
 			@include lib-css(font-size, lib-font-size-value($sizeValue));
 		}
 	}
 }
 
-//  Rem line height
+// Rem line height
 
 @mixin lib-line-height($heightValue) {
 	@if $heightValue != false {
 		@if unit($heightValue) == "%" {
 			@include lib-css(line-height, $heightValue);
 		}
-
 		@else {
 			@include lib-css(line-height, lib-font-size-value($heightValue));
 		}
@@ -70,7 +68,7 @@
 	text-shadow: none;
 }
 
-//  Optional hyphenation
+// Optional hyphenation
 
 @mixin lib-hyphens($mode: auto) {
 	hyphens: $mode;
@@ -86,21 +84,15 @@
 	$_font-style: $font-style__base
 ) {
 	@include lib-css(color, $_color);
-
 	@include lib-css(font-family, $_font-family);
-
 	@include lib-css(font-style, $_font-style);
-
 	@include lib-css(font-weight, $_font-weight);
-
 	@include lib-css(line-height, $_line-height);
-
 	@include lib-font-size($_font-size);
 }
 
 @mixin lib-list-reset-styles($_margin: 0, $_padding: 0) {
 	@include lib-css(margin, $_margin);
-
 	@include lib-css(padding, $_padding);
 
 	list-style: none none;
@@ -125,24 +117,20 @@
 	$_link-text-decoration-active: $link__active__text-decoration
 ) {
 	@include lib-css(color, $_link-color);
-
 	@include lib-css(text-decoration, $_link-text-decoration);
 
 	&:visited {
 		@include lib-css(color, $_link-color-visited);
-
 		@include lib-css(text-decoration, $_link-text-decoration-visited);
 	}
 
 	&:hover {
 		@include lib-css(color, $_link-color-hover);
-
 		@include lib-css(text-decoration, $_link-text-decoration-hover);
 	}
 
 	&:active {
 		@include lib-css(color, $_link-color-active);
-
 		@include lib-css(text-decoration, $_link-text-decoration-active);
 	}
 }
@@ -215,22 +203,16 @@
 	);
 
 	$map: $h1;
-
 	@if $_heading_level == h2 {
 		$map: $h2;
 	}
-
 	@else if $_heading_level == h3 {
 		$map: $h3;
 	} @else if $_heading_level == h4 {
 		$map: $h4;
-	}
-
-	@else if $_heading_level == h5 {
+	} @else if $_heading_level == h5 {
 		$map: $h5;
-	}
-
-	@else if $_heading_level == h6 {
+	} @else if $_heading_level == h6 {
 		$map: $h6;
 	}
 
@@ -242,7 +224,6 @@
 	$_font-style    : map-get($map, font-style);
 	$_margin-top    : map-get($map, margin-top);
 	$_margin-bottom : map-get($map, margin-bottom);
-
 	@include lib-typography(
 		$_font-size,
 		$_font-color,
@@ -251,14 +232,12 @@
 		$_line-height,
 		$_font-style
 	);
-
 	@include lib-css(margin-top, lib-font-size-value($_margin-top));
-
 	@include lib-css(margin-bottom, lib-font-size-value($_margin-bottom));
 }
 
 //
-//  Base typography
+// Base typography
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-typography__base(
@@ -272,12 +251,12 @@
 	$_hr-margin-top         : $line-height__computed,
 	$_mark-background-color : $mark__background-color,
 	$_mark-color            : $mark__color,
-    $_p-margin-bottom       : $p__margin-bottom,
-    $_p-margin-top          : $p__margin-top,
-    $_root-font-size        : $root__font-size,
-    $_small-font-size       : $font-size__s,
-    $_strong-font-weight    : $font-weight__bold,
-    $_sub-sup-font-size     : ($font-size__xs / $font-size__base) * 100%
+	$_p-margin-bottom       : $p__margin-bottom,
+	$_p-margin-top          : $p__margin-top,
+	$_root-font-size        : $root__font-size,
+	$_small-font-size       : $font-size__s,
+	$_strong-font-weight    : $font-weight__bold,
+	$_sub-sup-font-size     : ($font-size__xs / $font-size__base) * 100%
 ) {
 	html {
 		@include lib-css(font-size, $_root-font-size);
@@ -299,7 +278,7 @@
 		}
 	}
 
-	//  Abbreviations and acronyms
+	// Abbreviations and acronyms
 	abbr[title] {
 		@include lib-css(border-bottom, 1px dotted $_abbr-border-color);
 
@@ -318,7 +297,6 @@
 
 	mark {
 		@include lib-css(background, $_mark-background-color);
-
 		@include lib-css(color, $_mark-color);
 	}
 
@@ -329,11 +307,8 @@
 
 	hr {
 		border: 0;
-
 		@include lib-css(border-top, $_hr-border-width $_hr-border-style $_hr-border-color);
-
 		@include lib-css(margin-bottom, $_hr-margin-bottom);
-
 		@include lib-css(margin-top, $_hr-margin-top);
 	}
 
@@ -360,7 +335,7 @@
 }
 
 //
-//  Headings
+// Headings
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-typography-headings(
@@ -411,7 +386,7 @@
 
 
 //
-//  Links
+// Links
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-typography-links() {
@@ -422,7 +397,7 @@
 }
 
 //
-//  Unordered and Ordered lists
+// Unordered and Ordered lists
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-typography-lists(
@@ -436,17 +411,15 @@
 	$_dd-margin-top           : $dd__margin-top,
 	$_dt-font-weight          : $dt__font-weight,
 	$_dt-margin-bottom        : $dt__margin-bottom,
-    $_dt-margin-top           : $dt__margin-top
+	$_dt-margin-top           : $dt__margin-top
 ) {
 	ul,
 	ol {
 		@include lib-css(margin-top, lib-font-size-value($_list-margin-top));
-
 		@include lib-css(margin-bottom, lib-font-size-value($_list-margin-bottom));
 
 		& > li {
 			@include lib-css(margin-top, lib-font-size-value($_list-item-margin-top));
-
 			@include lib-css(margin-bottom, lib-font-size-value($_list-item-margin-bottom));
 		}
 
@@ -458,21 +431,17 @@
 
 	dl {
 		@include lib-css(margin-bottom, $_dl-margin-bottom);
-
 		@include lib-css(margin-top, $_dl-margin-top);
 	}
 
 	dt {
 		@include lib-css(font-weight, $_dt-font-weight);
-
 		@include lib-css(margin-bottom, $_dt-margin-bottom);
-
 		@include lib-css(margin-top, $_dt-margin-top);
 	}
 
 	dd {
 		@include lib-css(margin-bottom, $_dd-margin-bottom);
-
 		@include lib-css(margin-top, $_dd-margin-top);
 
 		margin-left: 0;
@@ -480,7 +449,7 @@
 }
 
 //
-//  Code (inline and block)
+// Code (inline and block)
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-typography-code(
@@ -494,13 +463,13 @@
 	$_kbd-font-size         : $code__font-size,
 	$_kbd-padding           : $code__padding,
 	$_pre-background-color  : $pre__background-color,
-    $_pre-border-color      : $pre__border-color,
-    $_pre-border-width      : $pre__border-width,
-    $_pre-color             : $pre__color,
-    $_pre-font-size         : $code__font-size,
-    $_pre-line-height       : $line-height__base,
-    $_pre-margin            : 0 0 $indent__s,
-    $_pre-padding           : $indent__s
+	$_pre-border-color      : $pre__border-color,
+	$_pre-border-width      : $pre__border-width,
+	$_pre-color             : $pre__color,
+	$_pre-font-size         : $code__font-size,
+	$_pre-line-height       : $line-height__base,
+	$_pre-margin            : 0 0 $indent__s,
+	$_pre-padding           : $indent__s
 ) {
 	code,
 	kbd,
@@ -509,44 +478,32 @@
 		@include lib-css(font-family, $_font-family-monospace);
 	}
 
-	//  Inline code
+	// Inline code
 	code {
 		@include lib-css(background, $_code-background-color);
-
 		@include lib-css(color, $_code-color);
-
 		@include lib-css(padding, $_code-padding);
-
 		@include lib-font-size($_code-font-size);
 
 		white-space: nowrap;
 	}
 
-	//  User input typically entered via keyboard
+	// User input typically entered via keyboard
 	kbd {
 		@include lib-css(background, $_kbd-background-color);
-
 		@include lib-css(color, $_kbd-color);
-
 		@include lib-css(padding, $_kbd-padding);
-
 		@include lib-font-size($_kbd-font-size);
 	}
 
-	//  Blocks of code
+	// Blocks of code
 	pre {
 		@include lib-css(background, $_pre-background-color);
-
 		@include lib-css(border, $_pre-border-width solid $_pre-border-color);
-
 		@include lib-css(color, $_pre-color);
-
 		@include lib-css(line-height, $_pre-line-height);
-
 		@include lib-css(margin, $_pre-margin);
-
 		@include lib-css(padding, $_pre-padding);
-
 		@include lib-font-size($_pre-font-size);
 
 		display: block;
@@ -564,7 +521,7 @@
 }
 
 //
-//  Blockquotes
+// Blockquotes
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-typography-blockquote(
@@ -578,16 +535,13 @@
 	$_blockquote-small-color: $blockquote-small__color,
 	$_blockquote-small-font-size: $blockquote-small__font-size,
 	$_blockquote-small-line-height: $line-height__base,
-    $_blockquote-cite: $cite__font-style,
-    $_cite: $cite__font-style
+	$_blockquote-cite: $cite__font-style,
+	$_cite: $cite__font-style
 ) {
 	blockquote {
 		@include lib-css(border-left, $_blockquote-border-width solid $_blockquote-border-color);
-
 		@include lib-css(margin, $_blockquote-margin);
-
 		@include lib-css(padding, $_blockquote-padding);
-
 		@include lib-typography(
 			$_font-size: $_blockquote-font-size,
 			$_font-style: $_blockquote-font-style
@@ -605,9 +559,7 @@
 		small,
 		.small {
 			@include lib-css(color, $_blockquote-small-color);
-
 			@include lib-css(line-height, $_blockquote-small-line-height);
-
 			@include lib-font-size($_blockquote-small-font-size);
 
 			display: block;
@@ -622,7 +574,7 @@
 		}
 	}
 
-	//  Quotes
+	// Quotes
 	blockquote {
 		&:before,
 		&:after {
@@ -640,26 +592,21 @@
 		}
 	}
 
-	//  Undo browser default styling
+	// Undo browser default styling
 	cite {
 		@include lib-css(font-style, $_cite);
 	}
 }
 
 //
-//  All typography
+// All typography
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-typography-all() {
 	@include lib-typography__base();
-
 	@include lib-typography-headings();
-
 	@include lib-typography-links();
-
 	@include lib-typography-lists();
-
 	@include lib-typography-code();
-
 	@include lib-typography-blockquote();
 }

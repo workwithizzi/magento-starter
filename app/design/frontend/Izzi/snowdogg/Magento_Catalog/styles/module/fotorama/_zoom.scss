@@ -1,49 +1,51 @@
 .fotorama__zoom-in,
 .fotorama__zoom-out {
-    display: none;
-    z-index: $z-index-10;
-    &:focus {
-        @extend .fotorama-focus;
-        box-shadow: none;
-        &:after {
-            border-radius: inherit;
-            bottom: $fotorama-inner-box-shadow;
-            box-shadow: $focus__box-shadow;
-            content: '';
-            left: $fotorama-inner-box-shadow;
-            position: absolute;
-            right: $fotorama-inner-box-shadow;
-            top: $fotorama-inner-box-shadow;
-            z-index: $z-index-10;
-        }
-    }
+	display: none;
+	z-index: $z-index-10;
+	&:focus {
+		@extend .fotorama-focus;
 
-    .fotorama__wrap:not(.fotorama__wrap--toggle-arrows) & {
-        @include fotorama-button-background();
-    }
+		box-shadow: none;
+		&:after {
+			border-radius: inherit;
+			bottom: $fotorama-inner-box-shadow;
+			box-shadow: $focus__box-shadow;
+			content: "";
+			left: $fotorama-inner-box-shadow;
+			position: absolute;
+			right: $fotorama-inner-box-shadow;
+			top: $fotorama-inner-box-shadow;
+			z-index: $z-index-10;
+		}
+	}
 
-    .fotorama__fullscreen & {
-        @extend .fotorama-sprite;
-        position: absolute;
-        display: block;
-        width: $size-fotorama-block;
-        height: $size-fotorama-block;
-        overflow: hidden;
-        cursor: pointer;
-        &--disabled {
-            display: none;
-        }
-    }
+	.fotorama__wrap:not(.fotorama__wrap--toggle-arrows) & {
+		@include fotorama-button-background();
+	}
+
+	.fotorama__fullscreen & {
+		@extend .fotorama-sprite;
+
+		cursor: pointer;
+		display: block;
+		height: $size-fotorama-block;
+		overflow: hidden;
+		position: absolute;
+		width: $size-fotorama-block;
+		&--disabled {
+			display: none;
+		}
+	}
 }
 
 .fotorama__fullscreen {
-    .fotorama__zoom-out {
-        top: 80px;
-        background-position: 0 (-$size-fotorama-block) !important;
-    }
+	.fotorama__zoom-out {
+		background-position: 0 (-$size-fotorama-block) !important; // stylelint-disable-line declaration-no-important
+		top: 80px;
+	}
 
-    .fotorama__zoom-in {
-        background-position: 0 0 !important;
-        top: 0;
-    }
+	.fotorama__zoom-in {
+		background-position: 0 0 !important; // stylelint-disable-line declaration-no-important
+		top: 0;
+	}
 }

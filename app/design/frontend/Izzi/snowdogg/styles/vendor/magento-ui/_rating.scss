@@ -21,7 +21,6 @@
 			$_icon-letter-spacing,
 			$_icon-color
 		);
-
 		@include lib-rating-icons-content(
 			$_icon-count,
 			$_icon-content
@@ -77,7 +76,6 @@
 			}
 		}
 	}
-
 	@include _lib-rating-iteration(
 		$_icon-content,
 		$_icon-count
@@ -98,7 +96,6 @@
 ) {
 	overflow: hidden;
 	white-space: nowrap;
-
 	@include _lib-rating-label-hide($_label-hide);
 
 	.rating-result {
@@ -114,7 +111,6 @@
 			top: 0;
 			width: 100%;
 			z-index: 1;
-
 			@include _lib-rating-summary-icon-default(
 				$_icon-font,
 				$_icon-font-size,
@@ -132,7 +128,6 @@
 			&:before {
 				position: relative;
 				z-index: 2;
-
 				@include _lib-rating-summary-icon-default(
 					$_icon-font,
 					$_icon-font-size,
@@ -185,15 +180,10 @@
 	$_icon-color
 ) {
 	@include lib-css(color, $_icon-color);
-
 	@include lib-css(font-family, $_icon-font);
-
 	@include lib-css(font-size, $_icon-font-size);
-
 	@include lib-css(height, $_icon-font-size);
-
 	@include lib-css(letter-spacing, $_icon-letter-spacing);
-
 	@include lib-css(line-height, $_icon-font-size);
 
 	-webkit-font-smoothing: antialiased;
@@ -216,19 +206,12 @@
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
-
 	@include lib-css(color, $_icon-color);
-
 	@include lib-css(font-family, $_icon-font);
-
 	@include lib-css(font-size, $_icon-font-size);
-
 	@include lib-css(height, $_icon-font-size);
-
 	@include lib-css(letter-spacing, $_icon-letter-spacing);
-
 	@include lib-css(line-height, $_icon-font-size);
-
 	@include lib-rating-icons-content($_icon-count, $_icon-content);
 }
 
@@ -237,7 +220,6 @@
 	$_icon-content: $rating-icon__content
 ) {
 	$_icon-content-result: $_icon-content;
-
 	@for $_index from $_icon-count to 1 {
 		$_icon-content-result:  $_icon-content-result + $_icon-content;
 	}

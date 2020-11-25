@@ -28,7 +28,6 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 
 @mixin lib-column() {
 	float: left;
-
 	@include lib-column-gutter();
 }
 
@@ -47,38 +46,25 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 		@if isnumber($total-columns) {
 			@if isnumber($end-column) {
 				$showgutter: false;
-
 				@include lib-column($showgutter);
-
 				@include lib-span($span, $total-columns);
-
 				@include lib-end-column();
 			}
-
 			@else {
 				$showgutter: false;
-
 				@include lib-column($showgutter);
-
 				@include lib-span($span, $total-columns);
 			}
 		}
-
 		@if $end-column {
 			$showgutter: false;
-
 			@include lib-column($showgutter);
-
 			@include lib-span($span);
-
 			@include lib-end-column();
 		}
-
 		@if isnumber($end-column) != true {
 			$showgutter: false;
-
 			@include lib-column($showgutter);
-
 			@include lib-span($span);
 		}
 	}
@@ -105,48 +91,34 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 		vertical-align: top;
 		word-spacing: normal;
 	}
-
 	@if isnumber($span) {
 		@if isnumber($total-columns) {
 			$showgutter: false;
-
 			@include lib-inline-column($showgutter);
-
 			@include lib-span(
 				$span,
 				$total-columns
 			);
 		}
-
 		@if $end-column == true {
 			$showgutter: false;
-
 			@include lib-inline-column($showgutter);
-
 			@include lib-span(
 				$span,
 				$total-columns
 			);
-
 			@include lib-inline-end-column();
 		}
 	}
-
 	@if isnumber($end-column) == false {
 		$showgutter: false;
-
 		@include lib-inline-column($showgutter);
-
 		@include lib-span($span);
 	}
-
 	@if $end-column == true {
 		$showgutter: false;
-
 		@include lib-inline-column($showgutter);
-
 		@include lib-span($span);
-
 		@include lib-inline-end-column();
 	}
 }
@@ -176,7 +148,6 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 			$span,
 			$total-columns
 		);
-
 		@include lib-column-gutter($total-columns);
 	}
 }
@@ -186,7 +157,6 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 	$total-columns: $total-columns
 ) {
 	$calc-column-width: 100% * (((($gutter-width + $column-width) * $span)) / $grid-width);
-
 	@include lib-css(padding-left, $calc-column-width);
 }
 
@@ -195,7 +165,6 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 	$total-columns: $total-columns
 ) {
 	$calc-column-width: 100% * (((($gutter-width+$column-width) * $span)) / $grid-width);
-
 	@include lib-css(padding-right, $calc-column-width);
 }
 
@@ -204,7 +173,6 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 	$total-columns: $total-columns
 ) {
 	$calc-column-width: 100% * (((($gutter-width+$column-width) * $span)) / $grid-width);
-
 	@include lib-css(margin-left, $calc-column-width);
 }
 
@@ -213,7 +181,6 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 	$total-columns: $total-columns
 ) {
 	$calc-column-width: 100% * (((($gutter-width+$column-width) * $span)+$gutter-width) / $grid-width);
-
 	@include lib-css(margin-right, $calc-column-width);
 }
 
@@ -222,7 +189,6 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 	$total-columns: $total-columns
 ) {
 	$calc-column-width: 100% * (((($gutter-width+$column-width) * $span)) / $grid-width);
-
 	@include lib-css(margin-right, $calc-column-width);
 }
 
@@ -231,7 +197,6 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 	$total-columns: $total-columns
 ) {
 	$calc-column-width: 100% * (((($gutter-width+$column-width) * $span)-$gutter-width) / $grid-width);
-
 	@include lib-css(width, $calc-column-width);
 }
 
@@ -242,10 +207,8 @@ $grid-width    : ($column-width * $total-columns) + ($gutter-width * ($total-col
 	@if $end-column {
 		margin-right: 0;
 	}
-
 	@else {
 		$calc-gutter-width: 100% * ($gutter-width / $grid-width);
-
 		@include lib-css(margin-right, $calc-gutter-width);
 	}
 }

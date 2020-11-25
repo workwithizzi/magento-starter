@@ -13,7 +13,7 @@
 	.price {
 		&-including-tax,
 		&-excluding-tax {
-			display: inline !important;
+			display: inline !important; // stylelint-disable-line declaration-no-important
 		}
 
 		&-including-tax:before {
@@ -31,7 +31,6 @@
 	.price-excluding-tax {
 		display: block;
 		line-height: 1;
-
 		@include lib-font-size(18);
 
 		.price {
@@ -49,12 +48,10 @@
 	.price-including-tax + .price-excluding-tax,
 	.weee[data-label] {
 		display: block;
-
 		@include lib-font-size(18);
 
 		&:before {
 			content: attr(data-label) ": ";
-
 			@include lib-font-size(11);
 		}
 

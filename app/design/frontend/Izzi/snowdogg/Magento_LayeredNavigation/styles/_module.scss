@@ -1,115 +1,118 @@
 .block.filter {
-    margin-bottom: $indent__xl;
+	margin-bottom: $indent__xl;
 
-    .filter-title {
-        margin-bottom: $indent__base;
+	.filter-title {
+		margin-bottom: $indent__base;
 
-        strong {
-            font-size: 18px;
-        }
-    }
+		strong {
+			font-size: 18px;
+		}
+	}
 }
 
 .block-subtitle {
-    display: inline-block;
-    margin-bottom: $indent__s;
+	display: inline-block;
+	margin-bottom: $indent__s;
 }
 
 .filter-current {
-    .item {
-        margin-bottom: $indent__s;
-    }
+	.item {
+		margin-bottom: $indent__s;
+	}
 
-    .filter-label {
-        display: block;
-        font-weight: $font-weight__bold;
+	.filter-label {
+		display: block;
+		font-weight: $font-weight__bold;
 
-        &:after {
-            content: ':';
-        }
-    }
+		&:after {
+			content: ":";
+		}
+	}
 
-    + .filter-actions {
-        margin-bottom: $indent__l;
-    }
+	+ .filter-actions {
+		margin-bottom: $indent__l;
+	}
 }
 
 .filter-options-content {
-    .filter-count-label {
-        @extend .abs-visually-hidden;
-    }
+	.filter-count-label {
+		@extend .abs-visually-hidden;
+	}
 }
 
 .filter-options {
-    margin: 0;
+	margin: 0;
 
-    .filter-options-title {
-        @include lib-heading(h4);
-        margin: 0 0 $indent__s;
-        word-break: break-all;
-    }
+	.filter-options-title {
+		@include lib-heading(h4);
 
-    .filter-options-content {
-        margin: 0 0 $indent__m;
+		margin: 0 0 $indent__s;
+		word-break: break-all;
+	}
 
-        .item {
-            margin-bottom: 3px;
-        }
-    }
+	.filter-options-content {
+		margin: 0 0 $indent__m;
 
-    .count {
-        @include lib-css(color, $text__color__muted);
+		.item {
+			margin-bottom: 3px;
+		}
+	}
 
-        &:before {
-            content: '(';
-        }
+	.count {
+		@include lib-css(color, $text__color__muted);
 
-        &:after {
-            content: ')';
-        }
-    }
+		&:before {
+			content: "(";
+		}
+
+		&:after {
+			content: ")";
+		}
+	}
 }
 
 .items {
-    @extend .abs-reset-list;
+	@extend .abs-reset-list;
 }
 
 .filtered {
-    .items {
-        margin: 15px 0;
-    }
+	.items {
+		margin: 15px 0;
+	}
 
-    .item {
-        margin-bottom: 6px;
-        padding-left: 22px;
-        position: relative;
+	.item {
+		margin-bottom: 6px;
+		padding-left: 22px;
+		position: relative;
 
-        .label {
-            font-weight: $font-weight__bold;
-        }
+		.label {
+			font-weight: $font-weight__bold;
+		}
 
-        .action.remove {
-            @extend .abs-remove-button-for-blocks;
-            left: -6px;
-            position: absolute;
-            top: 0;
-        }
-    }
+		.action.remove {
+			@extend .abs-remove-button-for-blocks;
 
-    & + .actions {
-        margin-bottom: 35px;
-    }
+			left: -6px;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	& + .actions {
+		margin-bottom: 35px;
+	}
 }
 
 //
 //  Mobile
 // ::::::::::::::::::::::::::::::::::::
+
 @include max-screen($screen__m) {
-    .page-with-filter {
-        .columns {
-            .sidebar-main {
-                @include lib-vendor-prefix-order(0);
-            }
-        }
-    }
+	.page-with-filter {
+		.columns {
+			.sidebar-main {
+				@include lib-vendor-prefix-order(0);
+			}
+		}
+	}
 }

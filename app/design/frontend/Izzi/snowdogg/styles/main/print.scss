@@ -19,17 +19,20 @@
 
 @media print {
 	* {
+		// stylelint-disable declaration-no-important
 		background: transparent !important;
+		// TODO: change this hex color to global var
 		color: #000000 !important; // stylelint-disable-line color-no-hex
 		-webkit-filter: none !important; // Use in 41 Chrome
 		filter: none !important;
 		text-shadow: none !important;
+		// stylelint-enable declaration-no-important
 	}
 
 	// Black prints faster:h5bp.com/s
 	a,
 	a:visited {
-		text-decoration: underline !important;
+		text-decoration: underline !important; // stylelint-disable-line declaration-no-important
 	}
 
 	// Don't show links for images, or javascript/internal links
@@ -63,9 +66,8 @@
 	}
 
 	img {
-		max-width: 100% !important;
+		max-width: 100% !important; // stylelint-disable-line declaration-no-important
 	}
-
 	@page {
 		margin: 1cm;
 	}
@@ -89,7 +91,7 @@
 	}
 
 	.nav-toggle {
-		display: none !important;
+		display: none !important; // stylelint-disable-line declaration-no-important
 	}
 
 	.sidebar,
@@ -102,7 +104,7 @@
 
 	.logo,
 	.footer .copyright {
-		display: block !important;
+		display: block !important; // stylelint-disable-line declaration-no-important
 		margin: 10px 0;
 	}
 
@@ -118,8 +120,8 @@
 	}
 
 	.column.main {
-		float: none !important;
-		width: 100% !important;
+		float: none !important; // stylelint-disable-line declaration-no-important
+		width: 100% !important; // stylelint-disable-line declaration-no-important
 	}
 
 	.breadcrumbs {

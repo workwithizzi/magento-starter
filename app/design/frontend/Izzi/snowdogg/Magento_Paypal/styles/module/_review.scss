@@ -1,112 +1,116 @@
 //  PayPal Review Order page
 .paypal-review {
-    .block {
-        @extend .abs-account-blocks;
-        .actions-toolbar {
-            .action {
-                &.primary {
-                    @extend .abs-revert-secondary-color;
-                }
-            }
-        }
-    }
+	.block {
+		@extend .abs-account-blocks;
+		.actions-toolbar {
+			.action {
+				&.primary {
+					@extend .abs-revert-secondary-color;
+				}
+			}
+		}
+	}
 
-    .paypa-review-title {
-        > strong {
-            @include lib-heading(h3);
-            display: inline-block;
-        }
-    }
+	.paypa-review-title {
+		> strong {
+			@include lib-heading(h3);
 
-    .items-qty {
-        @extend .abs-reset-list;
+			display: inline-block;
+		}
+	}
 
-        .item {
-            white-space: nowrap;
-        }
+	.items-qty {
+		@extend .abs-reset-list;
 
-        .title {
-            &:after {
-                content: ': ';
-            }
-        }
-    }
+		.item {
+			white-space: nowrap;
+		}
 
-    .paypal-review-title {
-        > strong {
-            @include lib-heading(h3);
-            display: inline-block;
-        }
-    }
+		.title {
+			&:after {
+				content: ": ";
+			}
+		}
+	}
 
-    .actions-toolbar {
-        margin-top: $indent__s;
-    }
+	.paypal-review-title {
+		> strong {
+			@include lib-heading(h3);
 
-    .item-options {
-        dt {
-            display: inline-block;
-            &:after {
-                content: ': ';
-            }
-        }
+			display: inline-block;
+		}
+	}
 
-        dd {
-            margin: 0;
-        }
-    }
+	.actions-toolbar {
+		margin-top: $indent__s;
+	}
+
+	.item-options {
+		dt {
+			display: inline-block;
+			&:after {
+				content: ": ";
+			}
+		}
+
+		dd {
+			margin: 0;
+		}
+	}
 }
 
 //  Discounts
 .paypal-review-discount {
-    border-bottom: $border-width__base solid $border-color__base;
-    margin: $indent__base 0;
+	border-bottom: $border-width__base solid $border-color__base;
+	margin: $indent__base 0;
 
-    .block {
-        @extend .abs-discount-block;
-        margin-bottom: 0;
+	.block {
+		@extend .abs-discount-block;
 
-        .fieldset {
-            padding: $indent__s 0 $indent__base;
-        }
-    }
+		margin-bottom: 0;
+
+		.fieldset {
+			padding: $indent__s 0 $indent__base;
+		}
+	}
 }
 
 //
 //  Desktop
 // ::::::::::::::::::::::::::::::::::::
+
 @include min-screen($screen__m) {
-    .paypal-review {
-        .paypal-review-title {
-            border-bottom: $border-width__base solid $border-color__base;
-        }
+	.paypal-review {
+		.paypal-review-title {
+			border-bottom: $border-width__base solid $border-color__base;
+		}
 
-        .block-content {
-            @extend .abs-add-clearfix-desktop;
-            .box-order-shipping-address,
-            .box-order-shipping-method,
-            .box-order-shipping-method + .box-order-billing-address {
-                box-sizing: border-box;
-                float: left;
-                width: 33%;
-            }
+		.block-content {
+			@extend .abs-add-clearfix-desktop;
+			.box-order-shipping-address,
+			.box-order-shipping-method,
+			.box-order-shipping-method + .box-order-billing-address {
+				box-sizing: border-box;
+				float: left;
+				width: 33%;
+			}
 
-            .box-order-shipping-address {
-                padding: 0 5%;
-                width: 34%;
-            }
-        }
+			.box-order-shipping-address {
+				padding: 0 5%;
+				width: 34%;
+			}
+		}
 
-        .column.main & {
-            .actions-toolbar {
-                @extend .abs-reset-left-margin-desktop;
-            }
-        }
+		.column.main & {
+			.actions-toolbar {
+				@extend .abs-reset-left-margin-desktop;
+			}
+		}
 
-        .col.subtotal,
-        .mark,
-        .amount {
-            text-align: right;
-        }
-    }
+		.col.subtotal,
+		.mark,
+		.amount {
+			text-align: right;
+		}
+	}
 }

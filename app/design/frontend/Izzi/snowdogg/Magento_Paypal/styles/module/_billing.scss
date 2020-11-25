@@ -1,18 +1,19 @@
 //  Paypal billing agreement
 .form-new-agreement {
-    .actions-toolbar {
-        @extend .abs-reset-left-margin;
-    }
+	.actions-toolbar {
+		@extend .abs-reset-left-margin;
+	}
 }
 
 //
 //  Desktop
 // ::::::::::::::::::::::::::::::::::::
+
 @include min-screen($screen__m) {
-    .form-new-agreement {
-        .fieldset .legend,
-        .actions-toolbar {
-            @extend .abs-reset-left-margin-desktop;
-        }
-    }
+	.form-new-agreement {
+		.fieldset .legend,
+		.actions-toolbar {
+			@extend .abs-reset-left-margin-desktop;
+		}
+	}
 }

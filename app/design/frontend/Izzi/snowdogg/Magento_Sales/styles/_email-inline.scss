@@ -1,213 +1,217 @@
 //
-//  Sales Module Styles
+// Sales Module Styles
 // ::::::::::::::::::::::::::::::::::::
 .email-summary {
-    h1 {
-        margin-bottom: $indent__xs;
-    }
+	h1 {
+		margin-bottom: $indent__xs;
+	}
 }
 
 
 //
-//  Order Summary
+// Order Summary
 // ::::::::::::::::::::::::::::::::::::-
 
 .order-details {
-    width: 100%;
+	width: 100%;
 
-    tr {
-        > .address-details,
-        > .method-info {
-            padding: $email-content__padding__base $email-content__padding__base $email-content__padding__base 0;
-            width: 50%;
+	tr {
+		> .address-details,
+		> .method-info {
+			padding: $email-content__padding__base $email-content__padding__base $email-content__padding__base 0;
+			width: 50%;
 
-            h3 {
-                margin-top: 0;
-            }
-        }
+			h3 {
+				margin-top: 0;
+			}
+		}
 
-        //  Prevent extra spacing on Payment & Shipping Method row
-        & + .method-info {
-            > td {
-                padding: 0 0 $email-content__padding__base;
-            }
-        }
-    }
+		// Prevent extra spacing on Payment & Shipping Method row
+		& + .method-info {
+			> td {
+				padding: 0 0 $email-content__padding__base;
+			}
+		}
+	}
 
-    .payment-method {
-        margin-bottom: $indent__s;
+	.payment-method {
+		margin-bottom: $indent__s;
 
-        .title {
-            font-weight: $font-weight__regular;
-        }
+		.title {
+			font-weight: $font-weight__regular;
+		}
 
-        .data.table {
-            > caption {
-                display: none;
-            }
+		.data.table {
+			> caption {
+				display: none;
+			}
 
-            th {
-                padding-right: $email-content__padding__base;
-            }
-        }
-    }
+			th {
+				padding-right: $email-content__padding__base;
+			}
+		}
+	}
 }
 
-//  Remove address and phone number link color on iOS
+// Remove address and phone number link color on iOS
 .address-details a {
-    // copy instead of using @extend .no-link-a; as we can't access non-inline emails styles like in less version
-    color: $text__color !important; // sass-lint:disable-line no-important
-    cursor: default !important; // sass-lint:disable-line no-important
-    text-decoration: none !important; // sass-lint:disable-line no-important
+	// copy instead of using @extend .no-link-a; as we can't access
+	// non-inline emails styles like in less version
+	// stylelint-disable declaration-no-important
+	color: $text__color !important;
+	cursor: default !important;
+	text-decoration: none !important;
+	// stylelint-enable declaration-no-important
 }
 
 
 //
-//  Shipment Tracking
+// Shipment Tracking
 // ::::::::::::::::::::::::::::::::::::-
 
 .shipment-track {
-    @include lib-table($table__width, 0);
+	@include lib-table($table__width, 0);
 
-    thead,
-    tbody {
-        > tr {
-            > th,
-            > td {
-                background-color: $color-gray95;
-                padding: $email-content__padding__base;
-                width: 50%;
-            }
+	thead,
+	tbody {
+		> tr {
+			> th,
+			> td {
+				background-color: $color-gray95;
+				padding: $email-content__padding__base;
+				width: 50%;
+			}
 
-            & + tr {
-                th,
-                td {
-                    padding-top: 0;
-                }
-            }
-        }
-    }
+			& + tr {
+				th,
+				td {
+					padding-top: 0;
+				}
+			}
+		}
+	}
 }
 
 
 //
-//  Items Table
+// Items Table
 // ::::::::::::::::::::::::::::::::::::-
 
 .email-items {
-    @include lib-table($table__width, 0);
-    border: $table__border-width $table__border-style $table__border-color;
+	@include lib-table($table__width, 0);
 
-    thead,
-    tfoot {
-        > tr {
-            > th,
-            > td {
-                background-color: $color-gray95;
-            }
-        }
-    }
+	border: $table__border-width $table__border-style $table__border-color;
 
-    > thead,
-    > tbody {
-        > tr {
-            > th {
-                padding: $email-content__padding__base;
-            }
+	thead,
+	tfoot {
+		> tr {
+			> th,
+			> td {
+				background-color: $color-gray95;
+			}
+		}
+	}
 
-            > td {
-                padding: $email-content__padding__base;
+	> thead,
+	> tbody {
+		> tr {
+			> th {
+				padding: $email-content__padding__base;
+			}
 
-                &.message-gift {
-                    border-top: none;
-                    padding-top: 0;
-                }
-            }
-        }
-    }
+			> td {
+				padding: $email-content__padding__base;
 
-    > tbody,
-    > tfoot {
-        > tr {
-            > th,
-            > td {
-                border-top: $table__border-width $table__border-style $table__border-color;
-            }
+				&.message-gift {
+					border-top: none;
+					padding-top: 0;
+				}
+			}
+		}
+	}
 
-            & + tr {
-                > th,
-                > td {
-                    border-top: 0;
-                }
-            }
-        }
-    }
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				border-top: $table__border-width $table__border-style $table__border-color;
+			}
 
-    p {
-        margin-bottom: 0;
-    }
+			& + tr {
+				> th,
+				> td {
+					border-top: 0;
+				}
+			}
+		}
+	}
 
-    .product-name {
-        font-weight: $font-weight__bold;
-        margin-bottom: $email-content__padding__s;
-    }
+	p {
+		margin-bottom: 0;
+	}
 
-    .has-extra .sku {
-        margin-bottom: $email-content__padding__base;
-    }
+	.product-name {
+		font-weight: $font-weight__bold;
+		margin-bottom: $email-content__padding__s;
+	}
 
-    .item-info {
-        dl {
-            margin-bottom: 0;
-            padding-left: $email-content__padding__m;
+	.has-extra .sku {
+		margin-bottom: $email-content__padding__base;
+	}
 
-            dt,
-            dd {
-                margin-bottom: 0;
-                padding-bottom: 0;
-            }
+	.item-info {
+		dl {
+			margin-bottom: 0;
+			padding-left: $email-content__padding__m;
 
-            dd {
-                padding-left: $email-content__padding__base;
-            }
-        }
-    }
+			dt,
+			dd {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
 
-    .item-qty {
-        text-align: center;
-    }
+			dd {
+				padding-left: $email-content__padding__base;
+			}
+		}
+	}
 
-    .item-price,
-    .item-subtotal {
-        text-align: right;
-    }
+	.item-qty {
+		text-align: center;
+	}
 
-    .item-extra {
-        padding-top: 0;
-    }
+	.item-price,
+	.item-subtotal {
+		text-align: right;
+	}
 
-    .order-totals {
-        > tr {
-            > th {
-                font-weight: $font-weight__regular;
-            }
+	.item-extra {
+		padding-top: 0;
+	}
 
-            > th,
-            > td {
-                padding: $email-content__padding__base;
-                text-align: right;
-            }
+	.order-totals {
+		> tr {
+			> th {
+				font-weight: $font-weight__regular;
+			}
 
-            & + tr {
-                th,
-                td {
-                    padding-top: 0;
-                }
-            }
-        }
+			> th,
+			> td {
+				padding: $email-content__padding__base;
+				text-align: right;
+			}
 
-        .price {
-            white-space: nowrap;
-        }
-    }
+			& + tr {
+				th,
+				td {
+					padding-top: 0;
+				}
+			}
+		}
+
+		.price {
+			white-space: nowrap;
+		}
+	}
 }

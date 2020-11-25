@@ -1,86 +1,89 @@
 .map-popup-wrapper.popup {
-    .action.close {
-        @include lib-css(top, $popup-button-close__position-top);
-    }
+	.action.close {
+		@include lib-css(top, $popup-button-close__position-top);
+	}
 }
 
 .map-popup {
-    @include lib-popup(
-        $_popup-margin-top      : $indent__s,
-        $_popup-margin-left     : false,
-        $_popup-content-margin  : $indent__s 0 0,
-        $_popup-position-bottom : false,
-        $_popup-position-right  : false,
-        $_popup-position        : absolute
-    );
-    box-sizing: border-box;
+	@include lib-popup(
+		$_popup-margin-top      : $indent__s,
+		$_popup-margin-left     : false,
+		$_popup-content-margin  : $indent__s 0 0,
+		$_popup-position-bottom : false,
+		$_popup-position-right  : false,
+		$_popup-position        : absolute
+	);
 
-    .map-info-price {
-        @extend .abs-add-clearfix;
-        margin-bottom: 15px;
+	box-sizing: border-box;
 
-        .price-box {
-            margin: 0 0 $indent__base;
+	.map-info-price {
+		@extend .abs-add-clearfix;
 
-            .label {
-                &:after {
-                    content: ': ';
-                }
-            }
-        }
-    }
+		margin-bottom: 15px;
 
-    .regular-price {
-        .price-label {
-            display: none;
-        }
-    }
+		.price-box {
+			margin: 0 0 $indent__base;
+
+			.label {
+				&:after {
+					content: ": ";
+				}
+			}
+		}
+	}
+
+	.regular-price {
+		.price-label {
+			display: none;
+		}
+	}
 }
 
 .map-old-price,
 .product-info-price .map-show-info {
-    &:not(:last-child) {
-        margin-right: $indent__s;
-    }
+	&:not(:last-child) {
+		margin-right: $indent__s;
+	}
 }
 
 .map-old-price {
-    text-decoration: none;
+	text-decoration: none;
 
-    .price-wrapper {
-        text-decoration: line-through;
-    }
+	.price-wrapper {
+		text-decoration: line-through;
+	}
 }
 
 .map-form-addtocart {
-    display: inline-block;
-    text-align: center;
+	display: inline-block;
+	text-align: center;
 
-    img {
-        display: block;
-        margin: 0 auto;
-    }
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 button.map-show-info {
-    @include lib-button-reset();
-    @include lib-button-as-link();
+	@include lib-button-reset();
+	@include lib-button-as-link();
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
+
 @include max-screen($screen__m) {
-    .map-popup {
-        max-width: 100%;
-    }
+	.map-popup {
+		max-width: 100%;
+	}
 
-    .map-old-price,
-    .map-show-info {
-        display: inline-block;
+	.map-old-price,
+	.map-show-info {
+		display: inline-block;
 
-        &:not(:last-child) {
-            margin-bottom: $indent__s;
-        }
-    }
+		&:not(:last-child) {
+			margin-bottom: $indent__s;
+		}
+	}
 }

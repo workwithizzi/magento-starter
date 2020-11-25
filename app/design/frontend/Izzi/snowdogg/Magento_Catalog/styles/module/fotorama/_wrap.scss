@@ -1,15 +1,16 @@
 .fotorama__wrap {
-    @extend .fotorama-no-select;
-    position: relative;
-    direction: ltr;
-    text-size-adjust: 100%;
-    z-index: 0;
+	@extend .fotorama-no-select;
 
-    .fotorama--fullscreen & {
-        max-width: 100% !important;
-    }
+	direction: ltr;
+	position: relative;
+	text-size-adjust: 100%;
+	z-index: 0;
 
-    &--pan-y {
-        touch-action: pan-y;
-    }
+	.fotorama--fullscreen & {
+		max-width: 100% !important; // stylelint-disable-line declaration-no-important
+	}
+
+	&--pan-y {
+		touch-action: pan-y;
+	}
 }

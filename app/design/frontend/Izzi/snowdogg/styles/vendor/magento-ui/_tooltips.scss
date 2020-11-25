@@ -1,5 +1,5 @@
 //
-//  Tooltips
+// Tooltips
 // ::::::::::::::::::::::::::::::::::::
 
 @mixin lib-tooltip(
@@ -13,39 +13,32 @@
 	$_tooltip-color            : $tooltip__color,
 	$_tooltip-cursor           : $tooltip__cursor,
 	$_tooltip-font-size        : $tooltip__font-size,
-    $_tooltip-font-family      : $tooltip__font-family,
-    $_tooltip-font-weight      : $tooltip__font-weight,
-    $_tooltip-line-height      : $tooltip__line-height,
-    $_tooltip-font-style       : $tooltip__font-style,
-    $_tooltip-margin           : $tooltip__margin,
-    $_tooltip-padding          : $tooltip__padding,
-    $_tooltip-min-width        : $tooltip__min-width,
-    $_tooltip-max-width        : $tooltip__max-width,
-    $_tooltip-arrow-size       : $tooltip-arrow__size,
-    $_tooltip-arrow-offset     : $tooltip-arrow__offset,
-    $_tooltip-z-index          : $tooltip__z-index
+	$_tooltip-font-family      : $tooltip__font-family,
+	$_tooltip-font-weight      : $tooltip__font-weight,
+	$_tooltip-line-height      : $tooltip__line-height,
+	$_tooltip-font-style       : $tooltip__font-style,
+	$_tooltip-margin           : $tooltip__margin,
+	$_tooltip-padding          : $tooltip__padding,
+	$_tooltip-min-width        : $tooltip__min-width,
+	$_tooltip-max-width        : $tooltip__max-width,
+	$_tooltip-arrow-size       : $tooltip-arrow__size,
+	$_tooltip-arrow-offset     : $tooltip-arrow__offset,
+	$_tooltip-z-index          : $tooltip__z-index
 ) {
 	position: relative;
 
 	#{$_tooltip-selector-content} {
 		@include lib-css(background, $_tooltip-background);
-
 		@include lib-css(border-radius, $_tooltip-border-radius);
-
 		@include lib-css(margin, $_tooltip-margin);
-
 		@include lib-css(max-width, $_tooltip-max-width);
-
 		@include lib-css(min-width, $_tooltip-min-width);
-
 		@include lib-css(padding, $_tooltip-padding);
-
 		@include lib-css(z-index, $_tooltip-z-index);
 
 		display: none;
 		position: absolute;
 		text-align: left;
-
 		@include lib-typography(
 			$_color       : $_tooltip-color,
 			$_font-size   : $_tooltip-font-size,
@@ -54,7 +47,6 @@
 			$_line-height : $_tooltip-line-height,
 			$_font-style  : $_tooltip-font-style
 		);
-
 		@include _lib-tooltip-border($_tooltip-border-width, $_tooltip-border-color);
 
 		$_tooltip-arrow-after-margin: $_tooltip-arrow-size * -1;
@@ -80,7 +72,6 @@
 
 			border-color: transparent;
 		}
-
 		@include _lib-tooltip-arrow-position(
 			$_tooltip-position,
 			$_tooltip-arrow-size,
@@ -133,21 +124,16 @@
 		}
 		&:after {
 			@include lib-css(border-top-color, $_tooltip-background);
-
 			@include lib-css(left, $_tooltip-arrow-offset + $_tooltip-arrow-size);
-
 			@include lib-css(margin-left, $_tooltip-arrow-after-margin);
 		}
 
 		&:before {
 			@include lib-css(border-top-color, $_tooltip-border-color);
-
 			@include lib-css(left, $_tooltip-arrow-offset + $_tooltip-arrow-size);
-
 			@include lib-css(margin-left, $_tooltip-arrow-before-margin);
 		}
 	}
-
 	@if $_tooltip-position == left {
 		@include lib-css(margin-right, $_tooltip-arrow-size);
 
@@ -161,21 +147,16 @@
 
 		&:after {
 			@include lib-css(border-left-color, $_tooltip-background);
-
 			@include lib-css(margin-top, $_tooltip-arrow-after-margin);
-
 			@include lib-css(top, $_tooltip-arrow-offset + $_tooltip-arrow-size)
         }
 
 		&:before {
 			@include lib-css(border-left-color, $_tooltip-border-color);
-
 			@include lib-css(margin-top, $_tooltip-arrow-before-margin);
-
 			@include lib-css(top, $_tooltip-arrow-offset + $_tooltip-arrow-size);
 		}
 	}
-
 	@if $_tooltip-position == right {
 		@include lib-css(margin-left, $_tooltip-arrow-size);
 
@@ -189,21 +170,16 @@
 
 		&:after {
 			@include lib-css(border-right-color, $_tooltip-background);
-
 			@include lib-css(margin-top, $_tooltip-arrow-after-margin);
-
 			@include lib-css(top, $_tooltip-arrow-offset + $_tooltip-arrow-size);
 		}
 
 		&:before {
 			@include lib-css(border-right-color, $_tooltip-border-color);
-
 			@include lib-css(margin-top, $_tooltip-arrow-before-margin);
-
 			@include lib-css(top, $_tooltip-arrow-offset + $_tooltip-arrow-size);
 		}
 	}
-
 	@if $_tooltip-position == bottom {
 		@include lib-css(margin-top, $_tooltip-arrow-size);
 
@@ -217,17 +193,13 @@
 
 		&:after {
 			@include lib-css(border-bottom-color, $_tooltip-background);
-
 			@include lib-css(left, $_tooltip-arrow-offset + $_tooltip-arrow-size);
-
 			@include lib-css(margin-left, $_tooltip-arrow-after-margin);
 		}
 
 		&:before {
 			@include lib-css(border-bottom-color, $_tooltip-border-color);
-
 			@include lib-css(left, $_tooltip-arrow-offset + $_tooltip-arrow-size);
-
 			@include lib-css(margin-left, $_tooltip-arrow-before-margin);
 		}
 	}

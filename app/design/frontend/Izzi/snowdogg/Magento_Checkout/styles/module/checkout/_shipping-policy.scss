@@ -9,55 +9,59 @@ $checkout-shipping-policy-tooltip-mobile__width : 300px !default;
 //  Common
 // ::::::::::::::::::::::::::::::::::::
 .checkout-shipping-method {
-    position: relative;
+	position: relative;
 }
 
 .shipping-policy-block {
-    &.field-tooltip {
-        top: 12px;
+	&.field-tooltip {
+		top: 12px;
 
-        .field-tooltip-action {
-            @include lib-css(color, $checkout-shipping-policy-action__color);
-            cursor: pointer;
+		.field-tooltip-action {
+			@include lib-css(color, $checkout-shipping-policy-action__color);
 
-            &:before {
-                display: none;
-            }
+			cursor: pointer;
 
-            span {
-                @extend .abs-visually-hidden-reset;
-            }
-        }
+			&:before {
+				display: none;
+			}
 
-        .field-tooltip-content {
-            @extend .abs-add-box-sizing;
-            @extend .abs-checkout-tooltip-content-position-top;
-            @include lib-css(width, $checkout-shipping-policy-tooltip__width);
-            top: $indent__l;
-        }
-    }
+			span {
+				@extend .abs-visually-hidden-reset;
+			}
+		}
+
+		.field-tooltip-content {
+			@extend .abs-add-box-sizing;
+			@extend .abs-checkout-tooltip-content-position-top;
+			@include lib-css(width, $checkout-shipping-policy-tooltip__width);
+
+			top: $indent__l;
+		}
+	}
 }
 
 //
 //  Mobile
 // ::::::::::::::::::::::::::::::::::::
+
 @include max-screen($screen__s) {
-    .shipping-policy-block {
-        &.field-tooltip {
-            margin-bottom: $indent__base;
-            position: relative;
-            right: auto;
-            top: auto;
+	.shipping-policy-block {
+		&.field-tooltip {
+			margin-bottom: $indent__base;
+			position: relative;
+			right: auto;
+			top: auto;
 
-            .field-tooltip-content {
-                @include lib-css(width, $checkout-shipping-policy-tooltip-mobile__width);
-                right: auto;
+			.field-tooltip-content {
+				@include lib-css(width, $checkout-shipping-policy-tooltip-mobile__width);
 
-                &:before,
-                &:after {
-                    right: auto;
-                }
-            }
-        }
-    }
+				right: auto;
+
+				&:before,
+				&:after {
+					right: auto;
+				}
+			}
+		}
+	}
 }

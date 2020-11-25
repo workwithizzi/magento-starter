@@ -10,9 +10,7 @@
 )  {
 	@if $responsive != true {
 		@include _lib-layout-width($_layout__min-width, $_layout__max-width);
-
 		@include lib-css(padding-left, $layout-indent__width);
-
 		@include lib-css(padding-right, $layout-indent__width);
 
 		margin: 0 auto;
@@ -26,10 +24,8 @@
 	@if $_layout__min-width == $_layout__max-width {
 		@include lib-css(width, $_layout__min-width);
 	}
-
 	@else {
 		@include lib-css(max-width, $_layout__max-width);
-
 		@include lib-css(min-width, $_layout__min-width);
 
 		width: auto;
@@ -39,7 +35,6 @@
 @mixin lib-layout-columns() {
 	@if $use-flex == true {
 		@include lib-vendor-prefix-display(flex);
-
 		@include lib-vendor-prefix-flex-wrap(wrap);
 
 		box-sizing: border-box;
@@ -97,7 +92,6 @@
 	@if $_check == false and $_index == 2 {
 		@include lib-column-width($_width);
 	}
-
 	@else if $_check == true or $_width == "auto" {
 		@include lib-css(width, $_width);
 		$_index: 1;
@@ -109,24 +103,18 @@
 		$_units    : "px", "%", "em", "rem", "pt";
 		$_unit     : nth($_units, $_index);
 		$_checkUnit: false;
-
 		@if unit($_width) == $_unit {
 			$_checkUnit: true;
 		}
-
 		@include _lib-column-width($_width, $_checkUnit, $_index);
-
 		@include _lib-set-column-width($_index - 1, $_width);
 	}
 }
 
 @mixin lib-layout-column($_total-columns, $_order, $_width) {
 	$_units: "px", "%", "em", "rem", "pt";
-
 	@include _lib-set-column-width(length($_units), $_width);
-
 	@include lib-flex-degradation($_total-columns, $_order);
-
 	@if $use-flex == true {
 		@include lib-vendor-prefix-order($_order);
 	}
@@ -136,12 +124,9 @@
 	@if $_order == 1 {
 		float: left;
 	}
-
 	@else if $_order == $_total-columns {
 		float: right;
-	}
-
-	@else if $_total-columns == 3 and $_order == 2 {
+	} @else if $_total-columns == 3 and $_order == 2 {
 		display: inline-block;
 	}
 }

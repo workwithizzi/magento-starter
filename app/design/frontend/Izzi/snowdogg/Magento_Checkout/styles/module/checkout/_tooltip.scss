@@ -1,5 +1,5 @@
 //
-//  Variables
+// Variables
 // ::::::::::::::::::::::::::::::::::::
 $checkout-tooltip__hover__z-index               : $tooltip__z-index !default;
 
@@ -24,112 +24,116 @@ $checkout-tooltip-content-mobile__right         : -($indent__s) !default;
 $checkout-tooltip-content-mobile__top           : 30px + $checkout-tooltip-icon-arrow__font-size !default;
 
 //
-//  Common
+// Common
 // ::::::::::::::::::::::::::::::::::::
 .field-tooltip {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    top: 1px;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 1px;
 
-    &._active {
-        @include lib-css(z-index, $checkout-tooltip__hover__z-index);
+	&._active {
+		@include lib-css(z-index, $checkout-tooltip__hover__z-index);
 
-        .field-tooltip-content {
-            display: block;
-        }
+		.field-tooltip-content {
+			display: block;
+		}
 
-        .field-tooltip-action {
-            &:before {
-                @include lib-css(color, $checkout-tooltip-icon__hover__color);
-            }
-        }
-    }
+		.field-tooltip-action {
+			&:before {
+				@include lib-css(color, $checkout-tooltip-icon__hover__color);
+			}
+		}
+	}
 
-    .field-tooltip-action {
-        @include lib-icon-font(
-            $checkout-tooltip-icon__content,
-            $_icon-font-size         : $checkout-tooltip-icon__font-size,
-            $_icon-font-text-hide    : true,
-            $_icon-font-color        : $checkout-tooltip-icon__color,
-            $_icon-font-color-hover  : $checkout-tooltip-icon__hover__color,
-            $_icon-font-color-active : false
-        );
+	.field-tooltip-action {
+		@include lib-icon-font(
+			$checkout-tooltip-icon__content,
+			$_icon-font-size         : $checkout-tooltip-icon__font-size,
+			$_icon-font-text-hide    : true,
+			$_icon-font-color        : $checkout-tooltip-icon__color,
+			$_icon-font-color-hover  : $checkout-tooltip-icon__hover__color,
+			$_icon-font-color-active : false
+		);
 
-        &:focus {
-            ._keyfocus & {
-                @include lib-css(z-index, $checkout-tooltip__hover__z-index);
+		&:focus {
+			._keyfocus & {
+				@include lib-css(z-index, $checkout-tooltip__hover__z-index);
 
-                + .field-tooltip-content {
-                    display: block;
-                }
+				+ .field-tooltip-content {
+					display: block;
+				}
 
-                &:before {
-                    @include lib-css(color, $checkout-tooltip-icon__hover__color);
-                }
-            }
-        }
-    }
+				&:before {
+					@include lib-css(color, $checkout-tooltip-icon__hover__color);
+				}
+			}
+		}
+	}
 
-    .field-tooltip-content {
-        @include lib-css(background, $checkout-tooltip-content__background-color);
-        @include lib-css(border, $checkout-tooltip-content__border-width solid $checkout-tooltip-content__border-color);
-        @include lib-css(border-radius, $checkout-tooltip-content__border-width);
-        @include lib-css(font-size, $checkout-tooltip-content__font-size);
-        @include lib-css(padding, $checkout-tooltip-content__padding);
-        @include lib-css(width, $checkout-tooltip-content__width);
-        display: none;
-        left: 38px;
-        position: absolute;
-        text-transform: none;
-        top: -9px;
-        word-wrap: break-word;
-        z-index: 2;
+	.field-tooltip-content {
+		@include lib-css(background, $checkout-tooltip-content__background-color);
+		@include lib-css(border, $checkout-tooltip-content__border-width solid $checkout-tooltip-content__border-color);
+		@include lib-css(border-radius, $checkout-tooltip-content__border-width);
+		@include lib-css(font-size, $checkout-tooltip-content__font-size);
+		@include lib-css(padding, $checkout-tooltip-content__padding);
+		@include lib-css(width, $checkout-tooltip-content__width);
 
-        &:before,
-        &:after {
-            @include lib-arrow(
-                $_position : left,
-                $_size     : $checkout-tooltip-icon-arrow__font-size,
-                $_color    : $checkout-tooltip-content__background-color
-            );
-            @include lib-css(left, $checkout-tooltip-icon-arrow__left);
-            @include lib-css(top, $checkout-tooltip-content__padding);
-            content: '';
-            display: block;
-            position: absolute;
-            z-index: 3;
-        }
+		display: none;
+		left: 38px;
+		position: absolute;
+		text-transform: none;
+		top: -9px;
+		word-wrap: break-word;
+		z-index: 2;
 
-        &:before {
-            @include lib-css(border-right-color, $checkout-tooltip-content__active__border-color);
-        }
+		&:before,
+		&:after {
+			@include lib-arrow(
+				$_position : left,
+				$_size     : $checkout-tooltip-icon-arrow__font-size,
+				$_color    : $checkout-tooltip-content__background-color
+			);
+			@include lib-css(left, $checkout-tooltip-icon-arrow__left);
+			@include lib-css(top, $checkout-tooltip-content__padding);
 
-        &:after {
-            @include lib-css(border-right-color, $checkout-tooltip-content__background-color);
-            width: 1px;
-            z-index: 4;
-        }
-    }
+			content: "";
+			display: block;
+			position: absolute;
+			z-index: 3;
+		}
+
+		&:before {
+			@include lib-css(border-right-color, $checkout-tooltip-content__active__border-color);
+		}
+
+		&:after {
+			@include lib-css(border-right-color, $checkout-tooltip-content__background-color);
+
+			width: 1px;
+			z-index: 4;
+		}
+	}
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
+
 @include max-screen($screen__xs) {
-    .modal-popup {
-        .field-tooltip {
-            .field-tooltip-content {
-                @include lib-css(width, $checkout-tooltip-content-mobile-popup__width);
-            }
-        }
-    }
+	.modal-popup {
+		.field-tooltip {
+			.field-tooltip-content {
+				@include lib-css(width, $checkout-tooltip-content-mobile-popup__width);
+			}
+		}
+	}
 }
 
 @include max-screen($screen__m) {
-    .field-tooltip {
-        .field-tooltip-content {
-            @extend .abs-checkout-tooltip-content-position-top-mobile;
-        }
-    }
+	.field-tooltip {
+		.field-tooltip-content {
+			@extend .abs-checkout-tooltip-content-position-top-mobile;
+		}
+	}
 }

@@ -1,157 +1,162 @@
 .column {
-    .block-addbysku {
-        .fieldset {
-            margin: 0;
+	.block-addbysku {
+		.fieldset {
+			margin: 0;
 
-            .fields {
-                position: relative;
+			.fields {
+				position: relative;
 
-                .field {
-                    display: inline-block;
-                    margin-bottom: $indent__s;
-                    vertical-align: top;
-                }
+				.field {
+					display: inline-block;
+					margin-bottom: $indent__s;
+					vertical-align: top;
+				}
 
-                .actions-toolbar {
-                    position: absolute;
-                    right: 0;
-                    top: 4px;
-                }
-            }
-        }
+				.actions-toolbar {
+					position: absolute;
+					right: 0;
+					top: 4px;
+				}
+			}
+		}
 
-        .sku {
-            @extend .abs-add-box-sizing;
-            margin-right: -155px;
-            padding-right: 160px;
-            width: 100%;
-        }
+		.sku {
+			@extend .abs-add-box-sizing;
 
-        .skus {
-            > .label {
-                margin-top: $indent__s;
-            }
-        }
+			margin-right: -155px;
+			padding-right: 160px;
+			width: 100%;
+		}
 
-        .qty {
-            .qty {
-                @extend .abs-input-qty;
-                + .mage-error {
-                    width: 80px;
-                }
-            }
-        }
+		.skus {
+			> .label {
+				margin-top: $indent__s;
+			}
+		}
 
-        .block-content {
-            @extend .abs-add-clearfix-desktop;
+		.qty {
+			.qty {
+				@extend .abs-input-qty;
+				+ .mage-error {
+					width: 80px;
+				}
+			}
+		}
 
-            .box {
-                @extend .abs-blocks-2columns;
-            }
+		.block-content {
+			@extend .abs-add-clearfix-desktop;
 
-            .actions-toolbar {
-                clear: both;
-                @include lib-actions-toolbar(
-                    $_actions-toolbar-actions-position : left,
-                    $_actions-toolbar-margin           : 0 0 $indent__base
-                );
-                @include lib-actions-toolbar-clear-floats();
+			.box {
+				@extend .abs-blocks-2columns;
+			}
 
-                > .secondary {
-                    text-align: left;
-                }
-            }
-        }
+			.actions-toolbar {
+				clear: both;
+				@include lib-actions-toolbar(
+					$_actions-toolbar-actions-position : left,
+					$_actions-toolbar-margin           : 0 0 $indent__base
+				);
+				@include lib-actions-toolbar-clear-floats();
 
-        .reset {
-            margin: $indent__s 0;
-        }
+				> .secondary {
+					text-align: left;
+				}
+			}
+		}
 
-        .note {
-            display: block;
-            margin: 0 0 $indent__base;
-        }
-    }
+		.reset {
+			margin: $indent__s 0;
+		}
+
+		.note {
+			display: block;
+			margin: 0 0 $indent__base;
+		}
+	}
 }
 
 .block-cart-failed {
-    @extend .abs-shopping-cart-items;
-    margin-top: $indent__xl;
+	@extend .abs-shopping-cart-items;
 
-    .block-title {
-        @include lib-font-size($h2__font-size);
+	margin-top: $indent__xl;
 
-        strong {
-            font-weight: $h2__font-weight;
-        }
-    }
+	.block-title {
+		@include lib-font-size($h2__font-size);
 
-    .actions {
-        text-align: center;
+		strong {
+			font-weight: $h2__font-weight;
+		}
+	}
 
-        .action {
-            margin-bottom: $indent__s;
-        }
-    }
+	.actions {
+		text-align: center;
+
+		.action {
+			margin-bottom: $indent__s;
+		}
+	}
 }
 
 //
-//  Mobile
+// Mobile
 // ::::::::::::::::::::::::::::::::::::
-@include max-screen($screen__s) {
-    .column {
-        .block-addbysku {
-            .sku {
-                margin-right: -85px;
-                padding-right: 90px;
-            }
 
-            .action {
-                &.remove {
-                    @include lib-button-icon(
-                        $_icon-font-content   : $icon-remove,
-                        $_icon-font-text-hide : true,
-                        $_icon-font-size      : 28px,
-                        $_icon-font-margin    : 1px 0 0
-                    );
-                    @include lib-button-reset();
-                }
-            }
-        }
-    }
+@include max-screen($screen__s) {
+	.column {
+		.block-addbysku {
+			.sku {
+				margin-right: -85px;
+				padding-right: 90px;
+			}
+
+			.action {
+				&.remove {
+					@include lib-button-icon(
+						$_icon-font-content   : $icon-remove,
+						$_icon-font-text-hide : true,
+						$_icon-font-size      : 28px,
+						$_icon-font-margin    : 1px 0 0
+					);
+					@include lib-button-reset();
+				}
+			}
+		}
+	}
 }
 
 @include min-screen($screen__s) {
-    .column {
-        .block-addbysku {
-            .action {
-                &.remove {
-                    @include lib-button-reset();
-                    @include lib-button-as-link();
-                    margin-top: 2px;
-                }
-            }
-        }
-    }
+	.column {
+		.block-addbysku {
+			.action {
+				&.remove {
+					@include lib-button-reset();
+					@include lib-button-as-link();
+
+					margin-top: 2px;
+				}
+			}
+		}
+	}
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
+
 @include min-screen($screen__m) {
-    .block-cart-failed {
-        @extend .abs-shopping-cart-items-desktop;
+	.block-cart-failed {
+		@extend .abs-shopping-cart-items-desktop;
 
-        .actions {
-            text-align: left;
-        }
+		.actions {
+			text-align: left;
+		}
 
-        .actions.primary {
-            float: right;
-        }
+		.actions.primary {
+			float: right;
+		}
 
-        .block-content {
-            @extend .abs-add-clearfix-desktop;
-        }
-    }
+		.block-content {
+			@extend .abs-add-clearfix-desktop;
+		}
+	}
 }

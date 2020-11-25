@@ -2,16 +2,16 @@ $widgets-indent__bottom: $indent__base !default;
 
 .block-static-block,
 .block-cms-link {
-    &.widget {
-        @include lib-css(margin-bottom, $widgets-indent__bottom);
-        .links & {
-            margin-bottom: 0;
-        }
-    }
+	&.widget {
+		@include lib-css(margin-bottom, $widgets-indent__bottom);
+		.links & {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .block-cms-link-inline {
-    &.widget {
-        margin: 0;
-    }
+	&.widget {
+		margin: 0;
+	}
 }

@@ -1,17 +1,19 @@
 .fotorama__nav__shaft {
-    @extend .fotorama-inline-block;
-    @extend .fotorama-no-tap;
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: left;
+	@extend .fotorama-inline-block;
+	@extend .fotorama-no-tap;
 
-    .fotorama__wrap--css3 & {
-        @extend .fotorama-transition-for-slide;
-    }
+	left: 0;
+	position: relative;
+	text-align: left;
+	top: 0;
 
-    .fotorama__nav-wrap--vertical & {
-        width: 100%;
-        background-color: white;
-    }
+	.fotorama__wrap--css3 & {
+		@extend .fotorama-transition-for-slide;
+	}
+
+	.fotorama__nav-wrap--vertical & {
+		// TODO: Change this color from hex to global var
+		background-color: #ffffff; // stylelint-disable-line color-no-hex
+		width: 100%;
+	}
 }

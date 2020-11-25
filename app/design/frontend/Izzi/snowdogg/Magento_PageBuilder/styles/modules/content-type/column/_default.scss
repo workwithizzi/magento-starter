@@ -2,15 +2,16 @@
 //  Responsive Classes
 // ::::::::::::::::::::::::::::::::::::
 .pagebuilder-column {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 //
 //  Mobile
 // ::::::::::::::::::::::::::::::::::::
+
 @include max-screen($screen__m - 1) {
-    .pagebuilder-column {
-        background-attachment: scroll !important; // sass-lint:disable-line no-important
-        flex-basis: 100%;
-    }
+	.pagebuilder-column {
+		background-attachment: scroll !important; // stylelint-disable-line declaration-no-important
+		flex-basis: 100%;
+	}
 }

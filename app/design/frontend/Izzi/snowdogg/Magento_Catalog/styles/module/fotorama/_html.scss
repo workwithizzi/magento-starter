@@ -1,15 +1,17 @@
 .fotorama__html {
-    @extend .fotorama-stretch;
+	@extend .fotorama-stretch;
 
-    .fotorama__wrap--css3 & {
-        @extend .fotorama-gpu;
-        transition-duration: $fotorama-duration-time;
-        transition-property: opacity;
-        transition-timing-function: linear;
-    }
+	.fotorama__wrap--css3 & {
+		@extend .fotorama-gpu;
 
-    .fotorama__wrap--video .fotorama__stage__frame--video & {
-        @extend .fotorama-transform-disabled;
-        opacity: 0;
-    }
+		transition-duration: $fotorama-duration-time;
+		transition-property: opacity;
+		transition-timing-function: linear;
+	}
+
+	.fotorama__wrap--video .fotorama__stage__frame--video & {
+		@extend .fotorama-transform-disabled;
+
+		opacity: 0;
+	}
 }

@@ -108,7 +108,6 @@ select {
 ._has-datepicker {
 	~ .ui-datepicker-trigger {
 		@include lib-button-reset();
-
 		@include lib-icon-font(
 			$_icon-font-content     : $icon-calendar,
 			$_icon-font-color       : $primary__color__lighter,

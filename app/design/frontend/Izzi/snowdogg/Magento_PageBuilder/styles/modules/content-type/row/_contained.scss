@@ -1,24 +1,25 @@
 //
 //  Contained row appearance styles
 // ::::::::::::::::::::::::::::::::::::
-[data-content-type='row'][data-appearance='contained'] {
-    box-sizing: border-box;
-    margin-left: auto !important; // sass-lint:disable-line no-important
-    margin-right: auto !important; // sass-lint:disable-line no-important
-    max-width: $layout__max-width;
+[data-content-type="row"][data-appearance="contained"] {
+	box-sizing: border-box;
+	margin-left: auto !important; // stylelint-disable-line declaration-no-important
+	margin-right: auto !important; // stylelint-disable-line declaration-no-important
+	max-width: $layout__max-width;
 
-    [data-element='inner'] {
-        box-sizing: border-box;
-    }
+	[data-element="inner"] {
+		box-sizing: border-box;
+	}
 }
 
 //
 //  Mobile
 // ::::::::::::::::::::::::::::::::::::
+
 @include max-screen($screen__m - 1) {
-    [data-content-type='row'][data-appearance='contained'] {
-        [data-element='inner'] {
-            background-attachment: scroll !important; // sass-lint:disable-line no-important
-        }
-    }
+	[data-content-type="row"][data-appearance="contained"] {
+		[data-element="inner"] {
+			background-attachment: scroll !important; // stylelint-disable-line declaration-no-important
+		}
+	}
 }

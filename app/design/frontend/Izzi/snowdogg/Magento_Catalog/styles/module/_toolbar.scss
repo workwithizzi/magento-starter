@@ -2,183 +2,185 @@ $toolbar-mode-icon-font-size: 24px !default;
 $toolbar-element-background : $panel__background-color !default;
 
 .page-products {
-    .columns {
-        position: relative;
-        z-index: 1;
-    }
+	.columns {
+		position: relative;
+		z-index: 1;
+	}
 }
 
 .toolbar {
-    @extend .abs-add-clearfix;
+	@extend .abs-add-clearfix;
 }
 
 .toolbar-amount {
-    display: block;
-    line-height: $toolbar-mode-icon-font-size + 2;
-    margin: 0;
-    padding: 8px 0 0;
+	display: block;
+	line-height: $toolbar-mode-icon-font-size + 2;
+	margin: 0;
+	padding: 8px 0 0;
 
-    .products.wrapper ~ .toolbar & {
-        display: none;
-    }
+	.products.wrapper ~ .toolbar & {
+		display: none;
+	}
 }
 
 .toolbar-products {
-    @extend .abs-add-clearfix;
-    margin-bottom: $indent__xl;
-    padding: 0 $indent__s;
-    text-align: center;
+	@extend .abs-add-clearfix;
 
-    .pages {
-        display: none;
+	margin-bottom: $indent__xl;
+	padding: 0 $indent__s;
+	text-align: center;
 
-        .products.wrapper ~ & {
-            display: block;
-        }
-    }
+	.pages {
+		display: none;
 
-    .limiter {
-        display: none;
+		.products.wrapper ~ & {
+			display: block;
+		}
+	}
 
-        .control {
-            display: inline-block;
-        }
-    }
+	.limiter {
+		display: none;
+
+		.control {
+			display: inline-block;
+		}
+	}
 }
 
 .sorter {
-    padding: 4px 0 0;
+	padding: 4px 0 0;
 
-    .products.wrapper ~ .toolbar & {
-        display: none;
-    }
+	.products.wrapper ~ .toolbar & {
+		display: none;
+	}
 
-		.sort-desc {
-				&:before {
-						content: $icon-arrow-down;
-				}
+	.sort-desc {
+		&:before {
+			content: $icon-arrow-down;
 		}
+	}
 }
 
 .sorter-options {
-    margin: 0 0 0 7px;
-    width: auto;
+	margin: 0 0 0 7px;
+	width: auto;
 }
 
 .sorter-action {
-    vertical-align: top;
-    @include lib-icon-font(
-        $icon-arrow-up,
-        $_icon-font-size       : 28px,
-        $_icon-font-line-height: 32px,
-        $_icon-font-color      : $header-icons-color,
-        $_icon-font-color-hover: $header-icons-color-hover,
-        $_icon-font-text-hide  : true
-    );
+	vertical-align: top;
+	@include lib-icon-font(
+		$icon-arrow-up,
+		$_icon-font-size       : 28px,
+		$_icon-font-line-height: 32px,
+		$_icon-font-color      : $header-icons-color,
+		$_icon-font-color-hover: $header-icons-color-hover,
+		$_icon-font-text-hide  : true
+	);
 }
 
 .modes {
-    display: none;
+	display: none;
 }
 
 .limiter-options {
-    margin: 0 5px 0 7px;
-    width: auto;
+	margin: 0 5px 0 7px;
+	width: auto;
 }
 
 .limiter-label {
-    font-weight: 400;
+	font-weight: 400;
 }
 
 .limiter {
-    .page-products .toolbar & {
-        display: none;
-    }
+	.page-products .toolbar & {
+		display: none;
+	}
 }
 
 //
-//  Desktop
+// Desktop
 // ::::::::::::::::::::::::::::::::::::
+
 @include min-screen($screen__m) {
-    .page-products {
-        .columns {
-            padding-top: 0;
-            position: relative;
-            z-index: 1;
-        }
-    }
+	.page-products {
+		.columns {
+			padding-top: 0;
+			position: relative;
+			z-index: 1;
+		}
+	}
 
-    .toolbar {
-        .products.wrapper ~ & .pages {
-            float: left;
-        }
-    }
+	.toolbar {
+		.products.wrapper ~ & .pages {
+			float: left;
+		}
+	}
 
-    .toolbar-amount {
-        float: left;
-    }
+	.toolbar-amount {
+		float: left;
+	}
 
-    .sorter {
-        float: right;
-    }
+	.sorter {
+		float: right;
+	}
 
-    .modes {
-        display: block;
-        float: left;
-        margin-right: $indent__base;
+	.modes {
+		display: block;
+		float: left;
+		margin-right: $indent__base;
 
-        .products.wrapper ~ .toolbar & {
-            display: none;
-        }
-    }
+		.products.wrapper ~ .toolbar & {
+			display: none;
+		}
+	}
 
-    .modes-label {
-        @extend .abs-visually-hidden-desktop;
-    }
+	.modes-label {
+		@extend .abs-visually-hidden-desktop;
+	}
 
-    .modes-mode {
-        color: $text__color__muted;
-        border: 1px solid $border-color__base;
-        border-right: 0;
-        float: left;
-        font-weight: $font-weight__regular;
-        line-height: 1;
-        padding: 7px 10px;
-        text-align: center;
-        @include lib-icon-font(
-            $icon-grid,
-            $_icon-font-size       : $toolbar-mode-icon-font-size,
-            $_icon-font-text-hide  : true,
-            $_icon-font-color      : $text__color__muted,
-            $_icon-font-color-hover: $text__color__muted,
-            $_icon-font-display    : block
-        );
+	.modes-mode {
+		border: 1px solid $border-color__base;
+		border-right: 0;
+		color: $text__color__muted;
+		float: left;
+		font-weight: $font-weight__regular;
+		line-height: 1;
+		padding: 7px 10px;
+		text-align: center;
+		@include lib-icon-font(
+			$icon-grid,
+			$_icon-font-size       : $toolbar-mode-icon-font-size,
+			$_icon-font-text-hide  : true,
+			$_icon-font-color      : $text__color__muted,
+			$_icon-font-color-hover: $text__color__muted,
+			$_icon-font-display    : block
+		);
 
-        &:not(.active) {
-            &:hover {
-                color: $text__color__muted;
-                background: darken($toolbar-element-background, 7%);
-            }
-        }
+		&:not(.active) {
+			&:hover {
+				background: darken($toolbar-element-background, 7%);
+				color: $text__color__muted;
+			}
+		}
 
-        &:last-child {
-            border-right: 1px solid $border-color__base;
-        }
+		&:last-child {
+			border-right: 1px solid $border-color__base;
+		}
 
-        &.active {
-            color: $primary__color__light;
-        }
-    }
+		&.active {
+			color: $primary__color__light;
+		}
+	}
 
-    .mode-list {
-        @include lib-icon-font-symbol($icon-list);
-    }
+	.mode-list {
+		@include lib-icon-font-symbol($icon-list);
+	}
 
-    .limiter {
-        float: right;
+	.limiter {
+		float: right;
 
-        .products.wrapper ~ .toolbar & {
-            display: block;
-        }
-    }
+		.products.wrapper ~ .toolbar & {
+			display: block;
+		}
+	}
 }

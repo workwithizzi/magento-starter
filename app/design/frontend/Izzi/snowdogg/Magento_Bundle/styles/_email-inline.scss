@@ -7,25 +7,25 @@
 // ::::::::::::::::::::::::::::::::::::
 
 .email-items {
-    .bundle-option-label {
-        > td {
-            padding: 0 $email-content__padding__base 0 $email-content__padding__l;
-        }
-    }
+	.bundle-option-label {
+		> td {
+			padding: 0 $email-content__padding__base 0 $email-content__padding__l;
+		}
+	}
 
-    .bundle-option-value {
-        > td {
-            padding: 0 $email-content__padding__base $email-content__padding__base;
+	.bundle-option-value {
+		> td {
+			padding: 0 $email-content__padding__base $email-content__padding__base;
 
-            &.item-info {
-                padding: 0 $email-content__padding__base $email-content__padding__base $email-content__padding__xl;
-            }
-        }
-    }
+			&.item-info {
+				padding: 0 $email-content__padding__base $email-content__padding__base $email-content__padding__xl;
+			}
+		}
+	}
 
-    tr.bundle-option-value + tr {
-        > td.item-extra {
-            padding-top: $email-content__padding__base;
-        }
-    }
+	tr.bundle-option-value + tr {
+		> td.item-extra {
+			padding-top: $email-content__padding__base;
+		}
+	}
 }

@@ -55,7 +55,6 @@ $modal-popup-image-box-preview__max-width        : calc(#{$modal-popup-image-box
 
 	.modal-inner-wrap {
 		@include lib-css(background-color, $modal__background-color);
-
 		@include lib-css(box-shadow, $modal__box-shadow);
 
 		opacity: 1;
@@ -65,7 +64,6 @@ $modal-popup-image-box-preview__max-width        : calc(#{$modal-popup-image-box
 
 @mixin lib-modal-slide() {
 	@include lib-css(left, $modal-slide__first__indent-left);
-
 	@include lib-css(z-index, $modal-slide__z-index);
 
 	&._show {
@@ -98,11 +96,8 @@ $modal-popup-image-box-preview__max-width        : calc(#{$modal-popup-image-box
 
 	.modal-inner-wrap {
 		@include lib-css(margin, $modal-popup__indent-vertical auto);
-
 		@include lib-css(width, $modal-popup__width);
-
 		@include lib-vendor-prefix-display(flex);
-
 		@include lib-vendor-prefix-flex-direction(column);
 
 		box-sizing: border-box;
@@ -138,16 +133,13 @@ body {
 	&._inner-scroll {
 		.modal-inner-wrap {
 			overflow-y: visible;
-
 			@include lib-vendor-prefix-display(flex);
-
 			@include lib-vendor-prefix-flex-direction(column);
 		}
 
 		.modal-header,
 		.modal-footer {
 			@include lib-vendor-prefix-flex-grow(0);
-
 			@include lib-vendor-prefix-flex-shrink(0);
 		}
 
@@ -168,7 +160,6 @@ body {
 
 	.modal-header {
 		@include lib-css(padding-bottom, $modal-slide-header__padding-vertical);
-
 		@include lib-css(padding-top, $modal-slide-header__padding-vertical);
 	}
 }
@@ -205,28 +196,23 @@ body {
 	.modal-content,
 	.modal-footer {
 		@include lib-css(padding-left, $modal-popup__padding);
-
 		@include lib-css(padding-right, $modal-popup__padding);
 	}
 
 	.modal-header,
 	.modal-footer {
 		@include lib-vendor-prefix-flex-grow(0);
-
 		@include lib-vendor-prefix-flex-shrink(0);
 	}
 
 	.modal-header {
 		@include lib-css(padding-bottom, $modal-popup__padding / 2.5);
-
 		@include lib-css(padding-top, $modal-popup__padding);
 	}
 
 	.modal-footer {
 		margin-top: auto;
-
 		@include lib-css(padding-bottom, $modal-popup__padding);
-
 		@include lib-css(padding-top, $modal-popup__padding);
 	}
 
