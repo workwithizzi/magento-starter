@@ -33,12 +33,12 @@ module.exports = {
 	// ::::::::::::::::::::::::::::::::::::
 	"rules": {
 		"no-duplicate-at-import-rules": true,
-		"no-duplicate-selectors": [
-			false,
-			{
-				"disallowInList": false
-			}
-		],
+		// "no-duplicate-selectors": [
+		// 	true,
+		// 	{
+		// 		"disallowInList": false
+		// 	}
+		// ],
 		"no-eol-whitespace": [
 			true,
 			{
@@ -63,12 +63,12 @@ module.exports = {
 		],
 		"font-family-name-quotes": "always-unless-keyword",
 		"unit-no-unknown": true,
-		"block-no-empty": [
-			true,
-			{
-				"ignore": ["comments"]
-			}
-		],
+		// "block-no-empty": [ // kept throwing a bunch of TypeErrors
+		// 	true,
+		// 	{
+		// 		"ignore": ["comments"]
+		// 	}
+		// ],
 		"max-nesting-depth": [
 			6, // int|normally "2"
 			{
@@ -87,31 +87,31 @@ module.exports = {
 		// ::::::::::::::::
 		// Stylelint-order Plugin
 		// ::::::::::::::::
-		"order/order": [
-      [
-        "custom-properties",
-        "dollar-variables",
-        {
-          "type": "at-rule",
-          "name": "extend"
-        },
-        {
-          "type": "at-rule",
-          "name": "include",
-          "hasBlock": false
-        },
-        "declarations",
-        {
-          "type": "at-rule",
-          "name": "include",
-          "hasBlock": true
-        },
-        "rules"
-			],
-			{
-				"disableFix": true // don't auto-fix this
-			}
-    ],
+		// "order/order": [
+    //   [
+    //     "custom-properties",
+    //     "dollar-variables",
+    //     {
+    //       "type": "at-rule",
+    //       "name": "extend"
+    //     },
+    //     {
+    //       "type": "at-rule",
+    //       "name": "include",
+    //       "hasBlock": false
+    //     },
+    //     "declarations",
+    //     {
+    //       "type": "at-rule",
+    //       "name": "include",
+    //       "hasBlock": true
+    //     },
+    //     "rules"
+		// 	],
+		// 	{
+		// 		"disableFix": true // don't auto-fix this
+		// 	}
+    // ],
 		"order/properties-alphabetical-order": true,
 
 		// ::::::::::::::::
@@ -145,7 +145,7 @@ module.exports = {
 		"unit-case": "lower",
 		"value-keyword-case": "lower",
 		"string-quotes": [
-			"single", // single|double
+			"double", // single|double
 			{
 				"avoidEscape": true
 			}
@@ -160,7 +160,7 @@ module.exports = {
 		"at-rule-empty-line-before": [
 			"always",
 			{
-				"except": ["first-nested"]
+				"except": ["first-nested", "inside-block"]
 			}
 		],
 		"custom-property-empty-line-before": [
@@ -172,7 +172,7 @@ module.exports = {
 		"declaration-empty-line-before": [
 			"always",
 			{
-				"except": ["after-declaration", "first-nested"]
+				"except": ["after-comment", "after-declaration", "first-nested"]
 			}
 		],
 		"block-closing-brace-empty-line-before": "never",
@@ -193,7 +193,7 @@ module.exports = {
 		"no-extra-semicolons": true,
 		"number-leading-zero": "never",
 		"number-no-trailing-zeros": true,
-		"property-no-vendor-prefix": false, // 2nd options: https://t.ly/fNSX)
+		// "property-no-vendor-prefix": true, // 2nd options: https://t.ly/fNSX)
 		"selector-attribute-brackets-space-inside": "never",
 		"selector-attribute-operator-space-after": "never",
 		"selector-attribute-operator-space-before": "never",
