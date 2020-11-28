@@ -6,8 +6,8 @@
 		<!-- Move skiplink to make it more accessible -->
 		<move element="skip_to_content" destination="header.panel" before="-"/>
 
-		<!-- Move the minicart/icon after "top.links" -->
-		<move element="minicart" destination="header.panel" after="-"/>
+		<!-- Move minicart after "skiplink" -->
+		<move element="minicart" destination="header.panel" after="skip_to_content"/>
 
 		<!-- Remove a buch of things -->
 
