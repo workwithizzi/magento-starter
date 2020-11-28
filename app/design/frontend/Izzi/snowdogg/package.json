@@ -11,7 +11,7 @@
 		"compile": "node-sass --source-comments --source-map true --output-style expanded -o web/css/ styles/main/",
 		"autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 0.5%, last 2 versions, Firefox ESR, not dead' -r web/css/*.css",
 		"styles": "yarn run compile && yarn run autoprefixer",
-		"watch": "onchange '**/*.s+(a|c)ss' -- yarn run styles",
+		"watch": "onchange '**/*.scss' -- yarn run styles",
 		"serve": "browser-sync start --proxy 'https://magento2.test' --files 'web'",
 		"dev": "npm run compile && concurrently \"npm:watch\" \"npm:serve\""
 	},
