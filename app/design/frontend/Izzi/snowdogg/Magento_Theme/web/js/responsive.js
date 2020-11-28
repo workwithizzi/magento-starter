@@ -10,8 +10,8 @@ define([
 		media: `(min-width: 768px)`,
 
 		/**
-         * Switch to Desktop Version.
-         */
+		 * Switch to Desktop Version.
+		 */
 		entry: function() {
 			let galleryElement;
 
@@ -41,8 +41,8 @@ define([
 		},
 
 		/**
-         * Switch to Mobile Version.
-         */
+		 * Switch to Mobile Version.
+		 */
 		exit: function() {
 			let galleryElement
 
