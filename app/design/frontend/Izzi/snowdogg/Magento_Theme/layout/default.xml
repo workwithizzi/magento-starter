@@ -1,0 +1,25 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<!-- Add custom theme-class to body -->
+		<!-- <attribute name="class" value="skeleton-theme"/> -->
+
+		<!-- Move skiplink to make it more accessible -->
+		<move element="skip_to_content" destination="header.panel" before="-"/>
+
+		<!-- Move the minicart/icon after "top.links" -->
+		<move element="minicart" destination="header.panel" after="-"/>
+
+		<!-- Remove a buch of things -->
+
+		<!-- "View Wishlist" link in top menu -->
+		<referenceBlock name="wish-list-link" remove="true"/>
+		<!-- Search bar -->
+		<referenceBlock name="top.search" remove="true"/>
+		<!-- default subscription signup from footer -->
+		<referenceBlock name="form.subscribe" remove="true"/>
+		<!-- blank theme's default footer links -->
+		<referenceBlock name="footer_links" remove="true"/>
+		<!-- bug-report link from footer -->
+		<referenceBlock name="report.bugs" remove="true"/>
+	</body>
+</page>
