@@ -318,7 +318,7 @@ body {
 
 					&.welcome,
 					a {
-						line-height: 2.2;
+						line-height: 3.4;
 					}
 
 					&.welcome {
@@ -348,8 +348,7 @@ body {
 		.header.panel {
 			@extend .abs-add-clearfix-desktop;
 
-			padding-bottom: $indent__s;
-			padding-top: $indent__s;
+			padding: 0;
 		}
 
 		.switcher {
