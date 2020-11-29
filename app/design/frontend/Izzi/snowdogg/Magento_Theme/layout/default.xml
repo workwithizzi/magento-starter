@@ -9,17 +9,38 @@
 		<!-- Move minicart after "skiplink" -->
 		<move element="minicart" destination="header.panel" after="skip_to_content"/>
 
-		<!-- Remove a buch of things -->
+		<!-- :::::::: Top Links ::::::: -->
 
-		<!-- "View Wishlist" link in top menu -->
-		<referenceBlock name="wish-list-link" remove="true"/>
-		<!-- Search bar -->
+		<!-- Sign-In link -->
+		<!-- <referenceBlock name="authorization-link" remove="true"/> -->
+
+		<!-- Compare Products link -->
+		<!-- <move element="catalog.compare.link" destination="top.links" before="my-account-link"/> -->
+		<!-- <referenceBlock name="catalog.compare.link" remove="true"/> -->
+
+		<!-- "My Account" link -->
+		<!-- <referenceBlock name="my-account-link" remove="true"/> -->
+
+		<!-- "Create an Account" link -->
+		<!-- <referenceBlock name="register-link" remove="true"/> -->
+
+		<!-- "Remove: View Wishlist" link -->
+		<!-- <referenceBlock name="wish-list-link" remove="true"/> -->
+
+		<!-- ::::::::: Other :::::::::: -->
+
+		<!-- Remove: Search bar -->
 		<referenceBlock name="top.search" remove="true"/>
-		<!-- default subscription signup from footer -->
+
+		<!-- ::::::::: Footer ::::::::: -->
+
+		<!-- Remove: default subscription signup from footer -->
 		<referenceBlock name="form.subscribe" remove="true"/>
-		<!-- blank theme's default footer links -->
+
+		<!-- Remove: blank theme's default footer links -->
 		<referenceBlock name="footer_links" remove="true"/>
-		<!-- bug-report link from footer -->
+
+		<!-- Remove: bug-report link from footer -->
 		<referenceBlock name="report.bugs" remove="true"/>
 	</body>
 </page>
