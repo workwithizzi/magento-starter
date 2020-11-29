@@ -1,0 +1,35 @@
+body {
+	@include lib-css(background-color, $page__background-color);
+}
+
+
+@include min-screen($screen_desktop) {
+
+	html,
+	body {
+		height: 100%; // Stretch screen area for sticky footer
+	}
+
+	.page-wrapper {
+		@include lib-vendor-prefix-display(flex);
+		@include lib-vendor-prefix-flex-direction(column);
+
+		min-height: 100%; // Stretch content area for sticky footer
+
+		> .breadcrumbs,
+		> .top-container,
+		> .widget {
+			box-sizing: border-box;
+			width: 100%;
+		}
+
+		.ie10 &,
+		.ie11 & {
+			height: 100%;
+		}
+	}
+
+	.navigation ul {
+		padding: 0 8px;
+	}
+}
