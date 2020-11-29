@@ -157,12 +157,12 @@ module.exports = {
 		// Allow single-line blocks & enforce newlines on multi-line blocks
 		"block-opening-brace-newline-after": ["always-multi-line"],
 		// "block-closing-brace-newline-before": ["always-multi-line"],
-		"at-rule-empty-line-before": [
-			"always",
-			{
-				"except": ["first-nested", "inside-block"]
-			}
-		],
+		// "at-rule-empty-line-before": [
+		// 	"always",
+		// 	{
+		// 		"except": ["first-nested", "inside-block"]
+		// 	}
+		// ],
 		"custom-property-empty-line-before": [
 			"always",
 			{
