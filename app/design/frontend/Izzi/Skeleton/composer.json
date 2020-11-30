@@ -1,22 +1,11 @@
 {
-    "name": "Izzi/skeleton",
-    "description": "N/A",
-    "type": "magento2-theme",
-    "version": "0.0.1",
-    "config": {
-        "sort-packages": true
-    },
-    "require": {
-        "magento/framework": "*",
-        "magento/theme-frontend-blank": "*"
-    },
-    "license": [
-        "OSL-3.0",
-        "AFL-3.0"
-    ],
-    "autoload": {
-        "files": [
-            "registration.php"
-        ]
-    }
+	"name": "izzi/theme-blank-sass",
+	"description": "SASS based version of Magento 2 Blank theme",
+	"license": "MIT",
+	"type": "magento2-theme",
+	"autoload": {
+		"files": [
+			"registration.php"
+		]
+	}
 }

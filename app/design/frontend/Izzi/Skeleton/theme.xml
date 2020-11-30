@@ -1,14 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
-    <!-- The title for your theme in human-readable format -->
     <title>Skeleton</title>
-    <!-- The parent theme your theme will inherit -->
-    <!-- Almost always Magento/blank for new themes -->
-    <!-- <parent>Magento/blank</parent> -->
-    <!-- The media node is optional and can be removed if no preview image -->
     <media>
-        <!-- The preview_image node defines your theme's preview image -->
-        <!-- Magento looks for a path relative to your theme's directory -->
         <preview_image>media/preview.jpg</preview_image>
     </media>
 </theme>
