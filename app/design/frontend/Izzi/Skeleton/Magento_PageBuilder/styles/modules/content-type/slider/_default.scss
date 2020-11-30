@@ -1,0 +1,30 @@
+//
+// Default appearance styles
+// ::::::::::::::::::::::::::::::::::::
+div[data-content-type="slider"] {
+	visibility: hidden;
+
+	&.slick-initialized {
+		visibility: visible;
+	}
+
+	.slick-list,
+	.slick-track,
+	.slick-slide {
+		min-height: inherit;
+
+		> div {
+			line-height: 0;
+			min-height: inherit;
+			overflow: hidden;
+			width: 100%;
+		}
+	}
+}
+
+a.button {
+	appearance: button;
+	color: initial;
+	padding: 10px;
+	text-decoration: none;
+}

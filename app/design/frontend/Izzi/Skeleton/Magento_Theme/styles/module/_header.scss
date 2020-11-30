@@ -1,0 +1,119 @@
+//
+// Header
+// ::::::::::::::::::::::::::::::::::::
+
+.page-header {
+	@include lib-css(background-color, $header__background-color);
+
+	border-bottom: 1px solid $border-color__base;
+	margin-bottom: $indent__base;
+}
+
+.header {
+	&.content {
+		@extend .abs-add-clearfix;
+
+		padding-top: $indent__s;
+		position: relative;
+	}
+}
+
+.page-main {
+	> .page-title-wrapper {
+		.page-title + .action {
+			margin-top: $indent__l;
+		}
+	}
+}
+
+.action.skip {
+	&:not(:focus) {
+		@extend .abs-visually-hidden;
+	}
+
+	&:focus {
+		@include lib-css(background, $color-gray94);
+		@include lib-css(padding, $indent__s);
+
+		box-sizing: border-box;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100%;
+		z-index: 15;
+	}
+}
+
+.action-skip-wrapper {
+	height: 0;
+	position: relative;
+}
+
+
+@include min-screen($screen_desktop) {
+	.header {
+		&.panel {
+			> .header.links {
+				float: right;
+				font-size: 0;
+				margin-left: auto;
+				@include lib-list-inline();
+
+				> li {
+					font-size: $font-size__base;
+					margin: 0 0 0 15px;
+
+					&.welcome,
+					a {
+						line-height: 3.4;
+					}
+
+					&.welcome {
+						a {
+							@include lib-css(padding-left, $indent__xs);
+						}
+					}
+				}
+			}
+		}
+
+		&.content {
+			@extend .abs-add-clearfix-desktop;
+
+			padding: $indent__l $indent__base 0;
+		}
+	}
+
+	.page-header {
+		border: 0;
+		margin-bottom: 0;
+
+		.panel.wrapper {
+			border-bottom: 1px solid $secondary__color;
+		}
+
+		.header.panel {
+			@extend .abs-add-clearfix-desktop;
+
+			padding: 0;
+		}
+
+		.switcher {
+			display: inline-block;
+		}
+	}
+
+	.page-main {
+		> .page-title-wrapper {
+			.page-title {
+				display: inline-block;
+			}
+
+			.page-title + .action {
+				float: right;
+				margin-top: $indent__base;
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+//
+// Widgets
+// ::::::::::::::::::::::::::::::::::::
+
+.sidebar {
+	.widget.block:not(:last-child),
+	.widget:not(:last-child) {
+		@extend .abs-margin-for-blocks-and-widgets;
+	}
+}
+
+.widget {
+	clear: both;
+
+	.block-title {
+		@extend .abs-block-title;
+	}
+}
+
+.no-display {
+	@extend .abs-no-display;
+}

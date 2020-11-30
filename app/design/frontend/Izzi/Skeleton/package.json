@@ -1,0 +1,37 @@
+{
+	"name": "izzi_skeleton",
+	"version": "0.0.1",
+	"description": "Blank sass-theme for Magento 2",
+	"main": "index.js",
+	"scripts": {
+		"stylelint": "stylelint '**/*.scss'",
+		"stylelint-fix": "stylelint '**/*.scss' --fix",
+		"js:lint": "eslint ./",
+		"js:fix": "eslint ./ --fix",
+		"compile": "node-sass --source-comments --source-map true --output-style expanded -o web/css/ styles/main/",
+		"autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 0.5%, last 2 versions, Firefox ESR, not dead' -r web/css/*.css",
+		"styles": "yarn run compile && yarn run autoprefixer",
+		"watch": "onchange '**/*.scss' -- yarn run styles",
+		"serve": "browser-sync start --proxy 'https://magento2.test' --files 'web'",
+		"dev": "npm run compile && concurrently \"npm:watch\" \"npm:serve\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@workwithizzi/eslint-config": "^0.0.4",
+		"autoprefixer": "^10.0.2",
+		"browser-sync": "^2.26.13",
+		"concurrently": "^5.3.0",
+		"node-sass": "^5.0.0",
+		"onchange": "^7.1.0",
+		"postcss": "^8.1.8",
+		"postcss-cli": "^8.3.0",
+		"stylelint": "^13.8.0",
+		"stylelint-config-recommended": "^3.0.0",
+		"stylelint-config-sass-guidelines": "^7.1.0",
+		"stylelint-config-standard": "^20.0.0",
+		"stylelint-order": "^4.1.0",
+		"stylelint-scss": "^3.18.0"
+	}
+}

@@ -1,0 +1,105 @@
+.fotorama__img {
+	border: none !important; // stylelint-disable-line declaration-no-important
+	max-width: inherit;
+	opacity: 0;
+
+	.fotorama__loaded &,
+	.fotorama__error & {
+		opacity: 1;
+	}
+
+	&--full {
+		display: none;
+	}
+
+	.fotorama__wrap--video .fotorama__stage__frame--video & {
+		@extend .fotorama-transform-disabled;
+
+		opacity: 0;
+	}
+
+	.fotorama__nav-wrap .fotorama_vertical_ratio & {
+		height: auto;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+	}
+
+	.fotorama__nav-wrap .fotorama_horizontal_ratio & {
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		width: auto;
+	}
+
+	.fotorama__stage__frame & {
+		height: auto;
+		left: 50%;
+		max-height: 100%;
+		max-width: 100%;
+		position: absolute;
+		top: 50%;
+		transform: translate3d(-50%, -50%, 0);
+		transition-duration: $fotorama-fullscreen-zoom-time;
+		transition-property: width, height, top, left;
+		width: auto;
+		//vertical-align: middle;
+	}
+
+	.fotorama--fullscreen .fotorama__stage__frame & {
+		display: none;
+	}
+
+	.fotorama--fullscreen .fotorama__stage__frame &,
+	.fotorama--fullscreen .fotorama__stage__frame &--full {
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		max-height: inherit;
+		max-width: inherit;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.fotorama--fullscreen .fotorama__loaded--full & {
+		display: none;
+
+		&--full {
+			display: block;
+		}
+	}
+
+	.fotorama--fullscreen .fotorama__stage__frame &--full {
+		@extend .fotorama-gpu;
+
+		cursor: default;
+		display: block;
+		height: auto;
+		left: 0;
+		margin: auto;
+		max-height: 100%;
+		max-width: 100%;
+		top: 0;
+		transition: $fotorama-fullscreen-zoom-time linear;
+		width: auto;
+		//vertical-align: middle;
+		&.fotorama__img--zoommable {
+			cursor: pointer;
+			max-height: none;
+			max-width: none;
+			transition-property: width, height, bottom, right, top, left;
+		}
+		&.fotorama__img--draggable {
+			cursor: move;
+			transition-property: none;
+		}
+	}
+
+	.fotorama__product-video--loaded &,
+	.fotorama__product-video--loaded &--full {
+		display: none !important; // stylelint-disable-line declaration-no-important
+	}
+}

@@ -1,0 +1,59 @@
+.fotorama__nav__frame {
+	@extend .fotorama-auto-margin;
+	@extend .fotorama-focus;
+	@extend .fotorama-inline-block;
+	@extend .fotorama-no-tap;
+
+	box-sizing: content-box;
+	position: relative;
+
+	.fotorama__nav--dots & {
+		height: 30px;
+		width: 18px;
+		&--thumb {
+			display: none;
+		}
+	}
+
+	.fotorama__nav--thumbs & {
+		padding-left: 0 !important; // stylelint-disable-line declaration-no-important
+
+		&:last-child {
+			padding-right: 0 !important; // stylelint-disable-line declaration-no-important
+		}
+
+		&--dot {
+			display: none;
+		}
+	}
+
+	&.fotorama__active & {
+		border-width: 3px;
+		height: 0;
+		width: 0;
+
+		&:after {
+			left: -3px;
+			padding: 3px;
+			top: -3px;
+		}
+	}
+
+	&:focus {
+		@extend .fotorama-focus-overlay;
+
+		box-shadow: none;
+
+		// TODO check this in magento/blank css
+		:after {
+			left: -1px;
+			padding: 1px;
+			top: -1px;
+		}
+	}
+
+	.fotorama__nav-wrap--vertical .fotorama__nav__shaft &--thumb {
+		display: block;
+		padding-bottom: inherit !important; // stylelint-disable-line declaration-no-important
+	}
+}

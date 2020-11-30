@@ -1,0 +1,16 @@
+//
+// Full Bleed row appearance styles
+// ::::::::::::::::::::::::::::::::::::
+[data-content-type="row"][data-appearance="full-bleed"] {
+	box-sizing: border-box;
+}
+
+//
+// Mobile
+// ::::::::::::::::::::::::::::::::::::
+
+@include max-screen($screen__m - 1) {
+	[data-content-type="row"][data-appearance="full-bleed"] {
+		background-attachment: scroll !important; // stylelint-disable-line declaration-no-important
+	}
+}

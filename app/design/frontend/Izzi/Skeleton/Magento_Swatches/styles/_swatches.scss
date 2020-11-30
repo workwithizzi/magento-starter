@@ -1,0 +1,287 @@
+// stylelint-disable color-no-hex
+// TODO: Change color hex to global vars
+.swatch-attribute-label {
+	font-weight: bold;
+	position: relative;
+}
+
+.swatch-attribute-label.required {
+	padding-right: 10px;
+}
+
+.swatch-attribute-label[data-required="1"]:after {
+	color: #ff0000;
+	content: "*";
+	font-size: 1em;
+	font-weight: bold;
+	position: absolute;
+	right: -11px;
+	top: -2px;
+}
+
+.swatch-attribute-selected-option {
+	color: #646464;
+	padding-left: 17px;
+}
+
+.swatch-attribute-options {
+	margin-top: 10px;
+}
+
+.swatch-option {
+	border: 1px solid rgb(218, 218, 218);
+	cursor: pointer;
+	float: left;
+	height: 20px;
+	margin: 0 10px 5px 0;
+	max-width: 90px;
+	min-width: 30px;
+	overflow: hidden;
+	padding: 1px 2px;
+	position: relative;
+	text-align: center;
+	text-overflow: ellipsis;
+}
+
+.swatch-option.text {
+	background: #f0f0f0;
+	color: #686868;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+	margin-right: 7px;
+	min-width: 22px;
+	padding: 4px 8px;
+}
+
+.swatch-option.selected {
+	border: 1px solid #ffffff;
+	color: #333333;
+	outline: 2px solid #ff5501;
+}
+
+.swatch-option.text.selected {
+	background-color: #ffffff !important; // stylelint-disable-line declaration-no-important
+}
+
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.swatch-attribute.size .swatch-option,
+.swatch-attribute.manufacturer .swatch-option {
+	background: rgb(240, 240, 240);
+	color: rgb(148, 148, 148);
+}
+
+
+.swatch-attribute.size .swatch-option.selected,
+.swatch-attribute.manufacturer .swatch-option.selected {
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	color: #000000;
+}
+
+
+.swatch-option:not(.disabled):hover {
+	border: 1px solid #ffffff;
+	color: #333333;
+	outline: 1px solid #999999;
+}
+
+.swatch-option.image:not(.disabled):hover,
+.swatch-option.color:not(.disabled):hover {
+	border: 1px solid #ffffff;
+	outline: 2px solid #ee0000;
+}
+
+.swatch-option.disabled {
+	cursor: default;
+}
+
+.swatch-option.disabled:after {
+	background: linear-gradient(
+		to left top,
+		rgba( 255, 255, 255, 0) 0%,
+		rgba( 255, 255, 255, 0) 42%,
+		rgba( 255, 255, 255, 1) 43%,
+		rgba( 255, 255, 255, 1) 46%,
+		rgba( 255, 82, 22, 1) 47%,
+		rgba( 255, 82, 22, 1) 53%,
+		rgba( 255, 255, 255, 1) 54%,
+		rgba( 255, 255, 255, 1) 57%,
+		rgba( 255, 255, 255, 0) 58%,
+		rgba( 255, 255, 255, 0) 100%
+	);
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.swatch-option-tooltip {
+	background: #ffffff;
+	border: 1px solid #adadad;
+	color: rgb(148, 148, 148);
+	display: none;
+	max-height: 100%;
+	max-width: 140px;
+	min-height: 20px;
+	min-width: 20px;
+	padding: 5px;
+	position: absolute;
+	text-align: center;
+	z-index: 999;
+}
+
+.swatch-option-tooltip .corner,
+.swatch-option-tooltip-layered .corner {
+	bottom: 0;
+	height: 8px;
+	left: 40%;
+	position: absolute;
+}
+
+.swatch-option-tooltip .corner:after,
+.swatch-option-tooltip-layered .corner:after {
+	border-color: #ffffff transparent transparent transparent;
+	border-style: solid;
+	border-width: 7px 7.5px 0 7.5px;
+	content: "";
+	font-size: 1px;
+	height: 0;
+	left: -15px;
+	position: relative;
+	top: 1px;
+	width: 0;
+}
+
+.swatch-option-tooltip .corner:before,
+.swatch-option-tooltip-layered .corner:before {
+	border-color: #adadad transparent transparent transparent;
+	border-style: solid;
+	border-width: 8px 8.5px 0 8.5px;
+	content: "";
+	font-size: 1px;
+	height: 0;
+	left: 0;
+	position: relative;
+	top: 2px;
+	width: 0;
+}
+
+.swatch-option-tooltip .image,
+.swatch-option-tooltip-layered .image {
+	display: block;
+	height: 130px;
+	margin: 0 auto;
+	width: 130px;
+}
+
+.swatch-option-tooltip .title {
+	color: rgb(40, 40, 40);
+	display: block;
+	max-height: 200px;
+	max-width: 140px;
+	min-height: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.swatch-opt {
+	margin: 20px 0;
+}
+
+.swatch-more {
+	display: inline-block;
+	margin: 2px 0;
+	position: static;
+	text-decoration: none !important; // stylelint-disable-line declaration-no-important
+	z-index: 1;
+}
+
+// Layered Features
+.swatch-option-link-layered {
+	margin: 0 !important; // stylelint-disable-line declaration-no-important
+	padding: 0 !important; // stylelint-disable-line declaration-no-important
+	position: relative;
+}
+
+.swatch-option-link-layered:focus > div {
+	box-shadow: 0 0 3px 1px #68a8e0;
+}
+
+.swatch-option-tooltip-layered {
+	background: #ffffff;
+	border: 1px solid #adadad;
+	color: rgb(148, 148, 148);
+	display: none;
+	left: -47px;
+	position: absolute;
+	width: 140px;
+	z-index: 999;
+}
+
+.swatch-visual-tooltip-layered {
+	height: 160px;
+	top: -170px;
+}
+
+.swatch-textual-tooltip-layered {
+	height: 30px;
+	top: -40px;
+}
+
+.swatch-option-link-layered:hover > .swatch-option-tooltip-layered {
+	display: block;
+}
+
+.swatch-attribute-options .swatch-option-tooltip-layered .title {
+	bottom: -5px;
+	color: rgb(40, 40, 40);
+	height: 20px;
+	left: 0;
+	margin-bottom: 10px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.swatch-option-disabled:after {
+	background: #ff0000;
+	content: "";
+	height: 2px;
+	left: -4px;
+	position: absolute;
+	top: 10px;
+	transform: rotate(-30deg);
+	width: 42px;
+	z-index: 995;
+}
+
+.swatch-option-disabled {
+	border: 0;
+	cursor: default;
+	outline: none !important; // stylelint-disable-line declaration-no-important
+}
+
+// Bugfix for Add To Cart button
+.swatch-opt-listing {
+	margin-bottom: 10px;
+}
+
+.swatch-option-loading {
+	content: url("../Magento_Swatches/images/loader-2.gif");
+}
+
+.swatch-input {
+	left: -1000px;
+	position: absolute;
+	visibility: hidden;
+}

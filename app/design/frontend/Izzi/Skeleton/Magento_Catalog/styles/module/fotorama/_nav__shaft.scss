@@ -1,0 +1,19 @@
+.fotorama__nav__shaft {
+	@extend .fotorama-inline-block;
+	@extend .fotorama-no-tap;
+
+	left: 0;
+	position: relative;
+	text-align: left;
+	top: 0;
+
+	.fotorama__wrap--css3 & {
+		@extend .fotorama-transition-for-slide;
+	}
+
+	.fotorama__nav-wrap--vertical & {
+		// TODO: Change this color from hex to global var
+		background-color: #ffffff; // stylelint-disable-line color-no-hex
+		width: 100%;
+	}
+}

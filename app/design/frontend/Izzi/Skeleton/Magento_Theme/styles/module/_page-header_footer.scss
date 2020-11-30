@@ -1,0 +1,56 @@
+
+.page-header,
+.page-footer {
+	.switcher {
+		margin-right: 10px;
+
+		.options {
+			@include lib-dropdown(
+				$_dropdown-actions-padding            : 0,
+				$_dropdown-list-item-padding          : 0,
+				$_dropdown-toggle-icon-content        : $icon-down,
+				$_dropdown-toggle-active-icon-content : $icon-up,
+				$_icon-font-text-hide                 : true,
+				$_icon-font-size                      : 22px,
+				$_icon-font-line-height               : 22px,
+				$_dropdown-list-min-width             : 160px
+			);
+
+			ul.dropdown {
+				a {
+					display: block;
+					padding: 8px;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		li {
+			font-size: $font-size__s;
+			margin: 0;
+		}
+
+		.label {
+			@extend .abs-visually-hidden;
+		}
+
+		strong {
+			font-weight: $font-weight__regular;
+		}
+	}
+}
+
+//
+// Widgets
+// ::::::::::::::::::::::::::::::::::::
+
+// stylelint-disable-next-line no-duplicate-selectors
+.page-header,
+.page-footer {
+	.widget.block {
+		@include lib-css(margin, $indent__base 0);
+	}
+}

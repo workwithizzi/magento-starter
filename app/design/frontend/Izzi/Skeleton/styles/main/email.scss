@@ -1,0 +1,42 @@
+//
+// Styles for emails
+// ::::::::::::::::::::::::::::::::::::
+// See comments in source/_email-base.scss for explanation of email styles
+
+// Global lib
+
+@import "../vendor/magento-ui/lib";
+
+// Global email variables
+
+@import "../vendor/magento-ui/variables/email";
+
+// Local theme variables
+
+@import "../variables";
+
+// Theme variables for emails
+
+@import "../email/email-variables";
+
+// Mixins
+
+@import "../mixins/media-queries";
+
+// Include all styles that have been indicated as non-inline styles
+
+@import "../email/email-base";
+
+@import "../email/email-extend";
+
+// Module-specific styles for emails
+
+@import "../../Magento_Bundle/styles/email";
+
+@import "../../Magento_Rma/styles/email";
+
+@import "../../Magento_Sales/styles/email";
+
+// It is impossible to apply media queries as inline styles, so all media
+// queries must be output in this file
+$media-target: "all";

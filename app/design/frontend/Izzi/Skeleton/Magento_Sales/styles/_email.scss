@@ -1,0 +1,36 @@
+//
+// Sales Module Styles
+// ::::::::::::::::::::::::::::::::::::
+// inline styles moved to _email-inline.scss
+
+@include max-screen($screen__xs) {
+	// Shrink order number in order email so it will fit on
+	// single line on small screens
+	.email-summary {
+		h1 {
+			// output 24px
+			font-size: ceil(1.7 * $font-size__base) !important; // stylelint-disable-line declaration-no-important
+		}
+	}
+}
+
+//
+// Order Summary
+// ::::::::::::::::::::::::::::::::::::-
+
+@include max-screen($screen__xs) {
+	// Stack columns
+	.order-details {
+		.address-details,
+		.method-info {
+			display: block;
+			padding: $email-content__padding__base 0 !important; // stylelint-disable-line declaration-no-important
+			width: auto !important; // stylelint-disable-line declaration-no-important
+
+			h3 {
+				margin-bottom: $indent__xs !important; // stylelint-disable-line declaration-no-important
+				margin-top: 0 !important; // stylelint-disable-line declaration-no-important
+			}
+		}
+	}
+}
